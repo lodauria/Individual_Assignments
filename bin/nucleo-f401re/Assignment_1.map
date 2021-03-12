@@ -33,9 +33,9 @@ Archive member included to satisfy reference by file (symbol)
 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallstatsr.o)
                               /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-mstats.o) (_malloc_stats_r)
 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-printf.o)
-                              /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o (printf)
+                              /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o (printf)
 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-puts.o)
-                              /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o (puts)
+                              /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o (puts)
 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-realloc.o)
                               /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/malloc_thread_safe/malloc_wrappers.o (realloc)
 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wbuf.o)
@@ -97,9 +97,48 @@ Discarded input sections
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
  .text          0x0000000000000000        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
  .data          0x0000000000000000        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
  .bss           0x0000000000000000        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .text.irq_enable
+                0x0000000000000000        0x8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
@@ -133,7 +172,9 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
  .debug_macro   0x0000000000000000      0x118 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
  .debug_macro   0x0000000000000000       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_macro   0x0000000000000000       0xef /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
  .debug_macro   0x0000000000000000       0x6a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_macro   0x0000000000000000      0x1df /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
  .debug_macro   0x0000000000000000       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
  .debug_macro   0x0000000000000000       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
  .debug_macro   0x0000000000000000       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
@@ -151,6 +192,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xb6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
  .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
  .debug_macro   0x0000000000000000      0x114 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_macro   0x0000000000000000       0x60 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
@@ -247,9 +289,43 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xb6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
  .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
  .debug_macro   0x0000000000000000      0x114 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
  .debug_macro   0x0000000000000000       0xef /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
  .debug_macro   0x0000000000000000      0x1df /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x49 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x32 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0xd9 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000     0x102d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000      0x11f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000     0xb850 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x43 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x41 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x35 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000      0x460 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
  .debug_macro   0x0000000000000000       0x60 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x37 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x42 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x2b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0xee /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000      0x1de /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000000000       0x70 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/assert.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/assert.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/assert.o
@@ -4686,8 +4762,6 @@ Discarded input sections
                 0x0000000000000000       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
  .text.gpio_irq_disable
                 0x0000000000000000       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
- .text.gpio_read
-                0x0000000000000000       0x14 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
  .text.gpio_set
                 0x0000000000000000       0x12 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
  .text.gpio_clear
@@ -4871,6 +4945,147 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1de /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
  .debug_macro   0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
  .debug_macro   0x0000000000000000       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .text          0x0000000000000000        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .data          0x0000000000000000        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .bss           0x0000000000000000        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .text.irq_enable
+                0x0000000000000000        0x8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .text.timer_set_absolute
+                0x0000000000000000       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .text.timer_clear
+                0x0000000000000000       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .text.timer_read
+                0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .text.timer_start
+                0x0000000000000000       0x14 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .text.timer_init
+                0x0000000000000000       0x58 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .text.timer_stop
+                0x0000000000000000       0x14 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .rodata.timer_config
+                0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x5c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x57 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x97 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000      0x330 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0xfd /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x52 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x1f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x43 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000      0x1a3 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x6a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0xb6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000      0x114 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0xef /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000      0x1df /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x49 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x32 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0xd9 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000     0x102d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000      0x11f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000     0xb850 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x43 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x41 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x35 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000      0x460 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x60 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x37 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x42 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x2b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0xee /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000      0x1de /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x70 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x0000000000000000       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
  .group         0x0000000000000000        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
@@ -5851,6 +6066,7 @@ LOAD /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/spi.o
 LOAD /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/timer.o
 LOAD /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
 LOAD /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+LOAD /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
 LOAD /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
 LOAD /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
 LOAD /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
@@ -5880,7 +6096,7 @@ END GROUP
                 0x0000000000000000                _backup_ram_start_addr = DEFINED (_backup_ram_start_addr)?_backup_ram_start_addr:0x0
                 0x0000000000000000                _backup_ram_len = DEFINED (_backup_ram_len)?_backup_ram_len:0x0
 
-.text           0x0000000008000000     0x2140
+.text           0x0000000008000000     0x2218
                 0x0000000008000000                . = ALIGN (0x4)
                 0x0000000008000000                _sfixed = .
                 0x0000000008000000                _isr_vectors = DEFINED (_isr_vectors)?_isr_vectors:.
@@ -5891,440 +6107,445 @@ END GROUP
                 0x0000000008000040                vector_cpu
  *(.text .text.* .gnu.linkonce.t.*)
  .text.startup.main
-                0x0000000008000194       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+                0x0000000008000194       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
                 0x0000000008000194                main
  .text.auto_init
-                0x00000000080001a4        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
-                0x00000000080001a4                auto_init
+                0x00000000080001cc        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+                0x00000000080001cc                auto_init
  .text.board_init
-                0x00000000080001a6        0x4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
-                0x00000000080001a6                board_init
- *fill*         0x00000000080001aa        0x2 
+                0x00000000080001ce        0x4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+                0x00000000080001ce                board_init
+ *fill*         0x00000000080001d2        0x2 
  .text.main_trampoline
-                0x00000000080001ac       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+                0x00000000080001d4       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
  .text.kernel_init
-                0x00000000080001c4       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
-                0x00000000080001c4                kernel_init
+                0x00000000080001ec       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+                0x00000000080001ec                kernel_init
  .text.panic_app
-                0x00000000080001f8        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
-                0x00000000080001f8                panic_app
- *fill*         0x00000000080001fa        0x2 
+                0x0000000008000220        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+                0x0000000008000220                panic_app
+ *fill*         0x0000000008000222        0x2 
  .text.core_panic
-                0x00000000080001fc       0x50 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
-                0x00000000080001fc                core_panic
+                0x0000000008000224       0x50 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+                0x0000000008000224                core_panic
  .text.sched_run
-                0x000000000800024c       0x88 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
-                0x000000000800024c                sched_run
+                0x0000000008000274       0x88 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+                0x0000000008000274                sched_run
  .text.sched_set_status
-                0x00000000080002d4       0x84 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
-                0x00000000080002d4                sched_set_status
+                0x00000000080002fc       0x84 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+                0x00000000080002fc                sched_set_status
  .text.sched_switch
-                0x0000000008000358       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
-                0x0000000008000358                sched_switch
+                0x0000000008000380       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+                0x0000000008000380                sched_switch
  .text.sched_task_exit
-                0x0000000008000394       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
-                0x0000000008000394                sched_task_exit
+                0x00000000080003bc       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+                0x00000000080003bc                sched_task_exit
  .text.thread_getname
-                0x00000000080003d4       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
-                0x00000000080003d4                thread_getname
+                0x00000000080003fc       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+                0x00000000080003fc                thread_getname
  .text.thread_create
-                0x00000000080003f0       0xe0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
-                0x00000000080003f0                thread_create
+                0x0000000008000418       0xe0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+                0x0000000008000418                thread_create
  .text.cortexm_init
-                0x00000000080004d0       0x4c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
-                0x00000000080004d0                cortexm_init
+                0x00000000080004f8       0x4c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
+                0x00000000080004f8                cortexm_init
  .text.mpu_enable
-                0x000000000800051c       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
-                0x000000000800051c                mpu_enable
+                0x0000000008000544       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+                0x0000000008000544                mpu_enable
  .text.mpu_configure
-                0x000000000800053c       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
-                0x000000000800053c                mpu_configure
+                0x0000000008000564       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+                0x0000000008000564                mpu_configure
  .text.panic_arch
-                0x0000000008000554       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
-                0x0000000008000554                panic_arch
+                0x000000000800057c       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+                0x000000000800057c                panic_arch
  .text.thread_stack_init
-                0x0000000008000570       0x64 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
-                0x0000000008000570                thread_stack_init
+                0x0000000008000598       0x64 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+                0x0000000008000598                thread_stack_init
  .text.cpu_switch_context_exit
-                0x00000000080005d4       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
-                0x00000000080005d4                cpu_switch_context_exit
+                0x00000000080005fc       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+                0x00000000080005fc                cpu_switch_context_exit
  .text.isr_pendsv
-                0x00000000080005ec       0x4c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
-                0x00000000080005ec                isr_pendsv
- .text.isr_svc  0x0000000008000638       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
-                0x0000000008000638                isr_svc
+                0x0000000008000614       0x4c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+                0x0000000008000614                isr_pendsv
+ .text.isr_svc  0x0000000008000660       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+                0x0000000008000660                isr_svc
  .text.sched_arch_idle
-                0x0000000008000648       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
-                0x0000000008000648                sched_arch_idle
+                0x0000000008000670       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+                0x0000000008000670                sched_arch_idle
  .text.hard_fault_default
-                0x0000000008000658       0x44 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
-                0x0000000008000658                hard_fault_default
+                0x0000000008000680       0x44 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x0000000008000680                hard_fault_default
  .text.nmi_default
-                0x000000000800069c       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
-                0x000000000800069c                nmi_default
+                0x00000000080006c4       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x00000000080006c4                nmi_default
  .text.mem_manage_default
-                0x00000000080006ac       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
-                0x00000000080006ac                mem_manage_default
+                0x00000000080006d4       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x00000000080006d4                mem_manage_default
  .text.bus_fault_default
-                0x00000000080006bc       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
-                0x00000000080006bc                bus_fault_default
+                0x00000000080006e4       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x00000000080006e4                bus_fault_default
  .text.usage_fault_default
-                0x00000000080006cc       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
-                0x00000000080006cc                usage_fault_default
+                0x00000000080006f4       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x00000000080006f4                usage_fault_default
  .text.debug_mon_default
-                0x00000000080006dc       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
-                0x00000000080006dc                debug_mon_default
+                0x0000000008000704       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x0000000008000704                debug_mon_default
  .text.dummy_handler_default
-                0x00000000080006ec       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
-                0x00000000080006ec                dummy_handler_default
-                0x00000000080006ec                isr_systick
+                0x0000000008000714       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x0000000008000714                dummy_handler_default
+                0x0000000008000714                isr_systick
  .text.pre_startup
-                0x00000000080006fc        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
-                0x00000000080006fc                pre_startup
+                0x0000000008000724        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x0000000008000724                pre_startup
  .text.post_startup
-                0x00000000080006fe        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
-                0x00000000080006fe                post_startup
+                0x0000000008000726        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x0000000008000726                post_startup
  .text.reset_handler_default
-                0x0000000008000700       0x88 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
-                0x0000000008000700                reset_handler_default
+                0x0000000008000728       0x88 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x0000000008000728                reset_handler_default
  .text.hard_fault_handler
-                0x0000000008000788      0x1b8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
-                0x0000000008000788                hard_fault_handler
+                0x00000000080007b0      0x1b8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x00000000080007b0                hard_fault_handler
  .text.periph_apb_clk
-                0x0000000008000940       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
-                0x0000000008000940                periph_apb_clk
+                0x0000000008000968       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+                0x0000000008000968                periph_apb_clk
  .text.periph_clk_en
-                0x0000000008000958       0x48 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
-                0x0000000008000958                periph_clk_en
+                0x0000000008000980       0x48 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+                0x0000000008000980                periph_clk_en
  .text.cpu_init
-                0x00000000080009a0       0x6c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
-                0x00000000080009a0                cpu_init
- .text._init    0x0000000008000a0c        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
-                0x0000000008000a0c                _init
- .text._fini    0x0000000008000a0e        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
-                0x0000000008000a0e                _fini
- .text._sbrk_r  0x0000000008000a10       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
-                0x0000000008000a10                _sbrk_r
- .text._read_r  0x0000000008000a50        0x8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
-                0x0000000008000a50                _read_r
+                0x00000000080009c8       0x6c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+                0x00000000080009c8                cpu_init
+ .text._init    0x0000000008000a34        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+                0x0000000008000a34                _init
+ .text._fini    0x0000000008000a36        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+                0x0000000008000a36                _fini
+ .text._sbrk_r  0x0000000008000a38       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+                0x0000000008000a38                _sbrk_r
+ .text._read_r  0x0000000008000a78        0x8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+                0x0000000008000a78                _read_r
  .text._write_r
-                0x0000000008000a58        0x8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
-                0x0000000008000a58                _write_r
+                0x0000000008000a80        0x8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+                0x0000000008000a80                _write_r
  .text._close_r
-                0x0000000008000a60        0xa /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
-                0x0000000008000a60                _close_r
+                0x0000000008000a88        0xa /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+                0x0000000008000a88                _close_r
  .text._lseek_r
-                0x0000000008000a6a        0xa /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
-                0x0000000008000a6a                _lseek_r
+                0x0000000008000a92        0xa /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+                0x0000000008000a92                _lseek_r
  .text._fstat_r
-                0x0000000008000a74        0xa /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
-                0x0000000008000a74                _fstat_r
+                0x0000000008000a9c        0xa /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+                0x0000000008000a9c                _fstat_r
  .text._isatty_r
-                0x0000000008000a7e       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
-                0x0000000008000a7e                _isatty_r
+                0x0000000008000aa6       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+                0x0000000008000aa6                _isatty_r
  .text.periph_init
-                0x0000000008000a8e        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
-                0x0000000008000a8e                periph_init
+                0x0000000008000ab6        0x2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
+                0x0000000008000ab6                periph_init
  .text.gpio_init
-                0x0000000008000a90       0x6e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
-                0x0000000008000a90                gpio_init
+                0x0000000008000ab8       0x6e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+                0x0000000008000ab8                gpio_init
  .text.gpio_init_af
-                0x0000000008000afe       0x5a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
-                0x0000000008000afe                gpio_init_af
- .text.pm_set   0x0000000008000b58       0x78 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
-                0x0000000008000b58                pm_set
+                0x0000000008000b26       0x5a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+                0x0000000008000b26                gpio_init_af
+ .text.gpio_read
+                0x0000000008000b80       0x14 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+                0x0000000008000b80                gpio_read
+ .text.pm_set   0x0000000008000b94       0x78 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+                0x0000000008000b94                pm_set
+ .text.isr_tim5
+                0x0000000008000c0c       0x74 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+                0x0000000008000c0c                isr_tim5
  .text.irq_handler
-                0x0000000008000bd0       0x50 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+                0x0000000008000c80       0x50 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
  .text.uart_enable_clock
-                0x0000000008000c20       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+                0x0000000008000cd0       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
  .text.uart_init
-                0x0000000008000c50       0xa0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
-                0x0000000008000c50                uart_init
+                0x0000000008000d00       0xa0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+                0x0000000008000d00                uart_init
  .text.uart_write
-                0x0000000008000cf0       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
-                0x0000000008000cf0                uart_write
+                0x0000000008000da0       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+                0x0000000008000da0                uart_write
  .text.isr_usart2
-                0x0000000008000d30        0x6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
-                0x0000000008000d30                isr_usart2
+                0x0000000008000de0        0x6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+                0x0000000008000de0                isr_usart2
  .text.isr_usart1
-                0x0000000008000d36        0x6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
-                0x0000000008000d36                isr_usart1
+                0x0000000008000de6        0x6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+                0x0000000008000de6                isr_usart1
  .text.isr_usart6
-                0x0000000008000d3c        0x6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
-                0x0000000008000d3c                isr_usart6
- *fill*         0x0000000008000d42        0x2 
+                0x0000000008000dec        0x6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+                0x0000000008000dec                isr_usart6
+ *fill*         0x0000000008000df2        0x2 
  .text.pm_set_lowest
-                0x0000000008000d44       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
-                0x0000000008000d44                pm_set_lowest
+                0x0000000008000df4       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+                0x0000000008000df4                pm_set_lowest
  .text.pm_block
-                0x0000000008000d80       0x2c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
-                0x0000000008000d80                pm_block
- .text.pm_off   0x0000000008000dac       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
-                0x0000000008000dac                pm_off
+                0x0000000008000e30       0x2c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+                0x0000000008000e30                pm_block
+ .text.pm_off   0x0000000008000e5c       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+                0x0000000008000e5c                pm_off
  .text.stdio_init
-                0x0000000008000dbc        0xe /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
-                0x0000000008000dbc                stdio_init
+                0x0000000008000e6c        0xe /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+                0x0000000008000e6c                stdio_init
  .text.stdio_read
-                0x0000000008000dca        0x6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
-                0x0000000008000dca                stdio_read
+                0x0000000008000e7a        0x6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+                0x0000000008000e7a                stdio_read
  .text.stdio_write
-                0x0000000008000dd0       0x12 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
-                0x0000000008000dd0                stdio_write
- *fill*         0x0000000008000de2        0x2 
+                0x0000000008000e80       0x12 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+                0x0000000008000e80                stdio_write
+ *fill*         0x0000000008000e92        0x2 
  .text.stmclk_enable_hsi
-                0x0000000008000de4       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
-                0x0000000008000de4                stmclk_enable_hsi
+                0x0000000008000e94       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+                0x0000000008000e94                stmclk_enable_hsi
  .text.stmclk_disable_hsi
-                0x0000000008000dfc       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
-                0x0000000008000dfc                stmclk_disable_hsi
+                0x0000000008000eac       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+                0x0000000008000eac                stmclk_disable_hsi
  .text.stmclk_init_sysclk
-                0x0000000008000e0c       0x7c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
-                0x0000000008000e0c                stmclk_init_sysclk
+                0x0000000008000ebc       0x7c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+                0x0000000008000ebc                stmclk_init_sysclk
  .text.dummy_handler
-                0x0000000008000e88        0x4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
-                0x0000000008000e88                isr_dma2_stream4
-                0x0000000008000e88                isr_pvd
-                0x0000000008000e88                isr_rtc_wkup
-                0x0000000008000e88                isr_exti
-                0x0000000008000e88                isr_tim5
-                0x0000000008000e88                isr_i2c1_ev
-                0x0000000008000e88                isr_dma2_stream0
-                0x0000000008000e88                isr_tim4
-                0x0000000008000e88                isr_dma2_stream6
-                0x0000000008000e88                isr_dma1_stream1
-                0x0000000008000e88                isr_i2c3_ev
-                0x0000000008000e88                isr_dma2_stream5
-                0x0000000008000e88                isr_tim2
-                0x0000000008000e88                isr_sdio
-                0x0000000008000e88                isr_spi2
-                0x0000000008000e88                isr_tamp_stamp
-                0x0000000008000e88                dummy_handler
-                0x0000000008000e88                isr_otg_fs
-                0x0000000008000e88                isr_dma1_stream7
-                0x0000000008000e88                isr_dma1_stream6
-                0x0000000008000e88                isr_adc
-                0x0000000008000e88                isr_dma2_stream3
-                0x0000000008000e88                isr_spi1
-                0x0000000008000e88                isr_rcc
-                0x0000000008000e88                isr_flash
-                0x0000000008000e88                isr_dma2_stream7
-                0x0000000008000e88                isr_i2c3_er
-                0x0000000008000e88                isr_tim1_cc
-                0x0000000008000e88                isr_dma1_stream4
-                0x0000000008000e88                isr_spi4
-                0x0000000008000e88                isr_i2c2_er
-                0x0000000008000e88                isr_otg_fs_wkup
-                0x0000000008000e88                isr_dma1_stream0
-                0x0000000008000e88                isr_dma1_stream5
-                0x0000000008000e88                isr_spi3
-                0x0000000008000e88                isr_dma2_stream1
-                0x0000000008000e88                isr_tim3
-                0x0000000008000e88                isr_dma2_stream2
-                0x0000000008000e88                isr_fpu
-                0x0000000008000e88                isr_tim1_brk_tim9
-                0x0000000008000e88                isr_tim1_up_tim10
-                0x0000000008000e88                isr_i2c2_ev
-                0x0000000008000e88                isr_rtc_alarm
-                0x0000000008000e88                isr_dma1_stream3
-                0x0000000008000e88                isr_dma1_stream2
-                0x0000000008000e88                isr_tim1_trg_com_tim11
-                0x0000000008000e88                isr_i2c1_er
-                0x0000000008000e88                isr_wwdg
+                0x0000000008000f38        0x4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+                0x0000000008000f38                isr_dma2_stream4
+                0x0000000008000f38                isr_pvd
+                0x0000000008000f38                isr_rtc_wkup
+                0x0000000008000f38                isr_exti
+                0x0000000008000f38                isr_i2c1_ev
+                0x0000000008000f38                isr_dma2_stream0
+                0x0000000008000f38                isr_tim4
+                0x0000000008000f38                isr_dma2_stream6
+                0x0000000008000f38                isr_dma1_stream1
+                0x0000000008000f38                isr_i2c3_ev
+                0x0000000008000f38                isr_dma2_stream5
+                0x0000000008000f38                isr_tim2
+                0x0000000008000f38                isr_sdio
+                0x0000000008000f38                isr_spi2
+                0x0000000008000f38                isr_tamp_stamp
+                0x0000000008000f38                dummy_handler
+                0x0000000008000f38                isr_otg_fs
+                0x0000000008000f38                isr_dma1_stream7
+                0x0000000008000f38                isr_dma1_stream6
+                0x0000000008000f38                isr_adc
+                0x0000000008000f38                isr_dma2_stream3
+                0x0000000008000f38                isr_spi1
+                0x0000000008000f38                isr_rcc
+                0x0000000008000f38                isr_flash
+                0x0000000008000f38                isr_dma2_stream7
+                0x0000000008000f38                isr_i2c3_er
+                0x0000000008000f38                isr_tim1_cc
+                0x0000000008000f38                isr_dma1_stream4
+                0x0000000008000f38                isr_spi4
+                0x0000000008000f38                isr_i2c2_er
+                0x0000000008000f38                isr_otg_fs_wkup
+                0x0000000008000f38                isr_dma1_stream0
+                0x0000000008000f38                isr_dma1_stream5
+                0x0000000008000f38                isr_spi3
+                0x0000000008000f38                isr_dma2_stream1
+                0x0000000008000f38                isr_tim3
+                0x0000000008000f38                isr_dma2_stream2
+                0x0000000008000f38                isr_fpu
+                0x0000000008000f38                isr_tim1_brk_tim9
+                0x0000000008000f38                isr_tim1_up_tim10
+                0x0000000008000f38                isr_i2c2_ev
+                0x0000000008000f38                isr_rtc_alarm
+                0x0000000008000f38                isr_dma1_stream3
+                0x0000000008000f38                isr_dma1_stream2
+                0x0000000008000f38                isr_tim1_trg_com_tim11
+                0x0000000008000f38                isr_i2c1_er
+                0x0000000008000f38                isr_wwdg
  .text.__libc_init_array
-                0x0000000008000e8c       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
-                0x0000000008000e8c                __libc_init_array
- .text.memset   0x0000000008000ed4       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
-                0x0000000008000ed4                memset
- .text._free_r  0x0000000008000ee4       0x9c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
-                0x0000000008000ee4                _free_r
+                0x0000000008000f3c       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
+                0x0000000008000f3c                __libc_init_array
+ .text.memset   0x0000000008000f84       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
+                0x0000000008000f84                memset
+ .text._free_r  0x0000000008000f94       0x9c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
+                0x0000000008000f94                _free_r
  .text._malloc_r
-                0x0000000008000f80       0xb4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
-                0x0000000008000f80                _malloc_r
- .text.printf   0x0000000008001034       0x30 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-printf.o)
-                0x0000000008001034                printf
-                0x0000000008001034                iprintf
- .text._puts_r  0x0000000008001064       0xb8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-puts.o)
-                0x0000000008001064                _puts_r
- .text.puts     0x000000000800111c       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-puts.o)
-                0x000000000800111c                puts
+                0x0000000008001030       0xb4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000008001030                _malloc_r
+ .text.printf   0x00000000080010e4       0x30 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-printf.o)
+                0x00000000080010e4                printf
+                0x00000000080010e4                iprintf
+ .text._puts_r  0x0000000008001114       0xb8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-puts.o)
+                0x0000000008001114                _puts_r
+ .text.puts     0x00000000080011cc       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-puts.o)
+                0x00000000080011cc                puts
  .text.__swbuf_r
-                0x000000000800112c       0xa4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wbuf.o)
-                0x000000000800112c                __swbuf_r
+                0x00000000080011dc       0xa4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wbuf.o)
+                0x00000000080011dc                __swbuf_r
  .text.__swsetup_r
-                0x00000000080011d0       0xdc /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wsetup.o)
-                0x00000000080011d0                __swsetup_r
+                0x0000000008001280       0xdc /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wsetup.o)
+                0x0000000008001280                __swsetup_r
  .text.__sflush_r
-                0x00000000080012ac      0x10c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fflush.o)
-                0x00000000080012ac                __sflush_r
+                0x000000000800135c      0x10c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fflush.o)
+                0x000000000800135c                __sflush_r
  .text._fflush_r
-                0x00000000080013b8       0x54 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fflush.o)
-                0x00000000080013b8                _fflush_r
- .text.std      0x000000000800140c       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000008001468       0x54 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fflush.o)
+                0x0000000008001468                _fflush_r
+ .text.std      0x00000000080014bc       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x0000000008001454        0xc /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
-                0x0000000008001454                _cleanup_r
+                0x0000000008001504        0xc /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000008001504                _cleanup_r
  .text.__sfmoreglue
-                0x0000000008001460       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
-                0x0000000008001460                __sfmoreglue
- .text.__sinit  0x000000000800148c       0x60 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
-                0x000000000800148c                __sinit
- .text.__sfp    0x00000000080014ec       0x78 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080014ec                __sfp
+                0x0000000008001510       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000008001510                __sfmoreglue
+ .text.__sinit  0x000000000800153c       0x60 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
+                0x000000000800153c                __sinit
+ .text.__sfp    0x000000000800159c       0x78 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
+                0x000000000800159c                __sfp
  .text._fwalk_reent
-                0x0000000008001564       0x3c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fwalk.o)
-                0x0000000008001564                _fwalk_reent
+                0x0000000008001614       0x3c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fwalk.o)
+                0x0000000008001614                _fwalk_reent
  .text.__swhatbuf_r
-                0x00000000080015a0       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-makebuf.o)
-                0x00000000080015a0                __swhatbuf_r
+                0x0000000008001650       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-makebuf.o)
+                0x0000000008001650                __swhatbuf_r
  .text.__smakebuf_r
-                0x00000000080015e8       0x80 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-makebuf.o)
-                0x00000000080015e8                __smakebuf_r
+                0x0000000008001698       0x80 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-makebuf.o)
+                0x0000000008001698                __smakebuf_r
  .text.__malloc_lock
-                0x0000000008001668        0x2 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-mlock.o)
-                0x0000000008001668                __malloc_lock
+                0x0000000008001718        0x2 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-mlock.o)
+                0x0000000008001718                __malloc_lock
  .text.__malloc_unlock
-                0x000000000800166a        0x2 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-mlock.o)
-                0x000000000800166a                __malloc_unlock
+                0x000000000800171a        0x2 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-mlock.o)
+                0x000000000800171a                __malloc_unlock
  .text.__sfputc_r
-                0x000000000800166c       0x2e /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000000000800171c       0x2e /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x000000000800169a       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
-                0x000000000800169a                __sfputs_r
- *fill*         0x00000000080016be        0x2 
+                0x000000000800174a       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000000000800174a                __sfputs_r
+ *fill*         0x000000000800176e        0x2 
  .text._vfprintf_r
-                0x00000000080016c0      0x22c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
-                0x00000000080016c0                _vfiprintf_r
-                0x00000000080016c0                _vfprintf_r
+                0x0000000008001770      0x22c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000008001770                _vfiprintf_r
+                0x0000000008001770                _vfprintf_r
  .text._printf_common
-                0x00000000080018ec       0xea /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x00000000080018ec                _printf_common
- *fill*         0x00000000080019d6        0x2 
+                0x000000000800199c       0xea /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000000800199c                _printf_common
+ *fill*         0x0000000008001a86        0x2 
  .text._printf_i
-                0x00000000080019d8      0x224 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x00000000080019d8                _printf_i
- .text.__sread  0x0000000008001bfc       0x22 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)
-                0x0000000008001bfc                __sread
+                0x0000000008001a88      0x224 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000008001a88                _printf_i
+ .text.__sread  0x0000000008001cac       0x22 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)
+                0x0000000008001cac                __sread
  .text.__swrite
-                0x0000000008001c1e       0x38 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)
-                0x0000000008001c1e                __swrite
- .text.__sseek  0x0000000008001c56       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)
-                0x0000000008001c56                __sseek
+                0x0000000008001cce       0x38 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)
+                0x0000000008001cce                __swrite
+ .text.__sseek  0x0000000008001d06       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)
+                0x0000000008001d06                __sseek
  .text.__sclose
-                0x0000000008001c7a        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)
-                0x0000000008001c7a                __sclose
- *fill*         0x0000000008001c82        0xe 
- .text          0x0000000008001c90       0xa0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memchr.o)
-                0x0000000008001c90                memchr
+                0x0000000008001d2a        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)
+                0x0000000008001d2a                __sclose
+ *fill*         0x0000000008001d32        0xe 
+ .text          0x0000000008001d40       0xa0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memchr.o)
+                0x0000000008001d40                memchr
  *(.glue_7t)
- .glue_7t       0x0000000008001d30        0x0 linker stubs
+ .glue_7t       0x0000000008001de0        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x0000000008001d30        0x0 linker stubs
+ .glue_7        0x0000000008001de0        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
  .rodata.main.str1.1
-                0x0000000008001d30       0x13 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+                0x0000000008001de0       0x3a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
  .rodata.kernel_init.str1.1
-                0x0000000008001d43        0x5 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+                0x0000000008001e1a        0x5 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
  .rodata.main_trampoline.str1.1
-                0x0000000008001d48       0x3b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+                0x0000000008001e1f       0x3b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
  .rodata.assert_crash_message
-                0x0000000008001d83       0x12 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
-                0x0000000008001d83                assert_crash_message
+                0x0000000008001e5a       0x12 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+                0x0000000008001e5a                assert_crash_message
  .rodata.core_panic.str1.1
-                0x0000000008001d95       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+                0x0000000008001e6c       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
  .rodata.panic_arch.str1.1
-                0x0000000008001dc3        0xf /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+                0x0000000008001e9a        0xf /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
  .rodata.bus_fault_default.str1.1
-                0x0000000008001dd2       0x12 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x0000000008001ea9       0x12 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
  .rodata.debug_mon_default.str1.1
-                0x0000000008001de4       0x12 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x0000000008001ebb       0x12 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
  .rodata.dummy_handler_default.str1.1
-                0x0000000008001df6        0xe /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x0000000008001ecd        0xe /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
  .rodata.hard_fault_handler.str1.1
-                0x0000000008001e04      0x233 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x0000000008001edb      0x233 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
  .rodata.mem_manage_default.str1.1
-                0x0000000008002037       0x13 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x000000000800210e       0x13 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
  .rodata.nmi_default.str1.1
-                0x000000000800204a        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+                0x0000000008002121        0xc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
  .rodata.usage_fault_default.str1.1
-                0x0000000008002056       0x14 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
- *fill*         0x000000000800206a        0x2 
+                0x000000000800212d       0x14 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ *fill*         0x0000000008002141        0x3 
  .rodata.uart_config
-                0x000000000800206c       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+                0x0000000008002144       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
  .rodata._global_impure_ptr
-                0x00000000080020a8        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-impure.o)
-                0x00000000080020a8                _global_impure_ptr
+                0x0000000008002180        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-impure.o)
+                0x0000000008002180                _global_impure_ptr
  .rodata.__sf_fake_stderr
-                0x00000000080020ac       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080020ac                __sf_fake_stderr
+                0x0000000008002184       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000008002184                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x00000000080020cc       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080020cc                __sf_fake_stdin
+                0x00000000080021a4       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
+                0x00000000080021a4                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x00000000080020ec       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080020ec                __sf_fake_stdout
+                0x00000000080021c4       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
+                0x00000000080021c4                __sf_fake_stdout
  .rodata._vfprintf_r.str1.1
-                0x000000000800210c       0x11 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x00000000080021e4       0x11 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x000000000800211d       0x22 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000080021f5       0x22 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
  *(SORT_BY_NAME(.roxfa.*))
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008002140                . = ALIGN (0x4)
- *fill*         0x000000000800213f        0x1 
+                0x0000000008002218                . = ALIGN (0x4)
+ *fill*         0x0000000008002217        0x1 
  *(.init)
-                0x0000000008002140                . = ALIGN (0x4)
-                0x0000000008002140                __preinit_array_start = .
+                0x0000000008002218                . = ALIGN (0x4)
+                0x0000000008002218                __preinit_array_start = .
  *(.preinit_array)
-                0x0000000008002140                __preinit_array_end = .
-                0x0000000008002140                . = ALIGN (0x4)
-                0x0000000008002140                __init_array_start = .
+                0x0000000008002218                __preinit_array_end = .
+                0x0000000008002218                . = ALIGN (0x4)
+                0x0000000008002218                __init_array_start = .
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
-                0x0000000008002140                __init_array_end = .
-                0x0000000008002140                . = ALIGN (0x4)
+                0x0000000008002218                __init_array_end = .
+                0x0000000008002218                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *crtend.o(.ctors)
-                0x0000000008002140                . = ALIGN (0x4)
+                0x0000000008002218                . = ALIGN (0x4)
  *(.fini)
-                0x0000000008002140                . = ALIGN (0x4)
-                0x0000000008002140                __fini_array_start = .
+                0x0000000008002218                . = ALIGN (0x4)
+                0x0000000008002218                __fini_array_start = .
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x0000000008002140                __fini_array_end = .
+                0x0000000008002218                __fini_array_end = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *crtend.o(.dtors)
-                0x0000000008002140                . = ALIGN (0x4)
-                0x0000000008002140                _efixed = .
+                0x0000000008002218                . = ALIGN (0x4)
+                0x0000000008002218                _efixed = .
 
-.vfp11_veneer   0x0000000008002140        0x0
- .vfp11_veneer  0x0000000008002140        0x0 linker stubs
+.vfp11_veneer   0x0000000008002218        0x0
+ .vfp11_veneer  0x0000000008002218        0x0 linker stubs
 
-.v4_bx          0x0000000008002140        0x0
- .v4_bx         0x0000000008002140        0x0 linker stubs
+.v4_bx          0x0000000008002218        0x0
+ .v4_bx         0x0000000008002218        0x0 linker stubs
 
-.iplt           0x0000000008002140        0x0
- .iplt          0x0000000008002140        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+.iplt           0x0000000008002218        0x0
+ .iplt          0x0000000008002218        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
 
-.igot.plt       0x0000000008002140        0x0
- .igot.plt      0x0000000008002140        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+.igot.plt       0x0000000008002218        0x0
+ .igot.plt      0x0000000008002218        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
 
-.rel.dyn        0x0000000008002140        0x0
- .rel.iplt      0x0000000008002140        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+.rel.dyn        0x0000000008002218        0x0
+ .rel.iplt      0x0000000008002218        0x0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
 
-.tdata          0x0000000008002140        0x0
-                0x0000000008002140                __tdata_start = .
+.tdata          0x0000000008002218        0x0
+                0x0000000008002218                __tdata_start = .
  *(.tdata .tdata.* .gnu.linkonce.td.*)
-                0x0000000008002140                __tdata_end = .
-                0x0000000008002140                __tdata_source = LOADADDR (.tdata)
+                0x0000000008002218                __tdata_end = .
+                0x0000000008002218                __tdata_source = LOADADDR (.tdata)
                 0x0000000000000000                __tdata_size = SIZEOF (.tdata)
 
-.tbss           0x0000000008002140        0x0
+.tbss           0x0000000008002218        0x0
  *(.tbss .tbss.* .gnu.linkonce.tb.*)
  *(.tcommon)
-                0x0000000008002140                __tbss_end = .
+                0x0000000008002218                __tbss_end = .
                 0x0000000000000000                __tls_size = (__tbss_end - __tdata_start)
                 0x0000000000000000                __tbss_size = (__tls_size - __tdata_size)
                 [!provide]                        PROVIDE (__exidx_start = .)
@@ -6332,12 +6553,12 @@ END GROUP
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
                 [!provide]                        PROVIDE (__exidx_end = .)
-                0x0000000008002140                . = ALIGN (0x4)
+                0x0000000008002218                . = ALIGN (0x4)
 
 .eh_frame
  *(.eh_frame)
-                0x0000000008002140                . = ALIGN (0x4)
-                0x0000000008002140                _etext = .
+                0x0000000008002218                . = ALIGN (0x4)
+                0x0000000008002218                _etext = .
 
 .stack          0x0000000020000000      0x200
  *(.puf)
@@ -6349,7 +6570,7 @@ END GROUP
                 0x0000000020000200                . = ALIGN (0x8)
                 0x0000000020000200                _estack = .
 
-.relocate       0x0000000020000200       0x70 load address 0x0000000008002140
+.relocate       0x0000000020000200       0x70 load address 0x0000000008002218
                 0x0000000020000200                . = ALIGN (0x4)
                 0x0000000020000200                _srelocate = .
  *(.ramfunc .ramfunc.*)
@@ -6372,7 +6593,7 @@ END GROUP
  *fill*         0x000000002000026e        0x2 
                 0x0000000020000270                _erelocate = .
 
-.bss            0x0000000020000270      0x708 load address 0x00000000080021b0
+.bss            0x0000000020000270      0x710 load address 0x0000000008002288
                 0x0000000020000270                . = ALIGN (0x4)
                 0x0000000020000270                _sbss = .
                 0x0000000020000270                _szero = .
@@ -6401,396 +6622,430 @@ END GROUP
  .bss.sched_threads
                 0x00000000200008c8       0x84 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
                 0x00000000200008c8                sched_threads
- .bss.isr_ctx   0x000000002000094c       0x24 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .bss.isr_ctx   0x000000002000094c        0x8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .bss.isr_ctx   0x0000000020000954       0x24 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
  .bss.__malloc_free_list
-                0x0000000020000970        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
-                0x0000000020000970                __malloc_free_list
+                0x0000000020000978        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000020000978                __malloc_free_list
  .bss.__malloc_sbrk_start
-                0x0000000020000974        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
-                0x0000000020000974                __malloc_sbrk_start
+                0x000000002000097c        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000000002000097c                __malloc_sbrk_start
  *(COMMON)
-                0x0000000020000978                . = ALIGN (0x4)
-                0x0000000020000978                _ebss = .
-                0x0000000020000978                _ezero = .
+                0x0000000020000980                . = ALIGN (0x4)
+                0x0000000020000980                _ebss = .
+                0x0000000020000980                _ezero = .
 
-.noinit         0x0000000020000978        0x0 load address 0x00000000080021b0
-                0x0000000020000978                __noinit_start = .
+.noinit         0x0000000020000980        0x0 load address 0x0000000008002288
+                0x0000000020000980                __noinit_start = .
  *(.noinit)
-                0x0000000020000978                . = ALIGN (0x4)
-                0x0000000020000978                __noinit_end = .
-                0x0000000020000978                . = ALIGN (0x4)
-                0x0000000020000978                _sheap = .
+                0x0000000020000980                . = ALIGN (0x4)
+                0x0000000020000980                __noinit_end = .
+                0x0000000020000980                . = ALIGN (0x4)
+                0x0000000020000980                _sheap = .
                 0x0000000020018000                _eheap = (ORIGIN (ram) + LENGTH (ram))
                 0x0000000020000000                _sram = ORIGIN (ram)
                 0x0000000020018000                _eram = (ORIGIN (ram) + LENGTH (ram))
-                0x00000000080021b0                _sbackup_data_load = LOADADDR (.backup.data)
+                0x0000000008002288                _sbackup_data_load = LOADADDR (.backup.data)
 
-.backup.data    0x0000000000000000        0x0 load address 0x00000000080021b0
+.backup.data    0x0000000000000000        0x0 load address 0x0000000008002288
                 0x0000000000000000                _sbackup_data = .
  *(.backup.data)
                 0x0000000000000000                _ebackup_data = .
                 0x0000000000000000                . = ALIGN (0x4)
 
-.backup.bss     0x0000000000000000        0x0 load address 0x00000000080021b0
+.backup.bss     0x0000000000000000        0x0 load address 0x0000000008002288
                 0x0000000000000000                _sbackup_bss = .
  *(.backup.bss)
                 0x0000000000000000                _ebackup_bss = .
                 0x0000000000000000                . = ALIGN (0x4)
 
-.heap3          0x0000000000000000        0x0 load address 0x00000000080021b0
+.heap3          0x0000000000000000        0x0 load address 0x0000000008002288
                 0x0000000000000000                _sheap1 = .
                 0x0000000000000000                _eheap1 = (ORIGIN (bkup-ram) + LENGTH (bkup-ram))
 OUTPUT(/home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/Assignment_1.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x1ec27
- .debug_info    0x0000000000000000      0x8c1 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_info    0x00000000000008c1      0xafb /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_info    0x00000000000013bc     0x184e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_info    0x0000000000002c0a      0xde8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_info    0x00000000000039f2      0xe63 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
- .debug_info    0x0000000000004855     0x1442 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
- .debug_info    0x0000000000005c97     0x1aae /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
- .debug_info    0x0000000000007745     0x126b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
- .debug_info    0x00000000000089b0      0xef1 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
- .debug_info    0x00000000000098a1      0xcca /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
- .debug_info    0x000000000000a56b     0x1172 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
- .debug_info    0x000000000000b6dd     0x232d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
- .debug_info    0x000000000000da0a     0x196a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
- .debug_info    0x000000000000f374     0x1c1e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
- .debug_info    0x0000000000010f92     0x2350 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_info    0x00000000000132e2      0xbfb /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
- .debug_info    0x0000000000013edd     0x1cf2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
- .debug_info    0x0000000000015bcf      0xf42 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
- .debug_info    0x0000000000016b11     0x21d0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
- .debug_info    0x0000000000018ce1     0x1106 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
- .debug_info    0x0000000000019de7     0x199a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
- .debug_info    0x000000000001b781     0x186e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
- .debug_info    0x000000000001cfef     0x19ac /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
- .debug_info    0x000000000001e99b      0x28c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+.debug_info     0x0000000000000000    0x21902
+ .debug_info    0x0000000000000000     0x1705 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_info    0x0000000000001705      0xafb /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_info    0x0000000000002200     0x184e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_info    0x0000000000003a4e      0xde8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_info    0x0000000000004836      0xe63 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+ .debug_info    0x0000000000005699     0x1442 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+ .debug_info    0x0000000000006adb     0x1aae /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+ .debug_info    0x0000000000008589     0x126b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
+ .debug_info    0x00000000000097f4      0xef1 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+ .debug_info    0x000000000000a6e5      0xcca /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+ .debug_info    0x000000000000b3af     0x1172 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+ .debug_info    0x000000000000c521     0x232d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ .debug_info    0x000000000000e84e     0x196a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+ .debug_info    0x00000000000101b8     0x1c1e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_info    0x0000000000011dd6     0x2350 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_info    0x0000000000014126      0xbfb /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
+ .debug_info    0x0000000000014d21     0x1cf2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+ .debug_info    0x0000000000016a13      0xf42 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .debug_info    0x0000000000017955     0x1e97 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_info    0x00000000000197ec     0x21d0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .debug_info    0x000000000001b9bc     0x1106 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+ .debug_info    0x000000000001cac2     0x199a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+ .debug_info    0x000000000001e45c     0x186e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+ .debug_info    0x000000000001fcca     0x19ac /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+ .debug_info    0x0000000000021676      0x28c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
 
-.debug_abbrev   0x0000000000000000     0x49af
- .debug_abbrev  0x0000000000000000      0x18f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_abbrev  0x000000000000018f      0x1ab /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_abbrev  0x000000000000033a      0x2ad /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_abbrev  0x00000000000005e7      0x2af /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_abbrev  0x0000000000000896      0x30b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
- .debug_abbrev  0x0000000000000ba1      0x411 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
- .debug_abbrev  0x0000000000000fb2      0x46d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
- .debug_abbrev  0x000000000000141f      0x370 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
- .debug_abbrev  0x000000000000178f      0x267 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
- .debug_abbrev  0x00000000000019f6      0x293 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
- .debug_abbrev  0x0000000000001c89      0x40f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
- .debug_abbrev  0x0000000000002098      0x451 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
- .debug_abbrev  0x00000000000024e9      0x345 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
- .debug_abbrev  0x000000000000282e      0x2fb /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
- .debug_abbrev  0x0000000000002b29      0x495 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_abbrev  0x0000000000002fbe      0x22d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
- .debug_abbrev  0x00000000000031eb      0x399 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
- .debug_abbrev  0x0000000000003584      0x30e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
- .debug_abbrev  0x0000000000003892      0x492 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
- .debug_abbrev  0x0000000000003d24      0x319 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
- .debug_abbrev  0x000000000000403d      0x300 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
- .debug_abbrev  0x000000000000433d      0x28d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
- .debug_abbrev  0x00000000000045ca      0x2fd /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
- .debug_abbrev  0x00000000000048c7       0xe8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+.debug_abbrev   0x0000000000000000     0x4eea
+ .debug_abbrev  0x0000000000000000      0x2be /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_abbrev  0x00000000000002be      0x1ab /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_abbrev  0x0000000000000469      0x2ad /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_abbrev  0x0000000000000716      0x2af /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_abbrev  0x00000000000009c5      0x30b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+ .debug_abbrev  0x0000000000000cd0      0x411 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+ .debug_abbrev  0x00000000000010e1      0x46d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+ .debug_abbrev  0x000000000000154e      0x370 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
+ .debug_abbrev  0x00000000000018be      0x267 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+ .debug_abbrev  0x0000000000001b25      0x293 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+ .debug_abbrev  0x0000000000001db8      0x40f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+ .debug_abbrev  0x00000000000021c7      0x451 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ .debug_abbrev  0x0000000000002618      0x345 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+ .debug_abbrev  0x000000000000295d      0x2fb /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_abbrev  0x0000000000002c58      0x495 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_abbrev  0x00000000000030ed      0x22d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
+ .debug_abbrev  0x000000000000331a      0x399 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+ .debug_abbrev  0x00000000000036b3      0x30e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .debug_abbrev  0x00000000000039c1      0x40c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_abbrev  0x0000000000003dcd      0x492 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .debug_abbrev  0x000000000000425f      0x319 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+ .debug_abbrev  0x0000000000004578      0x300 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+ .debug_abbrev  0x0000000000004878      0x28d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+ .debug_abbrev  0x0000000000004b05      0x2fd /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+ .debug_abbrev  0x0000000000004e02       0xe8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
 
-.debug_aranges  0x0000000000000000      0x678
- .debug_aranges
-                0x0000000000000000       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_aranges
-                0x0000000000000020       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_aranges
-                0x0000000000000040       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_aranges
-                0x0000000000000070       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_aranges
-                0x00000000000000a0       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
- .debug_aranges
-                0x00000000000000d8       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
- .debug_aranges
-                0x0000000000000118       0x78 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
- .debug_aranges
-                0x0000000000000190       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
- .debug_aranges
-                0x00000000000001c0       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
- .debug_aranges
-                0x0000000000000200       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
- .debug_aranges
-                0x0000000000000228       0x68 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
- .debug_aranges
-                0x0000000000000290       0x70 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
- .debug_aranges
-                0x0000000000000300       0x50 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
- .debug_aranges
-                0x0000000000000350       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
- .debug_aranges
-                0x0000000000000378       0xc0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_aranges
-                0x0000000000000438       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
- .debug_aranges
-                0x0000000000000460       0x70 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
- .debug_aranges
-                0x00000000000004d0       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
- .debug_aranges
-                0x00000000000004f8       0x68 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
- .debug_aranges
-                0x0000000000000560       0x48 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
- .debug_aranges
-                0x00000000000005a8       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
- .debug_aranges
-                0x00000000000005e0       0x50 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
- .debug_aranges
-                0x0000000000000630       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
- .debug_aranges
-                0x0000000000000658       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+.debug_loc      0x0000000000000000     0x2400
+ .debug_loc     0x0000000000000000       0x13 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_loc     0x0000000000000013       0x21 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_loc     0x0000000000000034       0x52 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+ .debug_loc     0x0000000000000086      0x169 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+ .debug_loc     0x00000000000001ef      0x715 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+ .debug_loc     0x0000000000000904      0x120 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
+ .debug_loc     0x0000000000000a24       0x63 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+ .debug_loc     0x0000000000000a87       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+ .debug_loc     0x0000000000000aa7      0x1a8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+ .debug_loc     0x0000000000000c4f      0x2f0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ .debug_loc     0x0000000000000f3f      0x269 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+ .debug_loc     0x00000000000011a8       0xed /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_loc     0x0000000000001295      0x41a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_loc     0x00000000000016af      0x38c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+ .debug_loc     0x0000000000001a3b       0x58 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .debug_loc     0x0000000000001a93      0x391 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_loc     0x0000000000001e24      0x488 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .debug_loc     0x00000000000022ac       0xcb /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+ .debug_loc     0x0000000000002377       0x76 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+ .debug_loc     0x00000000000023ed       0x13 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
 
-.debug_ranges   0x0000000000000000      0x7e8
- .debug_ranges  0x0000000000000000       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_ranges  0x0000000000000010       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_ranges  0x0000000000000020       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_ranges  0x0000000000000040       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_ranges  0x0000000000000060       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
- .debug_ranges  0x0000000000000088       0xc0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
- .debug_ranges  0x0000000000000148       0xf8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
- .debug_ranges  0x0000000000000240       0xa0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
- .debug_ranges  0x00000000000002e0       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
- .debug_ranges  0x0000000000000310       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
- .debug_ranges  0x0000000000000328       0x88 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
- .debug_ranges  0x00000000000003b0       0x78 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
- .debug_ranges  0x0000000000000428       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
- .debug_ranges  0x0000000000000468       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
- .debug_ranges  0x0000000000000498       0xe0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_ranges  0x0000000000000578       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
- .debug_ranges  0x0000000000000590       0x98 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
- .debug_ranges  0x0000000000000628       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
- .debug_ranges  0x0000000000000660       0xc0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
- .debug_ranges  0x0000000000000720       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
- .debug_ranges  0x0000000000000758       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
- .debug_ranges  0x0000000000000780       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
- .debug_ranges  0x00000000000007c0       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
- .debug_ranges  0x00000000000007d8       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+.debug_aranges  0x0000000000000000      0x6d8
+ .debug_aranges
+                0x0000000000000000       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_aranges
+                0x0000000000000028       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_aranges
+                0x0000000000000048       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_aranges
+                0x0000000000000078       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_aranges
+                0x00000000000000a8       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+ .debug_aranges
+                0x00000000000000e0       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+ .debug_aranges
+                0x0000000000000120       0x78 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+ .debug_aranges
+                0x0000000000000198       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
+ .debug_aranges
+                0x00000000000001c8       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+ .debug_aranges
+                0x0000000000000208       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+ .debug_aranges
+                0x0000000000000230       0x68 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+ .debug_aranges
+                0x0000000000000298       0x70 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ .debug_aranges
+                0x0000000000000308       0x50 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+ .debug_aranges
+                0x0000000000000358       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_aranges
+                0x0000000000000380       0xc0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_aranges
+                0x0000000000000440       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
+ .debug_aranges
+                0x0000000000000468       0x70 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+ .debug_aranges
+                0x00000000000004d8       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .debug_aranges
+                0x0000000000000500       0x58 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_aranges
+                0x0000000000000558       0x68 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .debug_aranges
+                0x00000000000005c0       0x48 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+ .debug_aranges
+                0x0000000000000608       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+ .debug_aranges
+                0x0000000000000640       0x50 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+ .debug_aranges
+                0x0000000000000690       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+ .debug_aranges
+                0x00000000000006b8       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
 
-.debug_macro    0x0000000000000000    0x2486f
- .debug_macro   0x0000000000000000      0x138 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000138      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000bec      0x118 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000d04       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000d26       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000d66       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000d7e       0x5c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000dda       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000e16       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000e4a       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000e60       0x57 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000eb7       0x97 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000000f4e      0x330 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x000000000000127e       0xfd /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x000000000000137b       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x000000000000138b       0x52 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x00000000000013dd       0x1f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x00000000000013fc       0x43 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x000000000000143f       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x000000000000145f      0x1a3 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000001602       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000001612       0x6a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x000000000000167c       0xb6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000001732       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x0000000000001748      0x114 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_macro   0x000000000000185c      0x186 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_macro   0x00000000000019e2      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_macro   0x0000000000002496       0x56 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_macro   0x00000000000024ec       0x51 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_macro   0x000000000000253d       0xef /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_macro   0x000000000000262c      0x1df /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_macro   0x000000000000280b       0x46 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_macro   0x0000000000002851       0x60 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_macro   0x00000000000028b1       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_macro   0x00000000000028e5      0x3e5 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000002cca      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x000000000000377e       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x00000000000037a0       0x49 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x00000000000037e9       0x32 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x000000000000381b       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000003843       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x000000000000385f       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000003881       0xd9 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x000000000000395a     0x102d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000004987      0x11f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000004aa6     0xb850 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x00000000000102f6       0x43 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010339       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010349       0x41 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x000000000001038a       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x000000000001039a       0x35 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x00000000000103cf      0x460 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x000000000001082f       0x37 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010866       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010876       0x42 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x00000000000108b8       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x00000000000108c8       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x00000000000108f6       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x000000000001090c       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010922       0x2b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x000000000001094d       0xee /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010a3b       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010a69       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010a85      0x1de /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010c63       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010c7f       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010cb3       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010cdb       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010cf1       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010d07       0x70 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010d77       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010d87       0xac /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010e33       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010e43       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010e53       0x3a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_macro   0x0000000000010e8d      0x38e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_macro   0x000000000001121b      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_macro   0x0000000000011ccf       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_macro   0x0000000000011cdf      0x23b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_macro   0x0000000000011f1a       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_macro   0x0000000000011f48       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_macro   0x0000000000011f58      0x360 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
- .debug_macro   0x00000000000122b8      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
- .debug_macro   0x0000000000012d6c       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
- .debug_macro   0x0000000000012d7c      0x30f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
- .debug_macro   0x000000000001308b      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
- .debug_macro   0x0000000000013b3f       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
- .debug_macro   0x0000000000013b55      0x303 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
- .debug_macro   0x0000000000013e58      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
- .debug_macro   0x000000000001490c       0xdc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
- .debug_macro   0x00000000000149e8      0x2d9 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
- .debug_macro   0x0000000000014cc1      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
- .debug_macro   0x0000000000015775      0x2dc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
- .debug_macro   0x0000000000015a51      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
- .debug_macro   0x0000000000016505      0x2dc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
- .debug_macro   0x00000000000167e1      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
- .debug_macro   0x0000000000017295      0x2fb /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
- .debug_macro   0x0000000000017590      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
- .debug_macro   0x0000000000018044       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
- .debug_macro   0x0000000000018060      0x41f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
- .debug_macro   0x000000000001847f      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
- .debug_macro   0x0000000000018f33       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
- .debug_macro   0x0000000000018f4f      0x395 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
- .debug_macro   0x00000000000192e4      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
- .debug_macro   0x0000000000019d98       0x25 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
- .debug_macro   0x0000000000019dbd      0x448 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
- .debug_macro   0x000000000001a205      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
- .debug_macro   0x000000000001acb9       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
- .debug_macro   0x000000000001accf      0x4fe /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
- .debug_macro   0x000000000001b1cd      0x51d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001b6ea      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c19e       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c1ae       0xcf /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c27d       0xbe /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c33b       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c34b      0x241 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c58c       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c59c       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c5d8       0xff /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c6d7       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c6ed       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c6fd       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c70d       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c73b       0xf5 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_macro   0x000000000001c830      0x333 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
- .debug_macro   0x000000000001cb63      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
- .debug_macro   0x000000000001d617      0x39f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
- .debug_macro   0x000000000001d9b6      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
- .debug_macro   0x000000000001e46a      0x37b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
- .debug_macro   0x000000000001e7e5      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
- .debug_macro   0x000000000001f299      0x3cc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
- .debug_macro   0x000000000001f665      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
- .debug_macro   0x0000000000020119       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
- .debug_macro   0x0000000000020129      0x363 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
- .debug_macro   0x000000000002048c      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
- .debug_macro   0x0000000000020f40      0x4a0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
- .debug_macro   0x00000000000213e0      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
- .debug_macro   0x0000000000021e94       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
- .debug_macro   0x0000000000021eaa      0x398 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
- .debug_macro   0x0000000000022242      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
- .debug_macro   0x0000000000022cf6      0x4fa /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
- .debug_macro   0x00000000000231f0      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
- .debug_macro   0x0000000000023ca4      0x101 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
- .debug_macro   0x0000000000023da5      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
- .debug_macro   0x0000000000024859       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+.debug_ranges   0x0000000000000000      0x8c0
+ .debug_ranges  0x0000000000000000       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_ranges  0x0000000000000018       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_ranges  0x0000000000000028       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_ranges  0x0000000000000048       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_ranges  0x0000000000000068       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+ .debug_ranges  0x0000000000000090       0xc0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+ .debug_ranges  0x0000000000000150       0xf8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+ .debug_ranges  0x0000000000000248       0xa0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
+ .debug_ranges  0x00000000000002e8       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+ .debug_ranges  0x0000000000000318       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+ .debug_ranges  0x0000000000000330       0x88 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+ .debug_ranges  0x00000000000003b8       0x78 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ .debug_ranges  0x0000000000000430       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+ .debug_ranges  0x0000000000000470       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_ranges  0x00000000000004a0       0xe0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_ranges  0x0000000000000580       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
+ .debug_ranges  0x0000000000000598       0x98 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+ .debug_ranges  0x0000000000000630       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .debug_ranges  0x0000000000000668       0xd0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_ranges  0x0000000000000738       0xc0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .debug_ranges  0x00000000000007f8       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+ .debug_ranges  0x0000000000000830       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+ .debug_ranges  0x0000000000000858       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+ .debug_ranges  0x0000000000000898       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+ .debug_ranges  0x00000000000008b0       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
 
-.debug_line     0x0000000000000000     0xae9d
- .debug_line    0x0000000000000000      0x24e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_line    0x000000000000024e      0x2f5 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_line    0x0000000000000543      0x8e3 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_line    0x0000000000000e26      0x701 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_line    0x0000000000001527      0x701 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
- .debug_line    0x0000000000001c28      0x6ae /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
- .debug_line    0x00000000000022d6      0x835 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
- .debug_line    0x0000000000002b0b      0x5d8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
- .debug_line    0x00000000000030e3      0x5a9 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
- .debug_line    0x000000000000368c      0x575 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
- .debug_line    0x0000000000003c01      0x6af /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
- .debug_line    0x00000000000042b0      0xa17 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
- .debug_line    0x0000000000004cc7      0x844 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
- .debug_line    0x000000000000550b      0x933 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
- .debug_line    0x0000000000005e3e      0xb9f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_line    0x00000000000069dd      0x63e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
- .debug_line    0x000000000000701b      0x92a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
- .debug_line    0x0000000000007945      0x6f6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
- .debug_line    0x000000000000803b      0x972 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
- .debug_line    0x00000000000089ad      0x79f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
- .debug_line    0x000000000000914c      0x98e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
- .debug_line    0x0000000000009ada      0x827 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
- .debug_line    0x000000000000a301      0x82b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
- .debug_line    0x000000000000ab2c      0x371 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+.debug_macro    0x0000000000000000    0x25a34
+ .debug_macro   0x0000000000000000      0x384 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000000384      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000000e38      0x118 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000000f50       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000000f72       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000000fb2       0x18 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000000fca       0x5c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001026       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001062       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001096       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x00000000000010ac       0x57 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001103       0x97 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000119a      0x330 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x00000000000014ca       0xfd /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x00000000000015c7       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x00000000000015d7       0x52 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001629       0x1f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001648       0x43 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000168b       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x00000000000016ab      0x1a3 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000184e       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000185e       0x6a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x00000000000018c8       0xb6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000197e       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001994      0x114 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001aa8       0x2b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001ad3       0xee /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001bc1       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001be3       0xef /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001cd2      0x1df /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001eb1       0x49 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001efa       0x32 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001f2c       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001f54       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001f70       0x22 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000001f92       0xd9 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000206b     0x102d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x0000000000003098      0x11f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x00000000000031b7     0xb850 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000ea07       0x43 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000ea4a       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000ea5a       0x41 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000ea9b       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000eaab       0x35 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000eae0      0x460 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000ef40       0x60 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000efa0       0x37 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000efd7       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000efe7       0x42 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f029       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f039       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f067       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f07d       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f0ab       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f0c7      0x1de /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f2a5       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f2bb       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f2d7       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f30b       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f333       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f349       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f35f       0x70 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_macro   0x000000000000f3cf      0x186 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_macro   0x000000000000f555      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_macro   0x0000000000010009       0x56 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_macro   0x000000000001005f       0x51 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_macro   0x00000000000100b0       0x46 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_macro   0x00000000000100f6       0x34 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_macro   0x000000000001012a      0x3e5 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x000000000001050f      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000010fc3       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x0000000000010fd3       0xac /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x000000000001107f       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x000000000001108f       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x000000000001109f       0x3a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_macro   0x00000000000110d9      0x38e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_macro   0x0000000000011467      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_macro   0x0000000000011f1b       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_macro   0x0000000000011f2b      0x23b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_macro   0x0000000000012166       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_macro   0x0000000000012194       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_macro   0x00000000000121a4      0x360 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+ .debug_macro   0x0000000000012504      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+ .debug_macro   0x0000000000012fb8       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+ .debug_macro   0x0000000000012fc8      0x30f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+ .debug_macro   0x00000000000132d7      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+ .debug_macro   0x0000000000013d8b       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+ .debug_macro   0x0000000000013da1      0x303 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+ .debug_macro   0x00000000000140a4      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+ .debug_macro   0x0000000000014b58       0xdc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+ .debug_macro   0x0000000000014c34      0x2d9 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
+ .debug_macro   0x0000000000014f0d      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
+ .debug_macro   0x00000000000159c1      0x2dc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+ .debug_macro   0x0000000000015c9d      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+ .debug_macro   0x0000000000016751      0x2dc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+ .debug_macro   0x0000000000016a2d      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+ .debug_macro   0x00000000000174e1      0x2fb /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+ .debug_macro   0x00000000000177dc      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+ .debug_macro   0x0000000000018290       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+ .debug_macro   0x00000000000182ac      0x41f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ .debug_macro   0x00000000000186cb      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ .debug_macro   0x000000000001917f       0x1c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ .debug_macro   0x000000000001919b      0x395 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+ .debug_macro   0x0000000000019530      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+ .debug_macro   0x0000000000019fe4       0x25 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+ .debug_macro   0x000000000001a009      0x448 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_macro   0x000000000001a451      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_macro   0x000000000001af05       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_macro   0x000000000001af1b      0x4fe /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_macro   0x000000000001b419      0x51d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001b936      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c3ea       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c3fa       0xcf /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c4c9       0xbe /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c587       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c597      0x241 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c7d8       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c7e8       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c824       0xff /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c923       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c939       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c949       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c959       0x2e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001c987       0xf5 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_macro   0x000000000001ca7c      0x333 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
+ .debug_macro   0x000000000001cdaf      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
+ .debug_macro   0x000000000001d863      0x39f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+ .debug_macro   0x000000000001dc02      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+ .debug_macro   0x000000000001e6b6      0x37b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .debug_macro   0x000000000001ea31      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .debug_macro   0x000000000001f4e5      0x383 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x000000000001f868      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x000000000002031c      0x142 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_macro   0x000000000002045e      0x3cc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .debug_macro   0x000000000002082a      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .debug_macro   0x00000000000212de       0x10 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .debug_macro   0x00000000000212ee      0x363 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+ .debug_macro   0x0000000000021651      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+ .debug_macro   0x0000000000022105      0x4a0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+ .debug_macro   0x00000000000225a5      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+ .debug_macro   0x0000000000023059       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+ .debug_macro   0x000000000002306f      0x398 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+ .debug_macro   0x0000000000023407      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+ .debug_macro   0x0000000000023ebb      0x4fa /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+ .debug_macro   0x00000000000243b5      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+ .debug_macro   0x0000000000024e69      0x101 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+ .debug_macro   0x0000000000024f6a      0xab4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+ .debug_macro   0x0000000000025a1e       0x16 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
 
-.debug_str      0x0000000000000000    0x5b6f5
- .debug_str     0x0000000000000000     0x6d2b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
-                                       0x6f42 (size before relaxing)
- .debug_str     0x0000000000006d2b     0x118c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+.debug_line     0x0000000000000000     0xbd01
+ .debug_line    0x0000000000000000      0x7cc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_line    0x00000000000007cc      0x2f5 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_line    0x0000000000000ac1      0x8e3 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_line    0x00000000000013a4      0x701 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_line    0x0000000000001aa5      0x701 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+ .debug_line    0x00000000000021a6      0x6ae /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+ .debug_line    0x0000000000002854      0x835 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+ .debug_line    0x0000000000003089      0x5d8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
+ .debug_line    0x0000000000003661      0x5a9 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+ .debug_line    0x0000000000003c0a      0x575 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+ .debug_line    0x000000000000417f      0x6af /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+ .debug_line    0x000000000000482e      0xa17 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ .debug_line    0x0000000000005245      0x844 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+ .debug_line    0x0000000000005a89      0x933 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_line    0x00000000000063bc      0xb9f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_line    0x0000000000006f5b      0x63e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
+ .debug_line    0x0000000000007599      0x92a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+ .debug_line    0x0000000000007ec3      0x6f6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .debug_line    0x00000000000085b9      0x8e6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_line    0x0000000000008e9f      0x972 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .debug_line    0x0000000000009811      0x79f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+ .debug_line    0x0000000000009fb0      0x98e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+ .debug_line    0x000000000000a93e      0x827 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+ .debug_line    0x000000000000b165      0x82b /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+ .debug_line    0x000000000000b990      0x371 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+
+.debug_str      0x0000000000000000    0x5b91e
+ .debug_str     0x0000000000000000    0x55b74 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+                                      0x55f5b (size before relaxing)
+ .debug_str     0x0000000000055b74      0x522 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
                                        0x80c5 (size before relaxing)
- .debug_str     0x0000000000007eb7    0x4e996 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_str     0x0000000000056096      0x862 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
                                       0x5666f (size before relaxing)
- .debug_str     0x000000000005684d      0x796 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_str     0x00000000000568f8      0x78f /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
                                       0x55ec5 (size before relaxing)
- .debug_str     0x0000000000056fe3      0x1c6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+ .debug_str     0x0000000000057087      0x1c6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
                                       0x55943 (size before relaxing)
- .debug_str     0x00000000000571a9      0x7a6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+ .debug_str     0x000000000005724d      0x7a6 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
                                       0x554db (size before relaxing)
- .debug_str     0x000000000005794f      0x226 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+ .debug_str     0x00000000000579f3      0x226 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
                                       0x556fe (size before relaxing)
- .debug_str     0x0000000000057b75      0x587 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
+ .debug_str     0x0000000000057c19      0x587 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
                                       0x55054 (size before relaxing)
- .debug_str     0x00000000000580fc      0x10e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+ .debug_str     0x00000000000581a0      0x10e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
                                       0x54c94 (size before relaxing)
- .debug_str     0x000000000005820a       0x6d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+ .debug_str     0x00000000000582ae       0x6d /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
                                       0x54c9b (size before relaxing)
- .debug_str     0x0000000000058277      0x1b1 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+ .debug_str     0x000000000005831b      0x1b1 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
                                       0x54f04 (size before relaxing)
- .debug_str     0x0000000000058428      0x37c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ .debug_str     0x00000000000584cc      0x381 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
                                       0x56d59 (size before relaxing)
- .debug_str     0x00000000000587a4      0x1f7 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+ .debug_str     0x000000000005884d      0x1f7 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
                                       0x561c9 (size before relaxing)
- .debug_str     0x000000000005899b     0x1156 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_str     0x0000000000058a44     0x1156 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
                                       0x57823 (size before relaxing)
- .debug_str     0x0000000000059af1      0x8fe /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_str     0x0000000000059b9a      0x8fe /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
                                       0x58578 (size before relaxing)
- .debug_str     0x000000000005a3ef       0xb0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
+ .debug_str     0x000000000005a498       0xb0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
                                       0x5565b (size before relaxing)
- .debug_str     0x000000000005a49f      0x218 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+ .debug_str     0x000000000005a548      0x1d5 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
                                       0x56317 (size before relaxing)
- .debug_str     0x000000000005a6b7      0x125 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .debug_str     0x000000000005a71d      0x125 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
                                       0x5596c (size before relaxing)
- .debug_str     0x000000000005a7dc      0x2c2 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .debug_str     0x000000000005a842      0x211 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+                                      0x56502 (size before relaxing)
+ .debug_str     0x000000000005aa53      0x274 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
                                       0x5672e (size before relaxing)
- .debug_str     0x000000000005aa9e       0xce /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+ .debug_str     0x000000000005acc7       0xce /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
                                       0x559b7 (size before relaxing)
- .debug_str     0x000000000005ab6c      0x200 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+ .debug_str     0x000000000005ad95      0x200 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
                                       0x57dd6 (size before relaxing)
- .debug_str     0x000000000005ad6c      0x18e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+ .debug_str     0x000000000005af95      0x18e /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
                                       0x560a4 (size before relaxing)
- .debug_str     0x000000000005aefa      0x72c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+ .debug_str     0x000000000005b123      0x72c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
                                       0x5675a (size before relaxing)
- .debug_str     0x000000000005b626       0xcf /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+ .debug_str     0x000000000005b84f       0xcf /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
                                       0x4fa2f (size before relaxing)
 
 .comment        0x0000000000000000       0x7f
@@ -6813,6 +7068,7 @@ OUTPUT(/home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/Assignment_1.elf elf32-l
  .comment       0x000000000000007f       0x80 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
  .comment       0x000000000000007f       0x80 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
  .comment       0x000000000000007f       0x80 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .comment       0x000000000000007f       0x80 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
  .comment       0x000000000000007f       0x80 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
  .comment       0x000000000000007f       0x80 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
  .comment       0x000000000000007f       0x80 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
@@ -6859,112 +7115,95 @@ OUTPUT(/home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/Assignment_1.elf elf32-l
  .ARM.attributes
                 0x00000000000003c9       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
  .ARM.attributes
-                0x0000000000000402       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+                0x0000000000000402       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
  .ARM.attributes
-                0x000000000000043b       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+                0x000000000000043b       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
  .ARM.attributes
-                0x0000000000000474       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+                0x0000000000000474       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
  .ARM.attributes
-                0x00000000000004ad       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+                0x00000000000004ad       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
  .ARM.attributes
-                0x00000000000004e6       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+                0x00000000000004e6       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
  .ARM.attributes
-                0x000000000000051f       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+                0x000000000000051f       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
  .ARM.attributes
-                0x0000000000000558       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-impure.o)
+                0x0000000000000558       0x39 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
  .ARM.attributes
-                0x000000000000058c       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
+                0x0000000000000591       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000000000005c0       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
+                0x00000000000005c5       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x00000000000005f4       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
+                0x00000000000005f9       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x0000000000000628       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000000000000062d       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
  .ARM.attributes
-                0x000000000000065c       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-printf.o)
+                0x0000000000000661       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
  .ARM.attributes
-                0x0000000000000690       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-puts.o)
+                0x0000000000000695       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-printf.o)
  .ARM.attributes
-                0x00000000000006c4       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wbuf.o)
+                0x00000000000006c9       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-puts.o)
  .ARM.attributes
-                0x00000000000006f8       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wsetup.o)
+                0x00000000000006fd       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wbuf.o)
  .ARM.attributes
-                0x000000000000072c       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fflush.o)
+                0x0000000000000731       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wsetup.o)
  .ARM.attributes
-                0x0000000000000760       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000000000765       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fflush.o)
  .ARM.attributes
-                0x0000000000000794       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fwalk.o)
+                0x0000000000000799       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
  .ARM.attributes
-                0x00000000000007c8       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-makebuf.o)
+                0x00000000000007cd       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fwalk.o)
  .ARM.attributes
-                0x00000000000007fc       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-mlock.o)
+                0x0000000000000801       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-makebuf.o)
  .ARM.attributes
-                0x0000000000000830       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000000000835       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-mlock.o)
  .ARM.attributes
-                0x0000000000000864       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000000000869       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
  .ARM.attributes
-                0x0000000000000898       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)
+                0x000000000000089d       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
  .ARM.attributes
-                0x00000000000008cc       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memchr.o)
+                0x00000000000008d1       0x34 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)
+ .ARM.attributes
+                0x0000000000000905       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memchr.o)
 
-.debug_frame    0x0000000000000000     0x11f8
- .debug_frame   0x0000000000000000       0x28 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
- .debug_frame   0x0000000000000028       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
- .debug_frame   0x0000000000000048       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
- .debug_frame   0x0000000000000088       0x50 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_frame   0x00000000000000d8       0x58 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
- .debug_frame   0x0000000000000130       0x80 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
- .debug_frame   0x00000000000001b0      0x124 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
- .debug_frame   0x00000000000002d4       0x48 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
- .debug_frame   0x000000000000031c       0x60 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
- .debug_frame   0x000000000000037c       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
- .debug_frame   0x00000000000003b4       0xd4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
- .debug_frame   0x0000000000000488      0x128 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
- .debug_frame   0x00000000000005b0       0x80 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
- .debug_frame   0x0000000000000630       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
- .debug_frame   0x000000000000066c      0x19c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_frame   0x0000000000000808       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
- .debug_frame   0x0000000000000838       0xfc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
- .debug_frame   0x0000000000000934       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
- .debug_frame   0x0000000000000964       0xf8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
- .debug_frame   0x0000000000000a5c       0x90 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
- .debug_frame   0x0000000000000aec       0x58 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
- .debug_frame   0x0000000000000b44       0x98 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
- .debug_frame   0x0000000000000bdc       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
- .debug_frame   0x0000000000000c18       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
- .debug_frame   0x0000000000000c38       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
- .debug_frame   0x0000000000000c64       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
- .debug_frame   0x0000000000000c84       0x38 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x0000000000000cbc       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x0000000000000ce8       0x74 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-printf.o)
- .debug_frame   0x0000000000000d5c       0x3c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-puts.o)
- .debug_frame   0x0000000000000d98       0x40 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wbuf.o)
- .debug_frame   0x0000000000000dd8       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wsetup.o)
- .debug_frame   0x0000000000000e04       0x68 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fflush.o)
- .debug_frame   0x0000000000000e6c      0x11c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
- .debug_frame   0x0000000000000f88       0x54 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fwalk.o)
- .debug_frame   0x0000000000000fdc       0x58 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-makebuf.o)
- .debug_frame   0x0000000000001034       0x30 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-mlock.o)
- .debug_frame   0x0000000000001064       0xac /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
- .debug_frame   0x0000000000001110       0x60 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x0000000000001170       0x88 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)
-
-.debug_loc      0x0000000000000000     0x205c
- .debug_loc     0x0000000000000000       0x21 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
- .debug_loc     0x0000000000000021       0x52 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
- .debug_loc     0x0000000000000073      0x169 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
- .debug_loc     0x00000000000001dc      0x715 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
- .debug_loc     0x00000000000008f1      0x120 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
- .debug_loc     0x0000000000000a11       0x63 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
- .debug_loc     0x0000000000000a74       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
- .debug_loc     0x0000000000000a94      0x1a8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
- .debug_loc     0x0000000000000c3c      0x2f0 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
- .debug_loc     0x0000000000000f2c      0x269 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
- .debug_loc     0x0000000000001195       0xed /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
- .debug_loc     0x0000000000001282      0x41a /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
- .debug_loc     0x000000000000169c      0x38c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
- .debug_loc     0x0000000000001a28       0x58 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
- .debug_loc     0x0000000000001a80      0x488 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
- .debug_loc     0x0000000000001f08       0xcb /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
- .debug_loc     0x0000000000001fd3       0x76 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
- .debug_loc     0x0000000000002049       0x13 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+.debug_frame    0x0000000000000000     0x12c0
+ .debug_frame   0x0000000000000000       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o
+ .debug_frame   0x0000000000000038       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/auto_init/auto_init.o
+ .debug_frame   0x0000000000000058       0x40 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/boards_common_nucleo/board_common_nucleo_init.o
+ .debug_frame   0x0000000000000098       0x50 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/init.o
+ .debug_frame   0x00000000000000e8       0x58 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/panic.o
+ .debug_frame   0x0000000000000140       0x80 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/sched.o
+ .debug_frame   0x00000000000001c0      0x124 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/core/thread.o
+ .debug_frame   0x00000000000002e4       0x48 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/cortexm_init.o
+ .debug_frame   0x000000000000032c       0x60 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/mpu.o
+ .debug_frame   0x000000000000038c       0x38 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/panic.o
+ .debug_frame   0x00000000000003c4       0xd4 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/thread_arch.o
+ .debug_frame   0x0000000000000498      0x128 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cortexm_common/vectors_cortexm.o
+ .debug_frame   0x00000000000005c0       0x80 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_common.o
+ .debug_frame   0x0000000000000640       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/cpu/cpu_init.o
+ .debug_frame   0x000000000000067c      0x19c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/newlib_syscalls_default/syscalls.o
+ .debug_frame   0x0000000000000818       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph_common/init.o
+ .debug_frame   0x0000000000000848       0xfc /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/gpio_all.o
+ .debug_frame   0x0000000000000944       0x30 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/pm.o
+ .debug_frame   0x0000000000000974       0xb8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o
+ .debug_frame   0x0000000000000a2c       0xf8 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/uart.o
+ .debug_frame   0x0000000000000b24       0x90 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/pm_layered/pm.o
+ .debug_frame   0x0000000000000bb4       0x58 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stdio_uart/stdio_uart.o
+ .debug_frame   0x0000000000000c0c       0x98 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_common.o
+ .debug_frame   0x0000000000000ca4       0x3c /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_clk/stmclk_f2f4f7.o
+ .debug_frame   0x0000000000000ce0       0x20 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o
+ .debug_frame   0x0000000000000d00       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000d2c       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000d4c       0x38 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000000d84       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000000000000db0       0x74 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-printf.o)
+ .debug_frame   0x0000000000000e24       0x3c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-puts.o)
+ .debug_frame   0x0000000000000e60       0x40 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x0000000000000ea0       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x0000000000000ecc       0x68 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fflush.o)
+ .debug_frame   0x0000000000000f34      0x11c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x0000000000001050       0x54 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x00000000000010a4       0x58 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x00000000000010fc       0x30 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x000000000000112c       0xac /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x00000000000011d8       0x60 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x0000000000001238       0x88 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-stdio.o)

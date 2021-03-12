@@ -1,6 +1,7 @@
-/home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/application_Assignment_1/main.o: \
- /home/lorenzo/IoT/Assignment_1/main.c \
+/home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/periph/timer.o: \
+ /home/lorenzo/IoT/RIOT/cpu/stm32/periph/timer.c \
  /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/riotbuild/riotbuild.h \
+ /home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/cpu.h \
  /usr/arm-none-eabi/include/stdio.h /usr/arm-none-eabi/include/_ansi.h \
  /usr/arm-none-eabi/include/newlib-nano/newlib.h \
  /usr/arm-none-eabi/include/_newlib_version.h \
@@ -21,12 +22,6 @@
  /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
  /usr/arm-none-eabi/include/machine/types.h \
  /usr/arm-none-eabi/include/sys/stdio.h \
- /home/lorenzo/IoT/RIOT/drivers/include/periph/gpio.h \
- /usr/lib/gcc/arm-none-eabi/7.3.1/include-fixed/limits.h \
- /usr/lib/gcc/arm-none-eabi/7.3.1/include-fixed/syslimits.h \
- /usr/arm-none-eabi/include/limits.h \
- /home/lorenzo/IoT/RIOT/cpu/stm32/include/periph_cpu.h \
- /home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/cpu.h \
  /home/lorenzo/IoT/RIOT/core/include/irq.h \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdbool.h \
  /home/lorenzo/IoT/RIOT/cpu/stm32/include/cpu_conf.h \
@@ -58,6 +53,11 @@
  /home/lorenzo/IoT/RIOT/core/include/sched.h \
  /home/lorenzo/IoT/RIOT/core/include/thread_config.h \
  /home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/thread_arch.h \
+ /home/lorenzo/IoT/RIOT/drivers/include/periph/timer.h \
+ /usr/lib/gcc/arm-none-eabi/7.3.1/include-fixed/limits.h \
+ /usr/lib/gcc/arm-none-eabi/7.3.1/include-fixed/syslimits.h \
+ /usr/arm-none-eabi/include/limits.h \
+ /home/lorenzo/IoT/RIOT/cpu/stm32/include/periph_cpu.h \
  /home/lorenzo/IoT/RIOT/core/include/macros/units.h \
  /home/lorenzo/IoT/RIOT/cpu/stm32/include/periph/f4/periph_cpu.h \
  /home/lorenzo/IoT/RIOT/boards/nucleo-f401re/include/periph_conf.h \
@@ -70,6 +70,8 @@
  /home/lorenzo/IoT/RIOT/boards/common/stm32/include/cfg_timer_tim5.h
 
 /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/riotbuild/riotbuild.h:
+
+/home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/cpu.h:
 
 /usr/arm-none-eabi/include/stdio.h:
 
@@ -112,18 +114,6 @@
 /usr/arm-none-eabi/include/machine/types.h:
 
 /usr/arm-none-eabi/include/sys/stdio.h:
-
-/home/lorenzo/IoT/RIOT/drivers/include/periph/gpio.h:
-
-/usr/lib/gcc/arm-none-eabi/7.3.1/include-fixed/limits.h:
-
-/usr/lib/gcc/arm-none-eabi/7.3.1/include-fixed/syslimits.h:
-
-/usr/arm-none-eabi/include/limits.h:
-
-/home/lorenzo/IoT/RIOT/cpu/stm32/include/periph_cpu.h:
-
-/home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/cpu.h:
 
 /home/lorenzo/IoT/RIOT/core/include/irq.h:
 
@@ -186,6 +176,16 @@
 /home/lorenzo/IoT/RIOT/core/include/thread_config.h:
 
 /home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/thread_arch.h:
+
+/home/lorenzo/IoT/RIOT/drivers/include/periph/timer.h:
+
+/usr/lib/gcc/arm-none-eabi/7.3.1/include-fixed/limits.h:
+
+/usr/lib/gcc/arm-none-eabi/7.3.1/include-fixed/syslimits.h:
+
+/usr/arm-none-eabi/include/limits.h:
+
+/home/lorenzo/IoT/RIOT/cpu/stm32/include/periph_cpu.h:
 
 /home/lorenzo/IoT/RIOT/core/include/macros/units.h:
 
