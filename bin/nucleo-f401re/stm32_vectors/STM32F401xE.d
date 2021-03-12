@@ -1,0 +1,62 @@
+/home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/stm32_vectors/STM32F401xE.o: \
+ /home/lorenzo/IoT/RIOT/cpu/stm32/vectors/STM32F401xE.c \
+ /home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/riotbuild/riotbuild.h \
+ /home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vectors_cortexm.h \
+ /home/lorenzo/IoT/RIOT/cpu/stm32/include/cpu_conf.h \
+ /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h \
+ /usr/arm-none-eabi/include/stdint.h \
+ /usr/arm-none-eabi/include/machine/_default_types.h \
+ /usr/arm-none-eabi/include/sys/features.h \
+ /usr/arm-none-eabi/include/_newlib_version.h \
+ /usr/arm-none-eabi/include/sys/_intsup.h \
+ /usr/arm-none-eabi/include/sys/_stdint.h \
+ /home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/cpu_conf_common.h \
+ /home/lorenzo/IoT/RIOT/cpu/stm32/include/vendor/cmsis/f4/Include/stm32f4xx.h \
+ /home/lorenzo/IoT/RIOT/cpu/stm32/include/vendor/cmsis/f4/Include/stm32f401xe.h \
+ /home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vendor/core_cm4.h \
+ /home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vendor/cmsis_version.h \
+ /home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vendor/cmsis_compiler.h \
+ /home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vendor/cmsis_gcc.h \
+ /home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vendor/mpu_armv7.h \
+ /home/lorenzo/IoT/RIOT/cpu/stm32/include/vendor/cmsis/f4/Include/system_stm32f4xx.h \
+ /home/lorenzo/IoT/RIOT/cpu/stm32/include/irqs/f4/irqs.h
+
+/home/lorenzo/IoT/Assignment_1/bin/nucleo-f401re/riotbuild/riotbuild.h:
+
+/home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vectors_cortexm.h:
+
+/home/lorenzo/IoT/RIOT/cpu/stm32/include/cpu_conf.h:
+
+/usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h:
+
+/usr/arm-none-eabi/include/stdint.h:
+
+/usr/arm-none-eabi/include/machine/_default_types.h:
+
+/usr/arm-none-eabi/include/sys/features.h:
+
+/usr/arm-none-eabi/include/_newlib_version.h:
+
+/usr/arm-none-eabi/include/sys/_intsup.h:
+
+/usr/arm-none-eabi/include/sys/_stdint.h:
+
+/home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/cpu_conf_common.h:
+
+/home/lorenzo/IoT/RIOT/cpu/stm32/include/vendor/cmsis/f4/Include/stm32f4xx.h:
+
+/home/lorenzo/IoT/RIOT/cpu/stm32/include/vendor/cmsis/f4/Include/stm32f401xe.h:
+
+/home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vendor/core_cm4.h:
+
+/home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vendor/cmsis_version.h:
+
+/home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vendor/cmsis_compiler.h:
+
+/home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vendor/cmsis_gcc.h:
+
+/home/lorenzo/IoT/RIOT/cpu/cortexm_common/include/vendor/mpu_armv7.h:
+
+/home/lorenzo/IoT/RIOT/cpu/stm32/include/vendor/cmsis/f4/Include/system_stm32f4xx.h:
+
+/home/lorenzo/IoT/RIOT/cpu/stm32/include/irqs/f4/irqs.h:
