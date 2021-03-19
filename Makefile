@@ -8,5 +8,6 @@ USEMODULE += xtimer
 
 FEATURES_REQUIRED = periph_gpio
 FEATURES_REQUIRED = periph_adc
+FEATURES_OPTIONAL += periph_rtc
 
 include $(RIOTBASE)/Makefile.include
