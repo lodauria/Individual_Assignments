@@ -36,11 +36,14 @@ QUIET ?= 1
 
 # Ethos/native TAP interface and UHCP prefix can be configured from make command
 TAP ?= tap0
-IPV6_PREFIX ?= fe80:2::/64
+# IPV6_PREFIX ?= fe80::/64
+# Based on the PC network configuration sometimes the prefix has to be changed
+IPV6_PREFIX ?= fe80::6000:0:0:0/66
+
 
 # The Broker address, port and the default MQTT topic to subscribe.
 #tapbr0 address
-SERVER_ADDR = fe80::5c47:aaff:fed8:63de
+SERVER_ADDR = fe80::1
 SERVER_PORT = 1885
 MQTT_TOPIC = status
 
