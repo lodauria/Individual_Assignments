@@ -6,9 +6,10 @@
 #include "periph/gpio.h"
 #include "periph/adc.h"
 #include "analog_util.h"
+#include "jsmn.h"
 
 #ifndef EMCUTE_ID
-#define EMCUTE_ID           ("stm32")
+#define EMCUTE_ID           ("nucleo-f401re")
 #endif
 #define EMCUTE_PRIO         (THREAD_PRIORITY_MAIN - 1)
 
@@ -54,30 +55,33 @@ static void actuate_DC_motor(int m1, int m2, int status)
 static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
 {
     char *in = (char *)data;
+    int relay_stauts;
+    int motor_status;
 
-    // Ignore irrelevant messages
-    // Correct command format = a;(relay);(motor)     e.g. = "a;1;1"
-    if (in[0]=='a' && in[1]==';'){
-        printf("Got command for topic '%s' \n", topic->name);
-        for (size_t i = 0; i < len; i++) {
-            printf("%c", in[i]);
-        }
+    jsmn_parser parser;
+    jsmntok_t tok[10];
 
+	jsmn_init(&parser);
+	int elem = jsmn_parse(&parser, in, len, tok, 10);
+
+	if (elem < 5) {
+		printf("Error reading json from topic \"%s\"\n", topic->name);
+	}
+	else{
+		char relay_str[2];
+		char motor_str[2];
+		sprintf(relay_str,"%.*s", tok[2].end - tok[2].start, in + tok[2].start);
+		sprintf(motor_str,"%.*s", tok[4].end - tok[4].start, in + tok[4].start);
+		relay_stauts = atoi(relay_str);
+        motor_status = atoi(motor_str);
+
+        printf("\nGot actuation commands:\nRelay status: %i\nMotor status: %i\n",relay_stauts,motor_status);
         puts("");
 
-        // Get commands from the message
-        char in1[2];
-        char in2[2];
-        sprintf(in1, "%c", in[2]);
-        sprintf(in2, "%c", in[4]);
-
-        int relay_stauts = atoi(in1);
-        int motor_status = atoi(in2);
-
         // APPLY ACTUATION
-        gpio_write(relay, relay_stauts);
-        actuate_DC_motor(motorA, motorB, motor_status);
-    }
+	    gpio_write(relay, relay_stauts);
+	    actuate_DC_motor(motorA, motorB, motor_status);
+	}
 
 }
 
@@ -93,17 +97,14 @@ int setup_mqtt(void)
     printf("Connecting to MQTT-SN broker %s port %d.\n", SERVER_ADDR, SERVER_PORT);
 
     sock_udp_ep_t gw = { .family = AF_INET6, .port = SERVER_PORT };
-    char *topic = MQTT_TOPIC;
-    char *message = "connected";
-    size_t len = strlen(message);
 
     if (ipv6_addr_from_str((ipv6_addr_t *)&gw.addr.ipv6, SERVER_ADDR) == NULL) {
-        printf("error parsing IPv6 address\n");
+        printf("Error parsing IPv6 address\n");
         return 1;
     }
 
-    if (emcute_con(&gw, true, topic, message, len, 0) != EMCUTE_OK) {
-        printf("error: unable to connect to [%s]:%i\n", SERVER_ADDR,
+    if (emcute_con(&gw, true, NULL, NULL, 0, 0) != EMCUTE_OK) {
+        printf("Error: unable to connect to [%s]:%i\n", SERVER_ADDR,
                (int)gw.port);
         return 1;
     }
@@ -111,17 +112,17 @@ int setup_mqtt(void)
     printf("Successfully connected to gateway at [%s]:%i\n",
            SERVER_ADDR, (int)gw.port);
 
-    unsigned flags = EMCUTE_QOS_0;
     subscriptions[0].cb = on_pub;
-    strcpy(topics[0], MQTT_TOPIC);
-    subscriptions[0].topic.name = MQTT_TOPIC;
+    strcpy(topics[0], MQTT_TOPIC_A);
+    subscriptions[0].topic.name = MQTT_TOPIC_A;
 
-    if (emcute_sub(&subscriptions[0], flags) != EMCUTE_OK) {
-        printf("error: unable to subscribe to %s\n", MQTT_TOPIC);
+    if (emcute_sub(&subscriptions[0], EMCUTE_QOS_0) != EMCUTE_OK) {
+        printf("Error: unable to subscribe to %s\n", MQTT_TOPIC_A);
         return 1;
     }
 
-    printf("Now subscribed to %s\n", MQTT_TOPIC);
+    printf("Now subscribed to %s\n", MQTT_TOPIC_A);
+    puts("");
 
     return 1;
 }
@@ -188,10 +189,10 @@ int main(void)
 		int projector_status;
 	    projector_status = gpio_read(projectorSens);
 	    if (projector_status == OPEN){
-	    	printf("Projector open\n");
+	    	printf("Projector: OPEN\n");
 	    }
 	    else{
-	    	printf("Projector closed\n");
+	    	printf("Projector: CLOSED\n");
 	    }
 
 	    // Illuminance
@@ -215,24 +216,26 @@ int main(void)
 
 		// PUBLISH VIA MQTT SENSORs DATA
 
-		char message[10];
-        sprintf(message, "s;%i;%i", light_level, projector_status);
+		char message[100];
+        sprintf(message, "{\"light_level\":%i, \"projector_status\":%i}", light_level, projector_status);
 		emcute_topic_t t;
 
 	    // Get topic id
-	    t.name = MQTT_TOPIC;
+	    t.name = MQTT_TOPIC_S;
 	    if (emcute_reg(&t) != EMCUTE_OK) {
-	        puts("error: unable to obtain topic ID");
+	        puts("Error: unable to obtain topic ID");
 	        return 1;
 	    }
 
 	    // Publish data
 	    if (emcute_pub(&t, message, strlen(message), EMCUTE_QOS_0) != EMCUTE_OK) {
-	        printf("error: unable to publish data to topic '%s [%i]'\n", t.name, (int)t.id);
+	        printf("Error: unable to publish data to topic '%s [%i]'\n", t.name, (int)t.id);
 	        return 1;
 	    }
 
 	    printf("Sensor readings published\n");
+	    puts("");
+	    
 		xtimer_sleep(10);
 	}
 

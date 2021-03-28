@@ -18,6 +18,8 @@ USEMODULE += gnrc_uhcpc
 FEATURES_REQUIRED = periph_gpio
 FEATURES_REQUIRED = periph_adc
 
+USEPKG += jsmn
+
 # Allow for env-var-based override of the nodes name (EMCUTE_ID)
 ifneq (,$(EMCUTE_ID))
   CFLAGS += -DEMCUTE_ID=\"$(EMCUTE_ID)\"
@@ -45,11 +47,13 @@ IPV6_PREFIX ?= fe80::6000:0:0:0/66
 #tapbr0 address
 SERVER_ADDR = fe80::1
 SERVER_PORT = 1885
-MQTT_TOPIC = status
+MQTT_TOPIC_S = sensing
+MQTT_TOPIC_A = actuation
 
 CFLAGS += -DSERVER_ADDR='"$(SERVER_ADDR)"'
 CFLAGS += -DSERVER_PORT=$(SERVER_PORT)
-CFLAGS += -DMQTT_TOPIC='"$(MQTT_TOPIC)"'
+CFLAGS += -DMQTT_TOPIC_S='"$(MQTT_TOPIC_S)"'
+CFLAGS += -DMQTT_TOPIC_A='"$(MQTT_TOPIC_A)"'
 
 ETHOS_BAUDRATE ?= 115200
 include $(CURDIR)/Makefile.ethos.conf
