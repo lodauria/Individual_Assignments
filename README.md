@@ -7,8 +7,8 @@ This is a prototype of an IoT system to be used in university's rooms. By using 
 From this data a model can be derived and used to automatically control the room lights with a relay and the windows curtains with a DC motor so to automatically have the ideal light condition in each situation.
 
 The logic used to control the actuators can be summarized with these two rules:
-- If the projector is open **AND** there is too much light **=>** (if lights are on **=>** switch lights off) **AND** (if there is still too much light **AND** curtains are open **=>** close the curtains)
-- If the projector is closed **AND** there is low light **=>** (if curtains are closed **=>** open curtains) **AND** (if there is still too low light **AND** lights are off **=>** switch on the lights)
+- If the projector is open **AND** there is too much light **AND** is lecture time **=>** (if lights are on **=>** switch lights off) **AND** (if there is still too much light **AND** curtains are open **=>** close the curtains)
+- If the projector is closed **AND** there is low light **AND** is lecture time **=>** (if curtains are closed **=>** open curtains) **AND** (if there is still too low light **AND** lights are off **=>** switch on the lights)
 
 ## What data are collected and by which sensors?
 

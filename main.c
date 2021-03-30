@@ -30,8 +30,8 @@ static gpio_t motorA = GPIO_PIN(PORT_A, 8); 	// pin D7
 static gpio_t motorB = GPIO_PIN(PORT_A, 9); 	// pin D8
 static gpio_t relay = GPIO_PIN(PORT_B, 5); 		// pin D4
 
-int relay_stauts;
-int motor_status;
+int relay_stauts=0;   // 0: lights off, 1: lights on
+int motor_status=2;   // 0: no action, 1: curatin closed, 2: curtain open
 
 static void *emcute_thread(void *arg)
 {
@@ -76,20 +76,23 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
 		char motor_str[2];
 		sprintf(relay_str,"%.*s", tok[2].end - tok[2].start, in + tok[2].start);
 		sprintf(motor_str,"%.*s", tok[4].end - tok[4].start, in + tok[4].start);
-		relay_stauts = atoi(relay_str);
-        motor_status = atoi(motor_str);
 
-        printf("\nGot actuation commands:\nRelay status: %i\nMotor status: %i\n",relay_stauts,motor_status);
+        printf("\nGot actuation commands:\nRelay status: %s\nMotor status: %s\n",relay_str,motor_str);
         puts("");
 
         // APPLY ACTUATION
+		relay_stauts = atoi(relay_str);
         if (relay_stauts == 0){
-        	gpio_clear(relay);
+            gpio_clear(relay);
         }
         else{
-        	gpio_set(relay);
+            gpio_set(relay);
         }
-	    actuate_DC_motor(motorA, motorB, motor_status);
+        if (atoi(motor_str) != 0){
+            motor_status = atoi(motor_str);
+            actuate_DC_motor(motorA, motorB, motor_status);
+        }
+
 	}
 
 }
@@ -140,9 +143,6 @@ int main(void)
 {
 
 	// INITIALIZATION
-    char maketime[8];
-    sprintf(maketime,"%s", __TIME__);
-    int num = atoi(maketime)*10000 + atoi(maketime+3)*100 + atoi(maketime+6);
 
     // Initialize the Hall sensor digital pin
 	gpio_init(projectorSens, GPIO_IN);
@@ -221,7 +221,7 @@ int main(void)
 		// PUBLISH VIA MQTT SENSORS DATA
 
 		char message[100];
-        sprintf(message, "{\"num\":%i,\"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", num, light_level, projector_status, relay_stauts, motor_status);
+        sprintf(message, "{\"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", light_level, projector_status, relay_stauts, motor_status);
 		emcute_topic_t t;
 
 	    // Get topic id
@@ -241,7 +241,6 @@ int main(void)
 	    puts("");
 	    
 		xtimer_sleep(10);
-        num = num+1;
 	}
 
 	return 0;
