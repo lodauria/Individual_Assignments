@@ -30,22 +30,33 @@ This sensor is used to detect if a magnet placed on the end of the projector scr
 
 ## What are the connected components, the protocols to connect them and the overall IoT architecture?
 
-The overall network diagram is the following.
+The network uses Mosquitto RSMB to communicate via ETHOS with the board, a Mosquitto broker with authentication to communicate with IoT Core. From IoT Core a lambda function is used to implement the collective intelligence and store the data in a DynamoDB table. A web page hosted on an S3 bucket is realizes a simple user interface. This page periodically calls an API gateway to get the data from the DynamoDB and send actuation command to the board.
+The overall network is represented in this scheme.
 
 <img src="./network.png" width="800">
 
-# Hands-on walkthrough
+## Hands-on walkthrough
 
 To use this system start by cloning this repository
 
     git clone https://github.com/lodauria/assignment1.git
 
-Then make sure to have downloaded [RIOTS-OS](https://github.com/RIOT-OS/RIOT), [Mosquitto RSMB](https://github.com/eclipse/mosquitto.rsmb), [Mosquitto broker]() and to have configured a device in [AWS IoT Core](https://aws.amazon.com/it/iot-core/).
+Then make sure to have downloaded [RIOTS-OS](https://github.com/RIOT-OS/RIOT), [Mosquitto RSMB](https://github.com/eclipse/mosquitto.rsmb), [Mosquitto broker]() and to have an active AWS account.
 
-## Makefile adjustments
+### Makefile adjustments
+Make sure to modify `Makefile` with the correct path of the RIOT folder and the IPv6 prefix length the with best option for your PC network configuration.
 
-## Mosquitto RSMB setup
+### Compile and upload software
+In the project directory compile and upload the program on your STM32 nucleo board with the following command
 
-## Mosquitto broker setup
+    make flash term
 
-## IoT Core setup
+Don't forget to type also the sudo password that will be required after executing this command.
+
+### Connect the electronic components
+Connect the 2 sensors, the relay and the motor as shown below.
+
+<img src="./wiring.png" width="800">
+
+### Mosquitto and AWS setup
+Read the dedicated guides: [Mosquitto setup](./mosquitto/README.md) and [AWS setup](./aws/README.md).
