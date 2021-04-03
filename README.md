@@ -59,4 +59,4 @@ Connect the 2 sensors, the relay and the motor as shown below.
 <img src="./wiring.png" width="800">
 
 ### Mosquitto and AWS setup
-Read the dedicated guides: [Mosquitto setup](./mosquitto/README.md) and [AWS setup](./aws/README.md).
+Read the dedicated guides: [Mosquitto setup](./mosquitto/) and [AWS setup](./aws/).
