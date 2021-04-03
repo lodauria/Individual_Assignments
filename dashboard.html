@@ -6,7 +6,7 @@
 		<script type="text/javascript">
 			function timer() {
 				console.log("Requesting new data...");
-				callAwsLambdaFunction(0);
+				callAwsLambdaFunction(0,debug_status);
 			}
 
 			window.setInterval(timer, 10000);
@@ -35,8 +35,8 @@
 		<p id = "proj_hist">Projector: </p>
 		<p id = "light_hist">Light: </p>
 
-		<button onclick="callAwsLambdaFunction(1)"> Toggle light </button>
-		<button onclick="callAwsLambdaFunction(2)"> Toggle relay </button>
+		<button onclick="toggleLight()"> Toggle light </button>
+		<button onclick="toggleRelay()"> Toggle relay </button>
 		
 	</body>
 </html>
