@@ -2,13 +2,13 @@
 
 ## What is the problem and why do you need IoT?
 
-This is a prototype of an IoT system to be used in university's rooms. By using a photocell and an Hall sensor is possible to detect in which light condition the projector is usually used or not. This can be done with a periodical sampling of the sensors state.
+This is a prototype of an IoT system to be used in university's rooms. By using a photocell and an Hall sensor is possible to detect in which light condition and at what hours the projector is usually used or not. This can be done with a periodical sampling of the sensors state.
 
 From this data a model can be derived and used to automatically control the room lights with a relay and the windows curtains with a DC motor so to automatically have the ideal light condition in each situation.
 
-The logic used to control the actuators can be summarized with these two rules:
-- If the projector is open **AND** there is too much light **AND** is lecture time **=>** (if lights are on **=>** switch lights off) **AND** (if there is still too much light **AND** curtains are open **=>** close the curtains)
-- If the projector is closed **AND** there is low light **AND** is lecture time **=>** (if curtains are closed **=>** open curtains) **AND** (if there is still too low light **AND** lights are off **=>** switch on the lights)
+In this prototype to control the actuators is used a simple logic that can be summarized with these two rules:
+- If the projector is open **AND** there is too much light **AND** is lecture time **=>** (if lights are on **=>** switch lights off) **ELSE** (if lights are off **AND** curtains are open **=>** close the curtains)
+- If the projector is closed **AND** there is low light **AND** is lecture time **=>** (if curtains are closed **=>** open curtains) **ELSE** (if curtains are open **AND** lights are off **=>** switch on the lights)
 
 ## What data are collected and by which sensors?
 
@@ -44,7 +44,7 @@ To use this system start by cloning this repository
 Then make sure to have downloaded [RIOTS-OS](https://github.com/RIOT-OS/RIOT), [Mosquitto RSMB](https://github.com/eclipse/mosquitto.rsmb), [Mosquitto broker]() and to have an active AWS account.
 
 ### Makefile adjustments
-Make sure to modify `Makefile` with the correct path of the RIOT folder and the IPv6 prefix length the with best option for your PC network configuration.
+Make sure to modify `Makefile` with the correct path of the RIOT folder and the IPv6 prefix length with the best option for your PC network configuration.
 
 ### Compile and upload software
 In the project directory compile and upload the program on your STM32 nucleo board with the following command
@@ -56,7 +56,7 @@ Don't forget to type also the sudo password that will be required after executin
 ### Connect the electronic components
 Connect the 2 sensors, the relay and the motor as shown below.
 
-<img src="./src/wiring.png" width="800">
+<img src="./src/wiring.jpg" width="800">
 
 ### Mosquitto and AWS setup
-Read the dedicated guides: [Mosquitto setup](./mosquitto/) and [AWS setup](./aws/).
+Read the dedicated guides to set up AWS cloud components: [Mosquitto setup](./mosquitto/) and [AWS setup](./aws/).

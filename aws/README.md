@@ -3,7 +3,7 @@
 ## Lambda functions
 Create a python lambda function called `myReaction` using a role with full access to IoTCore and DynamoDB. In the code section paste the content of `myReaction.py` 
 
-Create a python lambda function called `dashboard_handle` using a role with full access to IoTCore and DynamoDB. In the code section paste the content of `dashboard_handle.py`. Use as trigger an API gateway with CORS enabled. The API gateway endpoint has to be substituted inside the web interface script `s3_bucket/myScript.js` at line 6.
+Create a python lambda function called `dashboard_handle` using a role with full access to IoTCore and DynamoDB. In the code section paste the content of `dashboard_handle.py`. Create an HTTP API gateway trigger with CORS enabled. The API gateway endpoint has to be substituted inside the web interface script `s3_bucket/myScript.js` at line 6 in the `url` attribute.
 
 ## IoT Core
 In IoT Core create a thing called `mydevice`, generate and download the necessary certificates (they will be used in the Mosquitto borker setup).
