@@ -8,7 +8,7 @@ From this data a model can be derived and used to automatically control the room
 
 In this prototype to control the actuators is used a simple logic that can be summarized with these two rules:
 - If the projector is open **AND** there is too much light **AND** is lecture time **=>** (if lights are on **=>** switch lights off) **ELSE** (if lights are off **AND** curtains are open **=>** close the curtains)
-- If the projector is closed **AND** there is low light **AND** is lecture time **=>** (if curtains are closed **=>** open curtains) **ELSE** (if curtains are open **AND** lights are off **=>** switch on the lights)
+- If the projector is closed **AND** there is low light **AND** is lecture time **=>** (if curtains are closed **=>** open curtains) **ELSE** (if curtains are open **AND** lights are off **=>** switch on the lights).
 
 ## What data are collected and by which sensors?
 
@@ -18,7 +18,7 @@ The light condition is measured based on the electric resistance of a photocell 
 
 <img src="./src/photo_res.jpg" width="300"> <img src="./src/photo_circ.png" width="500">
 
-To be more tolerant to noise each measurement is computed as the average of 10 voltage readings made with a 0.5s delay. Each raw measurement measurement uses a 12 bit ADC, so the signal will be between 0 and 4095, this values are then mapped in a 10 to 100 lux scale. The ten analog measurements are repeated every 10s.
+Each raw measurement uses a 12 bit ADC, so the signal will be between 0 and 4095, this values are then mapped in a 10 to 100 lux scale. The analog measurement is repeated every 10s.
 
 ### Hall sensor
 
@@ -30,8 +30,7 @@ This sensor is used to detect if a magnet placed on the end of the projector scr
 
 ## What are the connected components, the protocols to connect them and the overall IoT architecture?
 
-The network uses Mosquitto RSMB to communicate via ETHOS with the board, a Mosquitto broker with authentication to communicate with IoT Core. From IoT Core a lambda function is used to implement the collective intelligence and store the data in a DynamoDB table. A web page hosted on an S3 bucket is realizes a simple user interface. This page periodically calls an API gateway to get the data from the DynamoDB and send actuation command to the board.
-The overall network is represented in this scheme.
+The network uses Mosquitto RSMB to communicate via ETHOS with the board and a Mosquitto broker with authentication to communicate with IoT Core. In the AWS Cloud IoT Core calls a lambda function when new data are received. This function is used to implement the collective intelligence and to store the new data in a DynamoDB table. A web page hosted on an S3 bucket realizes a simple user interface. This page periodically calls an API gateway to get the data from the DynamoDB and, if requested, sends actuation command to the IoT Core MQTT broker. The overall network is represented in this scheme.
 
 <img src="./src/network.png" width="800">
 
@@ -44,10 +43,12 @@ To use this system start by cloning this repository
 Then make sure to have downloaded [RIOTS-OS](https://github.com/RIOT-OS/RIOT), [Mosquitto RSMB](https://github.com/eclipse/mosquitto.rsmb), [Mosquitto broker]() and to have an active AWS account.
 
 ### Makefile adjustments
-Make sure to modify `Makefile` with the correct path of the RIOT folder and the IPv6 prefix length with the best option for your PC network configuration.
+
+Make sure to modify `Makefile` with the correct path of the RIOT folder and the IPv6 prefix with the best option for your PC network configuration.
 
 ### Compile and upload software
-In the project directory compile and upload the program on your STM32 nucleo board with the following command
+
+In the project directory compile and upload the program on your Nucleo-fe401RE board with the following command
 
     make flash term
 
@@ -59,4 +60,11 @@ Connect the 2 sensors, the relay and the motor as shown below.
 <img src="./src/wiring.jpg" width="800">
 
 ### Mosquitto and AWS setup
-Read the dedicated guides to set up AWS cloud components: [Mosquitto setup](./mosquitto/) and [AWS setup](./aws/).
+
+Read the dedicated indications to set up the other components:
+- [Mosquitto setup](./mosquitto/)
+- [AWS setup](./aws/)
+
+## Prototype demo
+
+The web interface associated with the creator personal implementation is available at this [link](https://dauriaassignment1.s3.amazonaws.com/dashboard.html). Note that if you access the page when the creator hardware is not connected to AWS Cloud you can only use it in demo mode.

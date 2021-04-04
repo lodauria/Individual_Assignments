@@ -3,26 +3,34 @@ import boto3
 from boto3.dynamodb.conditions import Key
 from datetime import datetime
 
+# Get data from the DB table
 def get_last_data(table, d):
     
     if d:
+
+        # Get old data if in demo mode
         response = table.scan(
         FilterExpression=Key('num').gte(1617264845),
         Limit=15
         )
     else:
+
+        # Get data of the last hour
         response = table.scan(
-            FilterExpression=Key('num').gte(int(datetime.utcnow().timestamp()-3600))
-            )
+        FilterExpression=Key('num').gte(int(datetime.utcnow().timestamp()-3600))
+        )
 
     return response['Items']
 
+# When the lambda function is invoked
 def lambda_handler(event, context):
     
     # Decode the JSON message
     head = event.get('headers')
     messType = head.get('mess-type')
     debug = head.get('mess-debug')
+
+    # Check for errors in the message
     if messType is None or debug is None:
         return {
             'statusCode': 200,
@@ -32,10 +40,12 @@ def lambda_handler(event, context):
             'body': json.dumps("Missing custom headers")
         }
         
-    # Last hour values
+    # Initialize DynamoDB resource and get data
     dynamodb = boto3.resource('dynamodb', endpoint_url="http://dynamodb.us-east-1.amazonaws.com:80", region_name='us-east-1')
     table = dynamodb.Table('sensing_report')
     last_data = get_last_data(table, debug == "1")
+
+    # Check if no items have been found
     if len(last_data)==0:
         return {
         'statusCode': 200,
@@ -45,10 +55,10 @@ def lambda_handler(event, context):
         'body': json.dumps("No sensor values in the last hour")
     }
     
-    # Last values
+    # Get most recent item
     last = last_data[0]
     
-    # Aggregated values
+    # Compute the aggregated values
     proj_min = 2
     proj_max = -1
     light_min = 101
@@ -57,6 +67,7 @@ def lambda_handler(event, context):
     light_avg = 0
     proj_hist = ["\""]
     light_hist = ["\""]
+
     for item in last_data:
         p_status = item['projector_status']
         l_status = item['light_level']
@@ -74,7 +85,7 @@ def lambda_handler(event, context):
     proj_hist[-1] = proj_hist[-1][:-1]+"\""
     light_hist[-1] = light_hist[-1][:-1]+"\""
     
-    # Assemble message
+    # Assemble the JSON message for the web page
     message ="{\"proj_last\": " + str(last['projector_status']) + ", \n" \
             + "\"light_last\": " + str(last['light_level']) + ", \n" \
             + "\"proj_avg\": " + "{:.2f}".format(proj_avg) + ", \n" \
@@ -86,25 +97,25 @@ def lambda_handler(event, context):
             + "\"proj_hist\": " + ' '.join(proj_hist) + ", \n" \
             + "\"light_hist\": " + ' '.join(light_hist) + ", \n"
             
-    # Get required data
-    relay_var = last['relay']
-    motor_var = last['motor']
-    
-    if messType == "1":
-        if relay_var==0:
-            relay_var = 1
-        else:
-            relay_var = 0
-            
-    if messType == "2":
-        if motor_var==1:
-            motor_var = 2
-        else:
-            motor_var = 1
-            
+    # If request includes an actuation command send an MQTT message
     if messType != "0":
+
+        # Get most recent actuators status
+        relay_var = last['relay']
+        motor_var = last['motor']
         
-        message = message + "\"act\": 1}"
+        # Change status for the required actuator
+        if messType == "1":
+            if relay_var==0:
+                relay_var = 1
+            else:
+                relay_var = 0
+                
+        if messType == "2":
+            if motor_var==1:
+                motor_var = 2
+            else:
+                motor_var = 1
         
         # Create an MQTT client
         client = boto3.client('iot-data', region_name='us-east-1')
@@ -115,10 +126,16 @@ def lambda_handler(event, context):
             qos=1,
             payload=json.dumps({"relay":str(relay_var), "motor":str(motor_var)})
         )
+
+        # Communicate to the web page that actuation has been performed
+        message = message + "\"act\": 1}"
     
     else:
+
+        # Used to communicate that no actuation has been done
         message = message + "\"act\": 0}"
     
+    # Return all the informations to the web page
     return {
         'statusCode': 200,
         'headers': {

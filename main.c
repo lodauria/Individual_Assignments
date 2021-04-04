@@ -25,14 +25,17 @@ static char stack[THREAD_STACKSIZE_DEFAULT];
 static emcute_sub_t subscriptions[NUMOFSUBS];
 static char topics[NUMOFSUBS][TOPIC_MAXLEN];
 
+// Pins initialization
 static gpio_t projectorSens = GPIO_PIN(PORT_A, 10); // pin D2
 static gpio_t motorA = GPIO_PIN(PORT_A, 8); 	// pin D7
 static gpio_t motorB = GPIO_PIN(PORT_A, 9); 	// pin D8
 static gpio_t relay = GPIO_PIN(PORT_B, 5); 		// pin D4
 
+// Actuators variables
 int relay_stauts=0;   // 0: lights off, 1: lights on
 int motor_status=2;   // 0: no action, 1: curatin closed, 2: curtain open
 
+// Emcute thread
 static void *emcute_thread(void *arg)
 {
     (void)arg;
@@ -40,6 +43,7 @@ static void *emcute_thread(void *arg)
     return NULL;
 }
 
+// Spin the motor for 3 seconds in one of the two directions
 static void actuate_DC_motor(int m1, int m2, int status)
 {
 	if (status >= 2){
@@ -57,11 +61,11 @@ static void actuate_DC_motor(int m1, int m2, int status)
 	gpio_clear(m2);
 }
 
-// WHAT TO DO WHEN A MESSAGE IS RECEIVED
+// When a message is received
 static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
 {
+    // Interpret the JSON message 
     char *in = (char *)data;
-
     jsmn_parser parser;
     jsmntok_t tok[10];
 
@@ -72,6 +76,8 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
 		printf("Error reading json from topic \"%s\"\n", topic->name);
 	}
 	else{
+
+		// First value is relay command, the second is the motor command
 		char relay_str[2];
 		char motor_str[2];
 		sprintf(relay_str,"%.*s", tok[2].end - tok[2].start, in + tok[2].start);
@@ -80,7 +86,7 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
         printf("\nGot actuation commands:\nRelay status: %s\nMotor status: %s\n",relay_str,motor_str);
         puts("");
 
-        // APPLY ACTUATION
+        // Apply actuation
 		relay_stauts = atoi(relay_str);
         if (relay_stauts == 0){
             gpio_clear(relay);
@@ -124,6 +130,7 @@ int setup_mqtt(void)
     printf("Successfully connected to gateway at [%s]:%i\n",
            SERVER_ADDR, (int)gw.port);
 
+    // Subscribe to the MQTT actuation topic
     subscriptions[0].cb = on_pub;
     strcpy(topics[0], MQTT_TOPIC_A);
     subscriptions[0].topic.name = MQTT_TOPIC_A;
@@ -201,24 +208,16 @@ int main(void)
 
 	    // Illuminance
 	    int light_raw;
-	    int light_level = 0;
-	    int num_samples = 5;
-	    int samples_delay = 500;
-	    for (int i = 0; i<num_samples; i++){
-	    	light_raw = adc_sample(ADC_IN_USE, ADC_RES);
-		    if (light_raw < 0){
-		    	printf("Photoresistor resolution error");
-		    	return 1;
-		    }
-		    else{
-		    	light_level += adc_util_map(light_raw, ADC_RES, 10, 100);
-		    }
-		    xtimer_msleep(samples_delay);
-		}
-		light_level = light_level/num_samples;
+	    int light_level;
+	    light_raw = adc_sample(ADC_IN_USE, ADC_RES);
+	    if (light_raw < 0){
+	    	printf("Photoresistor resolution error");
+	    	return 1;
+	    }
+		light_level = adc_util_map(light_raw, ADC_RES, 10, 100);
 		printf("Illuminance: %i lx\n", light_level);
 
-		// PUBLISH VIA MQTT SENSORS DATA
+		// PUBLISH VIA MQTT THE SENSORS DATA
 
 		char message[100];
         sprintf(message, "{\"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", light_level, projector_status, relay_stauts, motor_status);
