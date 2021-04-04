@@ -16,7 +16,7 @@ The logic used to control the actuators can be summarized with these two rules:
 
 The light condition is measured based on the electric resistance of a photocell (GL5528) placed in the room. Using the circuit below is possible to measure the photocell electrical resistance from an analog pin of the STM32 board.
 
-<img src="./photo_res.jpg" width="300"> <img src="./photo_circ.png" width="500">
+<img src="./src/photo_res.jpg" width="300"> <img src="./src/photo_circ.png" width="500">
 
 To be more tolerant to noise each measurement is computed as the average of 10 voltage readings made with a 0.5s delay. Each raw measurement measurement uses a 12 bit ADC, so the signal will be between 0 and 4095, this values are then mapped in a 10 to 100 lux scale. The ten analog measurements are repeated every 10s.
 
@@ -24,7 +24,7 @@ To be more tolerant to noise each measurement is computed as the average of 10 v
 
 The Hall sensor (A3144) is already mounted on a simple sensor module which provides a digital signal LOW when a magnetic field is detected, HIGH otherwise. With a 10K potentiometer on the board is possible to regulate the sensibility based on the type of magnet used so to trigger the sensor at the desired distance (around 2cm in this case).
 
-<img src="./hall_sensor.jpg" width="600">
+<img src="./src/hall_sensor.jpg" width="600">
 
 This sensor is used to detect if a magnet placed on the end of the projector screen is near the sensor placed on the wall. In this way when the screen is rolled up (and so the projector is switched off) the Hall sensor detects the magnetic field of the magnet, while it doesn't when the screen is unrolled. The digital value given by this sensor is sampled after the light measurement (every 10s).
 
@@ -33,7 +33,7 @@ This sensor is used to detect if a magnet placed on the end of the projector scr
 The network uses Mosquitto RSMB to communicate via ETHOS with the board, a Mosquitto broker with authentication to communicate with IoT Core. From IoT Core a lambda function is used to implement the collective intelligence and store the data in a DynamoDB table. A web page hosted on an S3 bucket is realizes a simple user interface. This page periodically calls an API gateway to get the data from the DynamoDB and send actuation command to the board.
 The overall network is represented in this scheme.
 
-<img src="./network.png" width="800">
+<img src="./src/network.png" width="800">
 
 ## Hands-on walkthrough
 
@@ -56,7 +56,7 @@ Don't forget to type also the sudo password that will be required after executin
 ### Connect the electronic components
 Connect the 2 sensors, the relay and the motor as shown below.
 
-<img src="./wiring.png" width="800">
+<img src="./src/wiring.png" width="800">
 
 ### Mosquitto and AWS setup
 Read the dedicated guides: [Mosquitto setup](./mosquitto/) and [AWS setup](./aws/).
