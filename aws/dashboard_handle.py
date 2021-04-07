@@ -56,6 +56,7 @@ def lambda_handler(event, context):
     }
     
     # Get most recent item
+    last_data = sorted(last_data, key=lambda k: k['num'], reverse=True)
     last = last_data[0]
     
     # Compute the aggregated values
