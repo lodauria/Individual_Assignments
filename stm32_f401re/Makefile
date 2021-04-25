@@ -1,6 +1,6 @@
 APPLICATION = Assignment_1
 BOARD ?= nucleo-f401re
-RIOTBASE ?= $(CURDIR)/../RIOT
+RIOTBASE ?= $(CURDIR)/../../RIOT
 
 # Default to using ethos for providing the uplink when not on native
 UPLINK ?= ethos

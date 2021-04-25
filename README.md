@@ -1,8 +1,8 @@
-# IoT course: First individual assignment
+# IoT course: Individual assignments
 
-## What is the problem and why do you need IoT?
+## Prototype description
 
-This is a prototype of an IoT system to be used in university's rooms. By using a photocell and an Hall sensor is possible to detect in which light condition and at what hours the projector is usually used or not. This can be done with a periodical sampling of the sensors state.
+Introducing a prototype of an IoT system to be used in university's rooms. By using a photocell and an Hall sensor is possible to detect in which light condition and at what hours the projector is usually used or not. This can be done with a periodical sampling of the sensors state.
 
 From this data a model can be derived and used to automatically control the room lights with a relay and the windows curtains with a DC motor so to automatically have the ideal light condition in each situation.
 
@@ -10,11 +10,11 @@ In this prototype to control the actuators is used a simple logic that can be su
 - If the projector is open **AND** there is too much light **AND** is lecture time **=>** (if lights are on **=>** switch lights off) **ELSE** (if lights are off **AND** curtains are open **=>** close the curtains)
 - If the projector is closed **AND** there is low light **AND** is lecture time **=>** (if curtains are closed **=>** open curtains) **ELSE** (if curtains are open **AND** lights are off **=>** switch on the lights).
 
-## What data are collected and by which sensors?
+## Sensors description
 
 ### Light sensor
 
-The light condition is measured based on the electric resistance of a photocell (GL5528) placed in the room. Using the circuit below is possible to measure the photocell electrical resistance from an analog pin of the STM32 board.
+The light condition is measured based on the electric resistance of a photocell (GL5528) placed in the room. Using the circuit below is possible to measure the photocell electrical resistance from an analog pin of an STM32 board.
 
 <img src="./src/photo_res.jpg" width="300"> <img src="./src/photo_circ.png" width="500">
 
@@ -28,42 +28,27 @@ The Hall sensor (A3144) is already mounted on a simple sensor module which provi
 
 This sensor is used to detect if a magnet placed on the end of the projector screen is near the sensor placed on the wall. In this way when the screen is rolled up (and so the projector is switched off) the Hall sensor detects the magnetic field of the magnet, while it doesn't when the screen is unrolled. The digital value given by this sensor is sampled after the light measurement (every 10s).
 
-## What are the connected components, the protocols to connect them and the overall IoT architecture?
+## System configuration
 
-The network uses Mosquitto RSMB to communicate via ETHOS with the board and a Mosquitto broker with authentication to communicate with IoT Core. In the AWS Cloud IoT Core calls a lambda function when new data are received. This function is used to implement the collective intelligence and to store the new data in a DynamoDB table. A web page hosted on an S3 bucket realizes a simple user interface. This page periodically calls an API gateway to get the data from the DynamoDB and, if requested, sends actuation command to the IoT Core MQTT broker. The overall network is represented in this scheme.
+### Devices setup
 
-<img src="./src/network.png" width="800">
+#### First assignment:
 
-## Hands-on walkthrough
+For the first assignment the interactions with the environment are mediated only by a single STM32-F401RE board connected to internet through a PC. For more informations about the network architecture and the devices setup visit the [dedicated folder](./stm32_f401re/).
 
-To use this system start by cloning this repository
+#### Second assignment
 
-    git clone https://github.com/lodauria/assignment1.git
-
-Then make sure to have downloaded [RIOTS-OS](https://github.com/RIOT-OS/RIOT), [Mosquitto RSMB](https://github.com/eclipse/mosquitto.rsmb), [Mosquitto broker]() and to have an active AWS account.
-
-### Makefile adjustments
-
-Make sure to modify `Makefile` with the correct path of the RIOT folder and the IPv6 prefix with the best option for your PC network configuration.
-
-### Compile and upload software
-
-In the project directory compile and upload the program on your Nucleo-fe401RE board with the following command
-
-    make flash term
-
-Don't forget to type also the sudo password that will be required after executing this command.
-
-### Connect the electronic components
-Connect the 2 sensors, the relay and the motor as shown below.
-
-<img src="./src/wiring.jpg" width="800">
+For the second assignment the interaction with the environment are carried out by 10 M3 nodes of the [FIT-IoT Lab](https://www.iot-lab.info/). The overall wireless sensor network is connected to the Internet through a border router. For more informations about the network architecture and the devices setup visit the [dedicated folder](./stm32_f103rey/).
 
 ### Mosquitto and AWS setup
 
 Read the dedicated indications to set up the other components:
 - [Mosquitto setup](./mosquitto/)
 - [AWS setup](./aws/)
+
+## Performance evaluation
+
+The performance evaluation of the wireless sensor network required in the second assignment can be found [here](./stm32_f103rey/performance.md).
 
 ## Prototype demo
 
