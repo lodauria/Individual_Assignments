@@ -1,4 +1,4 @@
-APPLICATION = Assignment_1
+APPLICATION = ind_assignment
 BOARD ?= nucleo-f401re
 RIOTBASE ?= $(CURDIR)/../../RIOT
 
