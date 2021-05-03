@@ -8,9 +8,7 @@
 #include "analog_util.h"
 #include "jsmn.h"
 
-#ifndef EMCUTE_ID
-#define EMCUTE_ID           ("nucleo-f401re")
-#endif
+#define NODE_ID 0
 #define EMCUTE_PRIO         (THREAD_PRIORITY_MAIN - 1)
 
 #define NUMOFSUBS           (1U)
@@ -39,7 +37,7 @@ int motor_status=2;   // 0: no action, 1: curatin closed, 2: curtain open
 static void *emcute_thread(void *arg)
 {
     (void)arg;
-    emcute_run(CONFIG_EMCUTE_DEFAULT_PORT, EMCUTE_ID);
+    emcute_run(CONFIG_EMCUTE_DEFAULT_PORT, "nucleo-f401re");
     return NULL;
 }
 
@@ -72,35 +70,38 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
 	jsmn_init(&parser);
 	int elem = jsmn_parse(&parser, in, len, tok, 10);
 
-	if (elem < 5) {
+	if (elem < 7) {
 		printf("Error reading json from topic \"%s\"\n", topic->name);
 	}
 	else{
 
-		// First value is relay command, the second is the motor command
-		char relay_str[2];
-		char motor_str[2];
-		sprintf(relay_str,"%.*s", tok[2].end - tok[2].start, in + tok[2].start);
-		sprintf(motor_str,"%.*s", tok[4].end - tok[4].start, in + tok[4].start);
+		char node_id[3];
+        sprintf(node_id,"%.*s", tok[2].end - tok[2].start, in + tok[2].start);
+        if (atoi(node_id) == NODE_ID){
 
-        printf("\nGot actuation commands:\nRelay status: %s\nMotor status: %s\n",relay_str,motor_str);
-        puts("");
+			// First value is relay command, the second is the motor command
+			char relay_str[2];
+			char motor_str[2];
+			sprintf(relay_str,"%.*s", tok[4].end - tok[4].start, in + tok[4].start);
+			sprintf(motor_str,"%.*s", tok[6].end - tok[6].start, in + tok[6].start);
 
-        // Apply actuation
-		relay_stauts = atoi(relay_str);
-        if (relay_stauts == 0){
-            gpio_clear(relay);
-        }
-        else{
-            gpio_set(relay);
-        }
-        if (atoi(motor_str) != 0){
-            motor_status = atoi(motor_str);
-            actuate_DC_motor(motorA, motorB, motor_status);
-        }
+	        printf("\nGot actuation commands:\nRelay status: %s\nMotor status: %s\n",relay_str,motor_str);
+	        puts("");
 
+	        // Apply actuation
+			relay_stauts = atoi(relay_str);
+	        if (relay_stauts == 0){
+	            gpio_clear(relay);
+	        }
+	        else{
+	            gpio_set(relay);
+	        }
+	        if (atoi(motor_str) != 0){
+	            motor_status = atoi(motor_str);
+	            actuate_DC_motor(motorA, motorB, motor_status);
+	        }
+	    }
 	}
-
 }
 
 // Setup the EMCUTE, open a connection to the MQTT-S broker and subscribe to default topic
@@ -220,8 +221,8 @@ int main(void)
 		// PUBLISH VIA MQTT THE SENSORS DATA
 
 		char message[100];
-        sprintf(message, "{\"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", light_level, projector_status, relay_stauts, motor_status);
-		emcute_topic_t t;
+        sprintf(message, "{\"id\":%i, \"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", NODE_ID, light_level, projector_status, relay_stauts, motor_status);
+        emcute_topic_t t;
 
 	    // Get topic id
 	    t.name = MQTT_TOPIC_S;

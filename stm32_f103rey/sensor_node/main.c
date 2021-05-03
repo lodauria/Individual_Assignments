@@ -1,53 +1,19 @@
-#include <errno.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-
-#include "thread.h"
-#include "xtimer.h"
-#include "shell.h"
-#include "shell_commands.h"
-
-#include "board.h"
-
-#include "net/gnrc/netapi.h"
-#include "net/gnrc/netif.h"
-
-#include "net/gnrc/pktbuf.h"
-#include "net/gnrc/pktdump.h"
-#include "net/gnrc/netreg.h"
-#include "net/loramac.h"
-
+#include <stdlib.h>
 #include "net/emcute.h"
-#include "periph/gpio.h"
-#include "periph/adc.h"
-#include "analog_util.h"
+#include "xtimer.h"
 #include "jsmn.h"
 
-#define LORAWAN_QUEUE_SIZE (4U)
-
-#ifndef EMCUTE_ID
-#define EMCUTE_ID           ("nucleo-f401re")
-#endif
 #define EMCUTE_PRIO         (THREAD_PRIORITY_MAIN - 1)
 
 #define NUMOFSUBS           (1U)
 #define TOPIC_MAXLEN        (64U)
 
-#define OPEN 1024
-#define ADC_IN_USE  ADC_LINE(0)			// pin A0
-#define ADC_RES		ADC_RES_12BIT
-
 static char stack[THREAD_STACKSIZE_DEFAULT];
 
 static emcute_sub_t subscriptions[NUMOFSUBS];
 static char topics[NUMOFSUBS][TOPIC_MAXLEN];
-
-// Pins initialization
-static gpio_t projectorSens = GPIO_PIN(PORT_A, 10); // pin D2
-static gpio_t motorA = GPIO_PIN(PORT_A, 8); 	// pin D7
-static gpio_t motorB = GPIO_PIN(PORT_A, 9); 	// pin D8
-static gpio_t relay = GPIO_PIN(PORT_B, 5); 		// pin D4
 
 // Actuators variables
 int relay_stauts=0;   // 0: lights off, 1: lights on
@@ -57,26 +23,11 @@ int motor_status=2;   // 0: no action, 1: curatin closed, 2: curtain open
 static void *emcute_thread(void *arg)
 {
     (void)arg;
-    emcute_run(CONFIG_EMCUTE_DEFAULT_PORT, EMCUTE_ID);
+    char id_emcute[12]; 
+    strcat(id_emcute, "m3-node-");
+    strcat(id_emcute, NODE_ID);
+    emcute_run(CONFIG_EMCUTE_DEFAULT_PORT, id_emcute);
     return NULL;
-}
-
-// Spin the motor for 3 seconds in one of the two directions
-static void actuate_DC_motor(int m1, int m2, int status)
-{
-	if (status >= 2){
-        gpio_clear(m1);
-        gpio_set(m2);
-	}
-	else{
-        if (status == 0) gpio_clear(m1);
-        else gpio_set(m1);
-        gpio_clear(m2);	
-	}
-
-	xtimer_msleep(3000);
-	gpio_clear(m1);
-	gpio_clear(m2);
 }
 
 // When a message is received
@@ -87,37 +38,36 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
     jsmn_parser parser;
     jsmntok_t tok[10];
 
-	jsmn_init(&parser);
-	int elem = jsmn_parse(&parser, in, len, tok, 10);
+    jsmn_init(&parser);
+    int elem = jsmn_parse(&parser, in, len, tok, 10);
 
-	if (elem < 5) {
-		printf("Error reading json from topic \"%s\"\n", topic->name);
-	}
-	else{
+    if (elem < 7) {
+        printf("Error reading json from topic \"%s\"\n", topic->name);
+    }
+    else{
 
-		// First value is relay command, the second is the motor command
-		char relay_str[2];
-		char motor_str[2];
-		sprintf(relay_str,"%.*s", tok[2].end - tok[2].start, in + tok[2].start);
-		sprintf(motor_str,"%.*s", tok[4].end - tok[4].start, in + tok[4].start);
+        char node_id[3];
+        sprintf(node_id,"%.*s", tok[2].end - tok[2].start, in + tok[2].start);
+        if (atoi(node_id) == atoi(NODE_ID)){
 
-        printf("\nGot actuation commands:\nRelay status: %s\nMotor status: %s\n",relay_str,motor_str);
-        puts("");
+            // First value is relay command, the second is the motor command
+            char relay_str[2];
+            char motor_str[2];
+            sprintf(relay_str,"%.*s", tok[4].end - tok[4].start, in + tok[4].start);
+            sprintf(motor_str,"%.*s", tok[6].end - tok[6].start, in + tok[6].start);
 
-        // Apply actuation
-		relay_stauts = atoi(relay_str);
-        if (relay_stauts == 0){
-            gpio_clear(relay);
+            printf("\nGot actuation commands:\nRelay status: %s\nMotor status: %s\n",relay_str,motor_str);
+            puts("");
+
+            // Store new actuators status
+            relay_stauts = atoi(relay_str);
+            
+            if (atoi(motor_str) != 0){
+                motor_status = atoi(motor_str);
+            }
         }
-        else{
-            gpio_set(relay);
-        }
-        if (atoi(motor_str) != 0){
-            motor_status = atoi(motor_str);
-            actuate_DC_motor(motorA, motorB, motor_status);
-        }
 
-	}
+    }
 
 }
 
@@ -167,41 +117,7 @@ int setup_mqtt(void)
 int main(void)
 {
 
-	// INITIALIZATION
-
-    // Initialize the Hall sensor digital pin
-	gpio_init(projectorSens, GPIO_IN);
-
-    if (!gpio_is_valid(projectorSens)){
-        printf("Failed to initialize projectr sensor\n");
-        return -1;
-    }
-    printf("Projector sensor ready\n");
-
-    // Initialize the analogic pin
-	if (adc_init(ADC_IN_USE) < 0) {
-	    printf("Failed to initialize photoresistor\n");
-	    return -1;
-	}
-	printf("Photoresistor ready\n");
-
-	// Initialize the relay digital pin
-    if (gpio_init(relay, GPIO_OUT)) {
-    	printf("Failed to initialize relay pin\n");
-        return -1;
-    }
-    printf("Relay pin ready\n");
-
-    // Initialize the DC motor digital pins
-    if (gpio_init(motorA, GPIO_OUT)) {
-    	printf("Failed to initialize motor pin\n");
-        return -1;
-    }
-    if (gpio_init(motorB, GPIO_OUT)) {
-    	printf("Failed to initialize motor pin\n");
-        return -1;
-    }
-    printf("Motor pin ready\n");
+    // INITIALIZATION
 
     // Setup MQTT-SN connection
     printf("Setting up MQTT-SN.\n");
@@ -211,55 +127,41 @@ int main(void)
 
     while(1){
 
-		// GET SENSORS READINGS
+        // GET SENSORS READINGS
 
-		// Projector
-		int projector_status;
-	    projector_status = gpio_read(projectorSens);
-	    if (projector_status > 0){
-	    	printf("Projector: OPEN, %i\n", projector_status);
-	    	projector_status = 1;
-	    }
-	    else{
-	    	printf("Projector: CLOSED\n");
-	    }
+        // Projector
+        int projector_status;
+        projector_status = 1;
 
-	    // Illuminance
-	    int light_raw;
-	    int light_level;
-	    light_raw = adc_sample(ADC_IN_USE, ADC_RES);
-	    if (light_raw < 0){
-	    	printf("Photoresistor resolution error");
-	    	return 1;
-	    }
-		light_level = adc_util_map(light_raw, ADC_RES, 10, 100);
-		printf("Illuminance: %i lx\n", light_level);
+        // Illuminance
+        int light_level;
+        light_level = 56;
 
-		// PUBLISH VIA MQTT THE SENSORS DATA
+        // PUBLISH VIA MQTT THE SENSORS DATA
 
-		char message[100];
-        sprintf(message, "{\"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", light_level, projector_status, relay_stauts, motor_status);
-		emcute_topic_t t;
+        char message[100];
+        sprintf(message, "{\"id\":%i, \"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", atoi(NODE_ID), light_level, projector_status, relay_stauts, motor_status);
+        emcute_topic_t t;
 
-	    // Get topic id
-	    t.name = MQTT_TOPIC_S;
-	    if (emcute_reg(&t) != EMCUTE_OK) {
-	        puts("Error: unable to obtain topic ID");
-	        return 1;
-	    }
+        // Get topic id
+        t.name = MQTT_TOPIC_S;
+        if (emcute_reg(&t) != EMCUTE_OK) {
+            puts("Error: unable to obtain topic ID");
+            return 1;
+        }
 
-	    // Publish data
-	    if (emcute_pub(&t, message, strlen(message), EMCUTE_QOS_0) != EMCUTE_OK) {
-	        printf("Error: unable to publish data to topic '%s [%i]'\n", t.name, (int)t.id);
-	        return 1;
-	    }
+        // Publish data
+        if (emcute_pub(&t, message, strlen(message), EMCUTE_QOS_0) != EMCUTE_OK) {
+            printf("Error: unable to publish data to topic '%s [%i]'\n", t.name, (int)t.id);
+            return 1;
+        }
 
-	    printf("Sensor readings published\n");
-	    puts("");
-	    
-		xtimer_sleep(10);
-	}
+        printf("Sensor readings published\n");
+        puts("");
+        
+        xtimer_sleep(10);
+    }
 
-	return 0;
+    return 0;
 
 }
