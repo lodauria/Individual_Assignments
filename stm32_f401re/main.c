@@ -14,7 +14,6 @@
 #define NUMOFSUBS           (1U)
 #define TOPIC_MAXLEN        (64U)
 
-#define OPEN 1024
 #define ADC_IN_USE  ADC_LINE(0)			// pin A0
 #define ADC_RES		ADC_RES_12BIT
 
@@ -221,7 +220,7 @@ int main(void)
 		// PUBLISH VIA MQTT THE SENSORS DATA
 
 		char message[100];
-        sprintf(message, "{\"id\":%i, \"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", NODE_ID, light_level, projector_status, relay_stauts, motor_status);
+        sprintf(message, "{\"id\":%d, \"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", NODE_ID, light_level, projector_status, relay_stauts, motor_status);
         emcute_topic_t t;
 
 	    // Get topic id

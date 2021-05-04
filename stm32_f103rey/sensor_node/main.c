@@ -23,9 +23,8 @@ int motor_status=2;   // 0: no action, 1: curatin closed, 2: curtain open
 static void *emcute_thread(void *arg)
 {
     (void)arg;
-    char id_emcute[12]; 
-    strcat(id_emcute, "m3-node-");
-    strcat(id_emcute, NODE_ID);
+    char id_emcute[12];
+    sprintf(id_emcute,"m3-node-%d",NODE_ID);
     emcute_run(CONFIG_EMCUTE_DEFAULT_PORT, id_emcute);
     return NULL;
 }
@@ -48,7 +47,7 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
 
         char node_id[3];
         sprintf(node_id,"%.*s", tok[2].end - tok[2].start, in + tok[2].start);
-        if (atoi(node_id) == atoi(NODE_ID)){
+        if (atoi(node_id) == NODE_ID){
 
             // First value is relay command, the second is the motor command
             char relay_str[2];
@@ -140,7 +139,7 @@ int main(void)
         // PUBLISH VIA MQTT THE SENSORS DATA
 
         char message[100];
-        sprintf(message, "{\"id\":%i, \"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", atoi(NODE_ID), light_level, projector_status, relay_stauts, motor_status);
+        sprintf(message, "{\"id\":%d, \"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", NODE_ID, light_level, projector_status, relay_stauts, motor_status);
         emcute_topic_t t;
 
         // Get topic id

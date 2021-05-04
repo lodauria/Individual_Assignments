@@ -21,11 +21,6 @@ FEATURES_REQUIRED = periph_adc
 
 USEPKG += jsmn
 
-# Allow for env-var-based override of the nodes name (EMCUTE_ID)
-ifneq (,$(EMCUTE_ID))
-  CFLAGS += -DEMCUTE_ID=\"$(EMCUTE_ID)\"
-endif
-
 # include UHCP client
 USE_DHCPV6 ?= 0
 

@@ -14,7 +14,7 @@ def test_time():
     return False
 
 # Save data as a new item in the DynamoDB
-def store_data(light, projector, relay, motor, dynamodb=None):
+def store_data(light, projector, relay, motor, d_id, dynamodb=None):
 
     # Initialize the DB and the table
     if not dynamodb:
@@ -28,7 +28,8 @@ def store_data(light, projector, relay, motor, dynamodb=None):
             'light_level': light,
             'projector_status': projector,
             'relay': relay,
-            'motor': motor
+            'motor': motor,
+            'id' : d_id
         }
     )
 
@@ -40,9 +41,10 @@ def lambda_handler(event, context):
     motor_var = event["motor"]
     l_level = event["light_level"]
     p_status = event["projector_status"]
+    dev_id = event["id"]
     
     # Add item to the DB
-    store_data (l_level, p_status, relay_var, motor_var)
+    store_data (l_level, p_status, relay_var, motor_var, dev_id)
     
     # IoT logic
     new_motor_var = 0
@@ -81,5 +83,5 @@ def lambda_handler(event, context):
       response = client.publish (
           topic='actuation',
           qos=1,
-          payload=json.dumps({"relay":relay_var, "motor":new_motor_var})
+          payload=json.dumps({"relay":relay_var, "motor":new_motor_var, "id":dev_id})
       )
