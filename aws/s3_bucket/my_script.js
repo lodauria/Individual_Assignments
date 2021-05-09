@@ -4,8 +4,6 @@ var dev_id = 0;
 
 function callAwsLambdaFunction(mess_type, mess_debug, device_id) {
 	
-	document.getElementById("device").innerHTML = "Device " + dev_id;
-	
 	// Send HTTP POST message to the API gateway using Ajax
     $.ajax({
 
@@ -64,20 +62,33 @@ function callAwsLambdaFunction(mess_type, mess_debug, device_id) {
 				document.getElementById("all_proj_hist").innerHTML = "Projector: " + myData.all_proj_hist;
 				document.getElementById("all_light_hist").innerHTML = "Lights: " + myData.all_light_hist;
 				
+				document.getElementById("device").innerHTML = "Device " + device_id;
+				
 				// In case it was executed, confirm actuation command execution
 				if (myData.act > 0){
 					confirm("Actuation done!");
 				}
 
 			} else{
-
-				// If parse was wrong probably is because there aren't recent data in the DynamoDB
-				var result = confirm("No data in the last hour. Activate demo mode?");
-
-				// Ask to switch to demo mode
-				if (result == true) {
-					debug_status = 1;
-					callAwsLambdaFunction(0,debug_status);
+				
+				if (debug_status == 0){
+					
+					var result = confirm("No data in the last hour for this device. Activate demo mode?");
+					
+					if (result == true) {
+						debug_status = 1;
+						callAwsLambdaFunction(0,debug_status,dev_id);
+					}
+				}
+				else{
+					
+					var result = confirm("No data in the last hour for this device. Demo mode already active. Do you want to set device ID to 0?");
+					
+					if (result == true) {
+						dev_id = 0;
+						document.getElementById('id_dev').value = dev_id;
+						callAwsLambdaFunction(0,debug_status,dev_id);
+					}
 				}
 			}
         },
@@ -100,8 +111,8 @@ function toggleMotor() {
 }
 
 function updateDev() {
-  dev_id = document.getElementById('id_dev').value;
-  callAwsLambdaFunction(0,debug_status,dev_id)
+	dev_id = document.getElementById('id_dev').value;
+	callAwsLambdaFunction(0,debug_status,dev_id)
 }
 
 // Call lambda function the first time to initialize the page

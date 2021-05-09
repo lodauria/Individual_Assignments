@@ -10,7 +10,7 @@ def get_last_data(table, d, d_id):
 
         # Get old data if in demo mode
         response = table.scan(
-        FilterExpression=Key('num').lt(1617264905) & Attr('id').eq(0)
+        FilterExpression=Key('num').lt(1617264905) & Attr('id').eq(d_id)
         )
     else:
 
@@ -119,14 +119,15 @@ def lambda_handler(event, context):
     for item in all_last_data:
         p_status = item['projector_status']
         l_status = item['light_level']
+        item_id = item['id']
         if p_status<all_proj_min: all_proj_min = p_status
         if p_status>all_proj_max: all_proj_max = p_status
         if l_status<all_light_min: all_light_min = l_status
         if l_status>all_light_max: all_light_max = l_status
         all_proj_avg += p_status
         all_light_avg += l_status
-        all_proj_hist.append('(Dev '+str(dev_id)+', '+str(p_status)+');')
-        all_light_hist.append('(Dev '+str(dev_id)+', '+str(l_status)+');')
+        all_proj_hist.append('(Dev '+str(item_id)+', '+str(p_status)+');')
+        all_light_hist.append('(Dev '+str(item_id)+', '+str(l_status)+');')
         
     all_proj_avg = all_proj_avg/len(all_last_data)
     all_light_avg = all_light_avg/len(all_last_data)
