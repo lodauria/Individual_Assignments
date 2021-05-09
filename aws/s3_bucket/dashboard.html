@@ -15,7 +15,7 @@
 
 		</script>
 		<meta charset="utf-8">
-		<title>Assignment 1 - Dashboard</title>
+		<title>Individual assignment - Dashboard</title>
 	</head>
   
 	<body>
@@ -25,16 +25,17 @@
 		<p>Light: illuminance of the room expressed in lux</p>
 		
 		<form>
-		  <label>Device:</label><br>
+		  <label>Select device ID:</label><br>
 		  <input type="number" id="id_dev" value=0><br>
 		  <input type="button" value="Update" onclick="updateDev()">
 		</form> 
-
-		<h2>Latest values received:</h2>
+		
+		<h2 id = "device">Device 0</h2>
+		<h3>Latest values received:</h3>
 		<p id = "proj_last">Projector: </p>
 		<p id = "light_last">Light: </p>
-
-		<h2>Aggregated values:</h2>
+		
+		<h3>Aggregated values:</h3>
 		<p id = "proj_avg">Projector avarage value: </p>
 		<p id = "light_avg">Light avarage value: </p>
 
@@ -44,10 +45,26 @@
 		<p id = "proj_min">Projector min value: </p>
 		<p id = "light_min">Light min value: </p>
 
-		<h2>History of latest values received:</h2>
+		<h3>History of latest values received:</h3>
 		<p>From latest to oldest</p>
 		<p id = "proj_hist">Projector: </p>
 		<p id = "light_hist">Light: </p>
+		
+		<h2>All devices</h2>
+		<h3>Aggregated values:</h3>
+		<p id = "all_proj_avg">Projector avarage value: </p>
+		<p id = "all_light_avg">Light avarage value: </p>
+
+		<p id = "all_proj_max">Projector max value: </p>
+		<p id = "all_light_max">Light max value: </p>
+
+		<p id = "all_proj_min">Projector min value: </p>
+		<p id = "all_light_min">Light min value: </p>
+
+		<h3>History of latest values received:</h3>
+		<p>From latest to oldest</p>
+		<p id = "all_proj_hist">Projector: </p>
+		<p id = "all_light_hist">Light: </p>
 
 		<button onclick="toggleRelay()"> Toggle relay</button>
 		<button onclick="toggleMotor()"> Toggle motor</button>

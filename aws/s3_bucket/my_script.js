@@ -3,7 +3,9 @@ var debug_status = 0;
 var dev_id = 0;
 
 function callAwsLambdaFunction(mess_type, mess_debug, device_id) {
-
+	
+	document.getElementById("device").innerHTML = "Device " + dev_id;
+	
 	// Send HTTP POST message to the API gateway using Ajax
     $.ajax({
 
@@ -49,7 +51,19 @@ function callAwsLambdaFunction(mess_type, mess_debug, device_id) {
 
 				document.getElementById("proj_hist").innerHTML = "Projector: " + myData.proj_hist;
 				document.getElementById("light_hist").innerHTML = "Lights: " + myData.light_hist;
+				
+				document.getElementById("all_proj_avg").innerHTML = "Projector avarage value: " + myData.all_proj_avg;
+				document.getElementById("all_light_avg").innerHTML = "Light avarage value: " + myData.all_light_avg;
 
+				document.getElementById("all_proj_max").innerHTML = "Projector max value: " + myData.all_proj_max;
+				document.getElementById("all_light_max").innerHTML = "Light max value: " + myData.all_light_max;
+
+				document.getElementById("all_proj_min").innerHTML = "Projector min value: " + myData.all_proj_min;
+				document.getElementById("all_light_min").innerHTML = "Light min value: " + myData.all_light_min;
+
+				document.getElementById("all_proj_hist").innerHTML = "Projector: " + myData.all_proj_hist;
+				document.getElementById("all_light_hist").innerHTML = "Lights: " + myData.all_light_hist;
+				
 				// In case it was executed, confirm actuation command execution
 				if (myData.act > 0){
 					confirm("Actuation done!");
