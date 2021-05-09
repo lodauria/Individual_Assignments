@@ -1,23 +1,22 @@
 import json
 import boto3
-from boto3.dynamodb.conditions import Key
+from boto3.dynamodb.conditions import Key, Attr
 from datetime import datetime
 
 # Get data from the DB table
-def get_last_data(table, d):
+def get_last_data(table, d, d_id):
     
     if d:
 
         # Get old data if in demo mode
         response = table.scan(
-        FilterExpression=Key('num').gte(1617264845),
-        Limit=15
+        FilterExpression=Key('num').lt(1617264905) & Attr('id').eq(0)
         )
     else:
 
         # Get data of the last hour
         response = table.scan(
-        FilterExpression=Key('num').gte(int(datetime.utcnow().timestamp()-3600))
+        FilterExpression=Key('num').gte(int(datetime.utcnow().timestamp()-3600)) & Attr('id').eq(d_id)
         )
 
     return response['Items']
@@ -29,9 +28,13 @@ def lambda_handler(event, context):
     head = event.get('headers')
     messType = head.get('mess-type')
     debug = head.get('mess-debug')
+    dev_id = head.get('dev-id')
+    print(messType)
+    print(debug)
+    print(dev_id)
 
     # Check for errors in the message
-    if messType is None or debug is None:
+    if messType is None or debug is None or dev_id is None:
         return {
             'statusCode': 200,
             'headers': {
@@ -43,7 +46,7 @@ def lambda_handler(event, context):
     # Initialize DynamoDB resource and get data
     dynamodb = boto3.resource('dynamodb', endpoint_url="http://dynamodb.us-east-1.amazonaws.com:80", region_name='us-east-1')
     table = dynamodb.Table('sensing_report')
-    last_data = get_last_data(table, debug == "1")
+    last_data = get_last_data(table, debug == "1", int(dev_id))
 
     # Check if no items have been found
     if len(last_data)==0:

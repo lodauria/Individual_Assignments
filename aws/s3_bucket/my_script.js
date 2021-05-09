@@ -1,7 +1,8 @@
 // Global variable used for demo mode
 var debug_status = 0;
+var dev_id = 0;
 
-function callAwsLambdaFunction(mess_type, mess_debug) {
+function callAwsLambdaFunction(mess_type, mess_debug, device_id) {
 
 	// Send HTTP POST message to the API gateway using Ajax
     $.ajax({
@@ -20,7 +21,8 @@ function callAwsLambdaFunction(mess_type, mess_debug) {
 	        "Access-Control-Allow-Headers": "*",
 	        "Access-Control-Allow-Origin": "*",
 			"mess-type": mess_type,
-			"mess-debug": mess_debug
+			"mess-debug": mess_debug,
+			"dev-id": device_id
     	},
 
         // If response is received correctly 
@@ -68,20 +70,25 @@ function callAwsLambdaFunction(mess_type, mess_debug) {
 
         // In case of error report failure
         error: function(data) {
-		   	console.log("Error receiving data")
+		   	console.log("Error receiving data");
         }
     });
 }
 
 // Call lambda function with specific parameters
 function toggleRelay() {
-	callAwsLambdaFunction(1,debug_status)
+	callAwsLambdaFunction(1,debug_status,dev_id)
 }
 
 // Call lambda function with specific parameters
 function toggleMotor() {
-	callAwsLambdaFunction(2,debug_status)
+	callAwsLambdaFunction(2,debug_status,dev_id)
+}
+
+function updateDev() {
+  dev_id = document.getElementById('id_dev').value;
+  callAwsLambdaFunction(0,debug_status,dev_id)
 }
 
 // Call lambda function the first time to initialize the page
-window.onload = callAwsLambdaFunction(0,0);
+window.onload = callAwsLambdaFunction(0,0,0);

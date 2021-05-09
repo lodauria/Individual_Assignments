@@ -8,7 +8,7 @@
 			// Periodically call the dashboard_handle lambda function 
 			function timer() {
 				console.log("Requesting new data...");
-				callAwsLambdaFunction(0,debug_status);
+				callAwsLambdaFunction(0,debug_status,dev_id);
 			}
 
 			window.setInterval(timer, 11000);
@@ -23,6 +23,12 @@
 		<h2>Legend:</h2>
 		<p>Projector: 1 = OPEN, 2 = CLOSED</p>
 		<p>Light: illuminance of the room expressed in lux</p>
+		
+		<form>
+		  <label>Device:</label><br>
+		  <input type="number" id="id_dev" value=0><br>
+		  <input type="button" value="Update" onclick="updateDev()">
+		</form> 
 
 		<h2>Latest values received:</h2>
 		<p id = "proj_last">Projector: </p>
