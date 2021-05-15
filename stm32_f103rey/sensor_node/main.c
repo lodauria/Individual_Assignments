@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "random.h"
 #include "net/emcute.h"
 #include "xtimer.h"
 #include "jsmn.h"
@@ -118,6 +119,8 @@ int main(void)
 
     // INITIALIZATION
 
+    random_init(19323+(NODE_ID*6));
+
     // Setup MQTT-SN connection
     printf("Setting up MQTT-SN.\n");
     setup_mqtt();
@@ -130,11 +133,11 @@ int main(void)
 
         // Projector
         int projector_status;
-        projector_status = 1;
+        projector_status = random_uint32_range(0,1);
 
         // Illuminance
         int light_level;
-        light_level = 56;
+        light_level = random_uint32_range(10,100);
 
         // PUBLISH VIA MQTT THE SENSORS DATA
 

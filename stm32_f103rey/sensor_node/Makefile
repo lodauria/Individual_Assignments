@@ -24,7 +24,7 @@ QUIET ?= 1
 DEFAULT_CHANNEL ?= 13
 
 # The Broker address, port and the MQTT topics that will be used
-SERVER_ADDR = 2001:660:5307:30ff::5
+SERVER_ADDR = 2001:660:3207:400::64
 SERVER_PORT = 1885
 MQTT_TOPIC_S = sensing
 MQTT_TOPIC_A = actuation

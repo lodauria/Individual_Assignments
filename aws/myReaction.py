@@ -83,5 +83,5 @@ def lambda_handler(event, context):
       response = client.publish (
           topic='actuation',
           qos=1,
-          payload=json.dumps({"relay":relay_var, "motor":new_motor_var, "id":dev_id})
+          payload=json.dumps({"id":dev_id, "relay":relay_var, "motor":new_motor_var})
       )

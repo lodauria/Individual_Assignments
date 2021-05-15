@@ -15,3 +15,8 @@ Add `bridge.conf` to your local Mosquitto broker:
 Update the `bridge.conf` informations with the path of your AWS certificates and your AWS IoTCore ATS endpoint url. Then restart the borker with this command:
 
     sudo service mosquitto restart
+
+
+Connect via SSH to FIT-IoT Lab and copy all the file needed by the Mosquitto brokers in the `~/A8` folder:
+
+    scp <file_name> <user>@saclay.iot-lab.info:~/A8

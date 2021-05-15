@@ -38,7 +38,7 @@ For the first assignment the interactions with the environment are mediated only
 
 #### Second assignment
 
-For the second assignment the interaction with the environment are carried out by 10 M3 nodes of the [FIT-IoT Lab](https://www.iot-lab.info/). The overall wireless sensor network is connected to the Internet through a border router. For more informations about the network architecture and the devices setup visit the [dedicated folder](./stm32_f103rey/).
+For the second assignment the interaction with the environment are carried out by multiple M3 nodes of the [FIT-IoT Lab](https://www.iot-lab.info/). The overall wireless sensor network is connected to the Internet through an A8-M3 node. For more informations about the network architecture and the devices setup visit the [dedicated folder](./stm32_f103rey/).
 
 ### Mosquitto and AWS setup
 
@@ -48,7 +48,7 @@ Read the dedicated indications to set up the other components:
 
 ## Performance evaluation
 
-The performance evaluation of the wireless sensor network required in the second assignment can be found [here](./stm32_f103rey/performance.md).
+The performance evaluation of the wireless sensor network required in the second assignment can be found [here](./stm32_f103rey/Evaluation.md).
 
 ## Prototype demo
 
