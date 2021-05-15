@@ -118,8 +118,9 @@ int main(void)
 {
 
     // INITIALIZATION
-
-    random_init(19323+(NODE_ID*6));
+	
+	// Set the random seed
+    random_init(12345+(NODE_ID*6));
 
     // Setup MQTT-SN connection
     printf("Setting up MQTT-SN.\n");
@@ -133,7 +134,7 @@ int main(void)
 
         // Projector
         int projector_status;
-        projector_status = random_uint32_range(0,1);
+        projector_status = random_uint32_range(0,2);
 
         // Illuminance
         int light_level;
