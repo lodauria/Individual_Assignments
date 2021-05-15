@@ -8,7 +8,7 @@ Create a python lambda function called `dashboard_handle` using a role with full
 
 ## IoT Core
 
-In IoT Core create a thing called `mydevice`, generate and download the necessary certificates (they will be used in the Mosquitto borker setup).
+In IoT Core create a thing called `mydevice`, generate and download the necessary certificates (they will be used in the Mosquitto broker setup).
 Create a rule connected to `mydevice` that calls the lambda function `myReaction` when a message with topic `sensing` is received.
 
 ## DynamoDB
@@ -17,4 +17,4 @@ Create a DynamoDB table called `sensing_report` with primary key name `num` and 
 
 ## S3 bucket
 
-Create a S3 bucket with public files allowed. Upload the file contained in the folder `s3_bucket` and make them public. Open in your browser the url associated to `dashboard.html` file to access the web interface.
+Create a S3 bucket with public files allowed. Upload the file contained in the folder `s3_bucket` and make them public. Open in your browser the URL associated to `dashboard.html` file to access the web interface.

@@ -2,7 +2,7 @@
 
 ## Mosquitto RSMB
 
-The RSMB is used to communicate with the RIOT sensor nodes. For more details about the installation of the Mosquitto RSMB refer to the official [Mosquitto repository](https://github.com/eclipse/mosquitto.rsmb). Below is reported a short guide on ho how to setup and start the broker on your local PC or on FIT-IoT Lab.
+The RSMB is used to communicate with the RIOT sensor nodes. For more details about the installation of the Mosquitto RSMB refer to the official [Mosquitto repository](https://github.com/eclipse/mosquitto.rsmb). Below is reported a short guide on ho how to setup and start the broker on your local PC or on FIT IoT-Lab.
 
 ### Start broker on local PC (1st assignment)
 
@@ -18,7 +18,7 @@ Keep the terminal open while using the broker.
 
 ### Start broker on A8-M3 node (2nd assignment)
 
-Connect via SSH to FIT-IoT Lab and copy the `config.conf` file needed by the RSMB in the `~/A8` folder:
+Connect via SSH to FIT IoT-Lab and copy the `config.conf` file needed by the RSMB in the `~/A8` folder:
 
     scp config.conf <user>@saclay.iot-lab.info:~/A8
 
@@ -44,7 +44,7 @@ Update the `bridge.conf` information with the paths of your AWS certificates and
 
 ### Start broker on A8-M3 node (2nd assignment)
 
-Connect via SSH to FIT-IoT Lab and copy all the file needed by the Mosquitto broker in the `~/A8` folder:
+Connect via SSH to FIT IoT-Lab and copy all the file needed by the Mosquitto broker in the `~/A8` folder:
 
     scp <file_name> <user>@saclay.iot-lab.info:~/A8
 
