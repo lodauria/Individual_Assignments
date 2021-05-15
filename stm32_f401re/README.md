@@ -8,12 +8,6 @@ In the configuration developed for the first assignment the network uses Mosquit
 
 ## Hands-on walkthrough
 
-To setup the system start by cloning this repository
-
-    git clone https://github.com/lodauria/Individual_Assignments
-
-Then make sure to have downloaded [RIOTS-OS](https://github.com/RIOT-OS/RIOT), [Mosquitto RSMB](https://github.com/eclipse/mosquitto.rsmb), [Mosquitto broker]() and to have an active AWS account.
-
 ### Makefile adjustments
 
 Make sure to modify `Makefile` with the correct path of the RIOT folder and the IPv6 prefix with the best option for your PC network configuration.
