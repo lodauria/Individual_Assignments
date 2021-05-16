@@ -18,7 +18,7 @@ endif
 # Set the SSID and password of your WiFi network here
 WIFI_SSID ?= "Your_WiFi_name"
 WIFI_PASS ?= "Your_secure_password"
-DEFAULT_CHANNEL ?= 13
+DEFAULT_CHANNEL ?= 15
 ETHOS_BAUDRATE ?= 500000
 
 # Include packages that pull up and auto-init the link layer.
