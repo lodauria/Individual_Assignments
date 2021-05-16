@@ -52,4 +52,4 @@ Upload each compiled program to the M3 nodes of the experiment that have to be u
 
 ### Setup STM32 Nucleo board (optional)
 
-If you want to use a local STM32 Nucleo board as an additional sensor node check the code and the instructions contained in the [dedicated folder](./../stm32_f401re), the only change that has to be done is the `SERVER_ADDR` in the `Makefile` that has to be changed with the A8-M3 global address.
+If you want to use a local STM32 Nucleo board as an additional sensor node check the code and the instructions contained in the [dedicated folder](./../stm32_f401re), the only change that has to be done is in the configuration of the local RSMB to which the board is connected. In particular inside the file `config.conf` the address of the outgoing bridge has to be substituted with the A8-M3 global address.

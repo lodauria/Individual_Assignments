@@ -34,7 +34,7 @@ To setup the system start by cloning this repository
 
     git clone https://github.com/lodauria/Individual_Assignments
 
-Then make sure to have downloaded [RIOTS-OS](https://github.com/RIOT-OS/RIOT), [Mosquitto RSMB](https://github.com/eclipse/mosquitto.rsmb), [Mosquitto broker]() and to have an active [AWS](https://www.awseducate.com/signin/SiteLogin?ec=302&startURL=%2Fstudent%2Fs%2F) and [FIT IOT-Lab](https://www.iot-lab.info/testbed/login?next=%2Fdashboard) account.
+Then make sure to have installed [RIOTS-OS](https://github.com/RIOT-OS/RIOT), [Mosquitto RSMB](https://github.com/eclipse/mosquitto.rsmb), [Mosquitto broker]() and to have an active [AWS](https://www.awseducate.com/signin/SiteLogin?ec=302&startURL=%2Fstudent%2Fs%2F) and [FIT IOT-Lab](https://www.iot-lab.info/testbed/login?next=%2Fdashboard) account.
 
 ### Devices setup
 
