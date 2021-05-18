@@ -2,7 +2,7 @@
 
 ## Network architecture
 
-In the configuration developed for the second assignment the network is composed of multiple M3 nodes of the FIT IoT-Lab. One of the nodes is used as border router to provide connection to Internet to the hole network. The additional A8-M3 node is used to run the Mosquitto RSMB broker connected with the nodes and the bridged Mosquitto broker connected to IoT Core with the proper certificates. The local STM32 Nucleo board with the code developed for the first assignment can be used as additional sensor node by connecting it to the global IPv6 address of the A8-M3 node. The overall architecture is shown in the picture below.
+In the configuration developed for the second assignment the network is composed of multiple M3 nodes of the FIT IoT-Lab. One of the nodes is used as border router to provide connection to Internet to the hole network. The additional A8-M3 node is used to run the Mosquitto RSMB broker connected with the nodes and the bridged Mosquitto broker connected to IoT Core with the proper certificates. The IoT Core components are the same used in the [first assignment](./../stm32_f401re), for more info check the [dedicated folder](./../aws). The local STM32 Nucleo board, with the code developed for the first assignment, can be used as additional sensor node by bridging the RSMB running on the PC with the Mosquitto broker of the A8-M3 node, which is reachable using its global IPv6 address. The overall architecture is shown in the picture below.
 
 <img src=./../src/network2.png width="800">
 
