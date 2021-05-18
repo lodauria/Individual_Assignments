@@ -12,7 +12,7 @@ The power consumption of the border router is reported in the following plot:
 
 <img src="./../src/Figure_1.png" width="800">
 
-It can be noticed that there are a lot of peaks based on the wireless network activity and interferances. This plot was obtained while using 5 sensor nodes, but the power consuption increases with the number of nodes.
+It can be noticed that there are a lot of peaks based on the wireless network activity and interference. This plot was obtained while using 5 sensor nodes, but the power consumption increases with the number of nodes.
 
 ### Sensor node
 
@@ -26,7 +26,7 @@ While this is the power consumption of a node farther from the border router (ar
 
 ## Network evaluation
 
-The 6LoWPAN network present on the M3 nodes uses a 2.4GHz frequency with a maximum throughput of 256kbit/s and a maximum range of around 40m indoor. The RSSI measured with the `ping` command was around -50dBm maybe due to the interferance with other experiments, anyway was good enough to receive the 90% of the sensor nodes packets, but this depends also on the collisions between the messages of each sensor node. A good syncronization between the sensor nodes could produce even better results.
+The 6LoWPAN network present on the M3 nodes uses a 2.4GHz frequency with a maximum throughput of 256kbit/s and a maximum range of around 40m indoor. The RSSI measured with the `ping` command was around -50dBm maybe due to the interference with other experiments, anyway was good enough to receive the 90% of the sensor nodes packets, but this depends also on the collisions between the messages of each sensor node. A good synchronization between the sensor nodes could produce even better results.
 
 The latency from the sensor nodes to the border router is around 65ms, while the latency from a sensor node to the AWS cloud is around 0.4s.
 
