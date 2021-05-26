@@ -33,22 +33,14 @@ DEVELHELP ?= 1
 # Change this to 0 show compiler invocation lines by default:
 QUIET ?= 1
 
-# The Broker address, port and the MQTT topics that will be used
-SERVER_ADDR = 2001:660:3207:400::64
-SERVER_PORT = 1885
-MQTT_TOPIC_S = sensing
-MQTT_TOPIC_A = actuation
-NODE_ID = 1
+# Sensor node ID
+NODE_ID = 90
 
 # The things network device configuration
 DEVEUI ?= 3223322332233223
 APPEUI ?= 5775577557755775
 APPKEY ?= DD39F1B3794F08A3F0421321F2BF1222
 
-CFLAGS += -DSERVER_ADDR='"$(SERVER_ADDR)"'
-CFLAGS += -DSERVER_PORT=$(SERVER_PORT)
-CFLAGS += -DMQTT_TOPIC_S='"$(MQTT_TOPIC_S)"'
-CFLAGS += -DMQTT_TOPIC_A='"$(MQTT_TOPIC_A)"'
 CFLAGS += -DNODE_ID=$(NODE_ID)
 
 # Default IotLab Config to run the test

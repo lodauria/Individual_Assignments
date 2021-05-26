@@ -119,13 +119,13 @@ int setup_loramac(void)
      * generated device address and to get the network and application session
      * keys.
      */
-    printf("Starting join procedure");
+    printf("Starting join procedure\n");
     if (semtech_loramac_join(&loramac, LORAMAC_JOIN_OTAA) != SEMTECH_LORAMAC_JOIN_SUCCEEDED) {
-        printf("Join procedure failed");
+        printf("Join procedure failed\n");
         return 1;
     }
     
-    printf("Join procedure succeeded");
+    printf("Join procedure succeeded\n");
     return 0;    
 }
 
@@ -135,8 +135,10 @@ int main(void)
     // INITIALIZATION
 
     // Setup LoRa connection
-    printf("Setting LoRa.\n");
-    setup_loramac();
+    printf("Setting LoRa\n");
+    if (setup_loramac() != 0) {
+        return 1;
+    }
 
     // SENSING LOOP
 
@@ -156,12 +158,8 @@ int main(void)
 
         char message[100];
         sprintf(message, "{\"id\":%d, \"light_level\":%i, \"projector_status\":%i,\"relay\":%i,\"motor\":%i}", NODE_ID, light_level, projector_status, relay_stauts, motor_status);
-
-        printf("Sending: %s\n", message);
-        /* Try to send the message */
-        uint8_t ret = semtech_loramac_send(&loramac,
-                                           (uint8_t *)message, strlen(message));
-        if (ret != SEMTECH_LORAMAC_TX_DONE)  {
+        uint8_t ret = semtech_loramac_send(&loramac, (uint8_t *)message, strlen(message));
+        if (ret != SEMTECH_LORAMAC_TX_DONE){
             printf("Cannot send message '%s', ret code: %d\n", message, ret);
         }
         else{
@@ -172,5 +170,5 @@ int main(void)
     }
 
     return 0;
-
+    
 }
