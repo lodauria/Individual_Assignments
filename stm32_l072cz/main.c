@@ -2,25 +2,16 @@
 #include <string.h>
 #include <stdlib.h>
 #include "random.h"
-#include "net/emcute.h"
 #include "xtimer.h"
 #include "jsmn.h"
-
-
-#include "msg.h"
 #include "thread.h"
 #include "fmt.h"
-
-#include "periph/rtc.h"
-
 #include "net/loramac.h"
 #include "semtech_loramac.h"
 
-/*
-#define SENDER_PRIO         (THREAD_PRIORITY_MAIN - 1)
-static kernel_pid_t sender_pid;
-static char sender_stack[THREAD_STACKSIZE_MAIN / 2];
-*/
+#define RECV_MSG_QUEUE                   (4U)
+static msg_t _recv_queue[RECV_MSG_QUEUE];
+static char _recv_stack[THREAD_STACKSIZE_DEFAULT];
 
 semtech_loramac_t loramac;
 
@@ -28,36 +19,12 @@ static uint8_t deveui[LORAMAC_DEVEUI_LEN];
 static uint8_t appeui[LORAMAC_APPEUI_LEN];
 static uint8_t appkey[LORAMAC_APPKEY_LEN];
 
-/*
-#define EMCUTE_PRIO         (THREAD_PRIORITY_MAIN - 1)
-
-#define NUMOFSUBS           (1U)
-#define TOPIC_MAXLEN        (64U)
-
-static char stack[THREAD_STACKSIZE_DEFAULT];
-
-static emcute_sub_t subscriptions[NUMOFSUBS];
-static char topics[NUMOFSUBS][TOPIC_MAXLEN];
-*/
-
 // Actuators variables
 int relay_stauts=0;   // 0: lights off, 1: lights on
-int motor_status=2;   // 0: no action, 1: curatin closed, 2: curtain open
-/*
-// Emcute thread
-static void *emcute_thread(void *arg)
-{
-    (void)arg;
-    char id_emcute[12];
-    sprintf(id_emcute,"m3-node-%d",NODE_ID);
-    emcute_run(CONFIG_EMCUTE_DEFAULT_PORT, id_emcute);
-    return NULL;
-}
-*/
+int motor_status=2;   // 0: no action, 1: curtain closed, 2: curtain open
 
-/*
 // When a message is received
-static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
+static void handle_mess(void *data, int len)
 {
     // Interpret the JSON message 
     char *in = (char *)data;
@@ -68,15 +35,16 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
     int elem = jsmn_parse(&parser, in, len, tok, 10);
 
     if (elem < 7) {
-        printf("Error reading json from topic \"%s\"\n", topic->name);
+        printf("Error reading json message\n");
     }
     else{
 
+        // Get the node ID from the message 
         char node_id[3];
         sprintf(node_id,"%.*s", tok[2].end - tok[2].start, in + tok[2].start);
         if (atoi(node_id) == NODE_ID){
 
-            // First value is relay command, the second is the motor command
+            // Second value is relay command, the third is the motor command
             char relay_str[2];
             char motor_str[2];
             sprintf(relay_str,"%.*s", tok[4].end - tok[4].start, in + tok[4].start);
@@ -92,33 +60,47 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
                 motor_status = atoi(motor_str);
             }
         }
-
     }
 
 }
-*/
-// Setup the EMCUTE, open a connection to the MQTT-S broker and subscribe to default topic
 
-int setup_loramac(void)
-{
-    /* Convert identifiers and application key */
+// Thread for receiving LoRa messages
+static void *_recv(void *arg){
+
+    msg_init_queue(_recv_queue, RECV_MSG_QUEUE);
+    (void)arg;
+    while (1) {
+
+        // Blocks until some data is received
+        semtech_loramac_recv(&loramac);
+        loramac.rx_data.payload[loramac.rx_data.payload_len] = 0;
+        if (loramac.rx_data.port == 10){
+            handle_mess(loramac.rx_data.payload, loramac.rx_data.payload_len);
+        }
+    }
+
+    return NULL;
+
+}
+
+// Setup LoRa connection and the OTAA procedure
+int setup_loramac(void){
+
+    // Convert identifiers and application key
     fmt_hex_bytes(deveui, CONFIG_LORAMAC_DEV_EUI_DEFAULT);
     fmt_hex_bytes(appeui, CONFIG_LORAMAC_APP_EUI_DEFAULT);
     fmt_hex_bytes(appkey, CONFIG_LORAMAC_APP_KEY_DEFAULT);
 
-    /* Initialize the loramac stack */
+    // Initialize the loramac stack
     semtech_loramac_init(&loramac);
     semtech_loramac_set_deveui(&loramac, deveui);
     semtech_loramac_set_appeui(&loramac, appeui);
     semtech_loramac_set_appkey(&loramac, appkey);
 
-    /* Use a fast datarate, e.g. BW125/SF7 in EU868 */
+    // Use a fast datarate, e.g. BW125/SF7 in EU868
     semtech_loramac_set_dr(&loramac, LORAMAC_DR_5);
 
-    /* Start the Over-The-Air Activation (OTAA) procedure to retrieve the
-     * generated device address and to get the network and application session
-     * keys.
-     */
+    // Start the Over-The-Air Activation (OTAA) procedure
     printf("Starting join procedure\n");
     if (semtech_loramac_join(&loramac, LORAMAC_JOIN_OTAA) != SEMTECH_LORAMAC_JOIN_SUCCEEDED) {
         printf("Join procedure failed\n");
@@ -139,6 +121,9 @@ int main(void)
     if (setup_loramac() != 0) {
         return 1;
     }
+
+    // Start thread for message received
+    thread_create(_recv_stack, sizeof(_recv_stack), THREAD_PRIORITY_MAIN - 1, 0, _recv, NULL, "recv thread");
 
     // SENSING LOOP
 

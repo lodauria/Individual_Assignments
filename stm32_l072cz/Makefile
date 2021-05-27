@@ -8,20 +8,14 @@ DRIVER ?= sx1276
 # Default region is Europe and default band is 868MHz
 LORA_REGION ?= EU868
 
-# Include the Semtech-loramac package
+# Include the Semtech-loramac packages
 USEPKG += semtech-loramac
+USEMODULE += semtech_loramac_rx
 
 # Modules and packages
 USEMODULE += xtimer
-USEMODULE += gnrc_netdev_default
-USEMODULE += auto_init_gnrc_netif
-USEMODULE += gnrc_ipv6_default
-USEMODULE += emcute
-USEMODULE += gnrc_netif_single
-USEMODULE += gnrc_uhcpc
 USEMODULE += $(DRIVER)
 USEMODULE += fmt
-FEATURES_REQUIRED += periph_rtc
 
 USEPKG += jsmn
 
