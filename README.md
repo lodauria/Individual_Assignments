@@ -1,61 +1,43 @@
 # IoT course: Individual assignments
 
-## Prototype description
+## System description
 
-Introducing a prototype of an IoT system to be used in university's rooms. By using a photocell and an Hall sensor is possible to detect in which light condition and at what hours the projector is usually used or not. This can be done with a periodical sampling of the sensors state.
+The IoT system chosen for the individual assignments is based on the idea of making university rooms smarter. By monitoring the light condition and time at which the rooms projectors are used is possible to automatically adjust the curtains and the lights so to reduce energy waste and provide students the best possible rooms conditions.
 
-From this data a model can be derived and used to automatically control the room lights with a relay and the windows curtains with a DC motor so to automatically have the ideal light condition in each situation.
+## Individual assignments
 
-In this prototype to control the actuators is used a simple logic that can be summarized with these two rules:
-- If the projector is open **AND** there is too much light **AND** is lecture time **=>** (if lights are on **=>** switch lights off) **ELSE** (if lights are off **AND** curtains are open **=>** close the curtains)
-- If the projector is closed **AND** there is low light **AND** is lecture time **=>** (if curtains are closed **=>** open curtains) **ELSE** (if curtains are open **AND** lights are off **=>** switch on the lights).
+The different aspects of this system have been analyzed during the course by following the three individual assignments guidelines.
 
-## Sensors description
+### First assignment
 
-### Light sensor
+For the first individual assignment the goal was to develop a simplified version of the hole system based on a single sensor node implemented on the [STM32 Nucleo F401RE](https://www.st.com/en/evaluation-tools/nucleo-f401re.html) board with some real physical sensors and actuators connected.
 
-The light condition is measured based on the electric resistance of a photocell (GL5528) placed in the room. Using the circuit below is possible to measure the photocell electrical resistance from an analog pin of an STM32 board.
+The details of the first assignment can be found [here](first_assignment.md).
 
-<img src="./src/photo_res.jpg" width="300"> <img src="./src/photo_circ.png" width="500">
+### Second assignment
 
-Each raw measurement uses a 12 bit ADC, so the signal will be between 0 and 4095, this values are then mapped in a 10 to 100 lux scale. The analog measurement is repeated every 10s.
+In the second assignment the goal was to extend the structure by integrating multiple sensor nodes in the system and evaluating their performance. The nodes used are the [M3 boards](https://www.iot-lab.info/docs/boards/iot-lab-m3/) available in the [FIT IoT-Lab](https://www.iot-lab.info/) and they are connected using the 6LoWPAN protocols.
 
-### Hall sensor
+The details of the second assignment can be found [here](second_assignment.md).
 
-The Hall sensor (A3144) is already mounted on a simple sensor module which provides a digital signal LOW when a magnetic field is detected, HIGH otherwise. With a 10K potentiometer on the board is possible to regulate the sensibility based on the type of magnet used so to trigger the sensor at the desired distance (around 2cm in this case).
+### Third assignment
 
-<img src="./src/hall_sensor.jpg" width="600">
+The goal of the third assignment was to complete the system with the integration of long-range nodes and the development of edge analytics. In this case the nodes used are the [ST B-L072Z-LRWAN1 boards](https://www.iot-lab.info/docs/boards/st-b-l072z-lrwan1/) available in the [FIT IoT-Lab](https://www.iot-lab.info/) and they are connected using [The Things Network](https://www.thethingsnetwork.org/) infrastructure.
 
-This sensor is used to detect if a magnet placed on the end of the projector screen is near the sensor placed on the wall. In this way when the screen is rolled up (and so the projector is switched off) the Hall sensor detects the magnetic field of the magnet, while it doesn't when the screen is unrolled. The digital value given by this sensor is sampled after the light measurement (every 10s).
+The details of the third assignment can be found [here](third_assignment.md).
 
-## System configuration
+## System prototype
 
-To setup the system start by cloning this repository
+The final working prototype of the system can be seen in [this demo]().
 
-    git clone https://github.com/lodauria/Individual_Assignments
+If you want to implement this system on your own start by cloning this repository with the following command
 
-Then make sure to have installed [RIOTS-OS](https://github.com/RIOT-OS/RIOT), [Mosquitto RSMB](https://github.com/eclipse/mosquitto.rsmb), [Mosquitto broker](https://github.com/eclipse/mosquitto) and to have an active [AWS](https://www.awseducate.com/signin/SiteLogin?ec=302&startURL=%2Fstudent%2Fs%2F) and [FIT IOT-Lab](https://www.iot-lab.info/testbed/login?next=%2Fdashboard) account.
+		git clone https://github.com/lodauria/Individual_Assignments
 
-### Devices setup
+Then follow the dedicated tutorials reachable from each of the assignments documents:
 
-#### First assignment:
+- [Assignment 1](first_assignment.md)
+- [Assignment 2](second_assignment.md)
+- [Assignment 3](third_assignment.md)
 
-For the first assignment the interactions with the environment are mediated only by a single STM32-F401RE board connected to internet through a PC. For more information about the network architecture and the devices setup visit the [dedicated folder](./stm32_f401re/).
-
-#### Second assignment
-
-For the second assignment the interaction with the environment are carried out by multiple M3 nodes of the [FIT IoT-Lab](https://www.iot-lab.info/). The overall wireless sensor network is connected to the Internet through an A8-M3 node. For more information about the network architecture and the devices setup visit the [dedicated folder](./stm32_f103rey/).
-
-### Mosquitto and AWS setup
-
-Read the dedicated indications to set up the other components:
-- [Mosquitto setup](./mosquitto/)
-- [AWS setup](./aws/)
-
-## Performance evaluation
-
-The performance evaluation of the wireless sensor network required in the second assignment can be found [here](./stm32_f103rey/Evaluation.md).
-
-## Prototype demo
-
-The web interface associated with the creator personal implementation is available at this [link](https://dauriaassignment1.s3.amazonaws.com/dashboard.html). Note that if you access the page when the creator hardware is not connected to AWS Cloud you can only use it in demo mode.
+The main findings of the three individual assignments are discussed in [this blog post]().

@@ -1,6 +1,8 @@
 # AWS setup
 
-## Lambda functions
+## For all the assignments
+
+### Lambda functions
 
 Create a python lambda function called `myReaction` using a role with full access to IoTCore and DynamoDB. In the code section paste the content of `myReaction.py`.
 
@@ -18,3 +20,7 @@ Create a DynamoDB table called `sensing_report` with primary key name `num` and 
 ## S3 bucket
 
 Create a S3 bucket with public files allowed. Upload the file contained in the folder `s3_bucket` and make them public. Open in your browser the URL associated to `dashboard.html` file to access the web interface.
+
+## For the third assignment
+
+Some additional configurations has to be done if we want to configure the system with the architecture described for the [third assignment](third_assignment.md). 
