@@ -1,6 +1,6 @@
-APPLICATION = ind_assignment
+APPLICATION = lora_sensor_node
 BOARD ?= b-l072z-lrwan1
-RIOTBASE ?= $(CURDIR)/../../RIOT
+RIOTBASE ?= $(CURDIR)/../../../RIOT
 
 # Default radio driver is Semtech SX1276 (used by the B-L072Z-LRWAN1 board)
 DRIVER ?= sx1276
