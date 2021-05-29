@@ -23,4 +23,4 @@ Create a S3 bucket with public files allowed. Upload the file contained in the f
 
 ## For the third assignment
 
-Some additional configurations has to be done if we want to configure the system with the architecture described for the [third assignment](third_assignment.md). 
+Some additional configurations has to be done if we want to configure the system with the architecture described for the [third assignment](../third_assignment.md). 

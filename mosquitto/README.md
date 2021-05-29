@@ -16,6 +16,28 @@ To start the Mosquitto RSMB, from the folder`<INSTALLATION_FOLDER>/mosquitto.rsm
 
 Keep the terminal open while using the broker.
 
+### Start broker on local PC bridged with A8-M3 node (2nd assignment)
+
+To use the local sensor node in addition to the M3 nodes in the second assignment, modify the `config.conf` file by changing the outgoing bridge settings with the A8-M3 node IPv6 global address.
+
+```
+# MQTT-S outgoing bridge
+connection local_bridge_to_mosquitto
+	address [<A8-M3 node IPv6 global address>]:1883
+	topic sensing out
+	topic actuation in
+```
+
+Then copy the `config.conf` file in your Mosquitto RSMB folder:
+
+    cp config.conf <INSTALLATION_FOLDER>/mosquitto.rsmb/rsmb/src/ 
+
+To start the Mosquitto RSMB, from the folder`<INSTALLATION_FOLDER>/mosquitto.rsmb/rsmb/src/` run the command:
+
+    ./broker_mqtts config.conf
+
+Keep the terminal open while using the broker.
+
 ### Start broker on A8-M3 node (2nd assignment)
 
 Connect via SSH to FIT IoT-Lab and copy the `config.conf` file needed by the RSMB in the `~/A8` folder:

@@ -1,5 +1,9 @@
 # First individual assignment
 
+In the first assignment we describe the IoT system functionalities and components. A first working version of the system has been developed using only a single local sensor node.
+
+The old version of the repository after the delivery of the first assignment can be found [here](https://github.com/lodauria/Individual_Assignments/tree/first_assignment).
+
 ## System logic description
 
 To monitor the room condition we will consider the data collected from a light sensor and an Hall sensor placed on the projector screen. From this data, a model can be derived and used to automatically control the room lights with a relay and the windows curtains with a DC motor so to automatically have the ideal light condition in each situation.
@@ -44,13 +48,15 @@ For the first assignment the interactions with the environment are mediated only
 
 ### STM32 Nucleo F401RE board setup
 
+All the file needed for the RIOT application are contained in the [dedicated folder](devices/stm32_f401re).
+
 #### Makefile adjustments
 
 Make sure to modify `Makefile` with the correct path of the RIOT folder and the IPv6 prefix with the best option for your PC network configuration.
 
 #### Compile and upload software
 
-In the project directory compile and upload the program on your STM32 Nucleo FE401RE board with the following command
+In the program directory compile and upload the code on the STM32 Nucleo FE401RE board with the following command
 
     make flash term
 

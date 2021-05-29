@@ -30,7 +30,9 @@ The details of the third assignment can be found [here](third_assignment.md).
 
 The final working prototype of the system can be seen in [this demo]().
 
-If you want to implement this system on your own start by cloning this repository with the following command
+The web interface associated with the creator personal implementation is available at this [link](https://dauriaassignment1.s3.amazonaws.com/dashboard.html). Note that if you access the page when no sensor nodes are connected you can only use it in demo mode.
+
+If you want to implement this system on your own start by cloning this repository with the following command:
 
 		git clone https://github.com/lodauria/Individual_Assignments
 

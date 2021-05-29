@@ -2,6 +2,8 @@
 
 For the second assignment the components developed for the [first assignment](first_assignment.md) have been adapted to extend the system with additional wireless sensor nodes. In addition for this assignment the new sensor node performances have been evaluated.
 
+The old version of the repository after the delivery of the second assignment can be found [here](https://github.com/lodauria/Individual_Assignments/tree/second_assignment).
+
 ## Network architecture
 
 In the configuration developed for the second assignment the network is composed of multiple [M3 nodes](https://www.iot-lab.info/docs/boards/iot-lab-m3/) of the [FIT IoT-Lab](https://www.iot-lab.info/). One of the nodes is used as border router to provide connection to Internet to the hole network. An additional [A8-M3 node](https://www.iot-lab.info/docs/boards/iot-lab-a8-m3/) is used to run the Mosquitto RSMB broker connected with the nodes and the bridged Mosquitto broker connected to IoT Core with the proper certificates. The IoT Core components are the same used in the first assignment. The local STM32 Nucleo board, with the code developed for the first assignment, can be used as additional sensor node by bridging the RSMB running on the PC with the Mosquitto broker of the A8-M3 node, which is reachable using its global IPv6 address. The overall architecture is shown in the picture below.
@@ -50,7 +52,7 @@ Network security was not the main focus of this assignment, in fact the wireless
 
 ## Hands-on walkthrough
 
-For the second assignment the interaction with the environment is carried out by multiple M3 nodes of the FIT IoT-Lab. The overall wireless sensor network is connected to the Internet through an A8-M3 node. Make sure to have installed [RIOTS-OS](https://github.com/RIOT-OS/RIOT), [Mosquitto RSMB](https://github.com/eclipse/mosquitto.rsmb), [Mosquitto broker](https://github.com/eclipse/mosquitto) and to have active [AWS](https://www.awseducate.com/signin/SiteLogin?ec=302&startURL=%2Fstudent%2Fs%2F) and [FIT IOT-Lab](https://www.iot-lab.info/testbed/login?next=%2Fdashboard) accounts.
+For the second assignment the interaction with the environment is simulated by multiple M3 nodes of the FIT IoT-Lab. The overall wireless sensor network is connected to the Internet through an A8-M3 node. Make sure to have installed [RIOTS-OS](https://github.com/RIOT-OS/RIOT), [Mosquitto RSMB](https://github.com/eclipse/mosquitto.rsmb), [Mosquitto broker](https://github.com/eclipse/mosquitto) and to have active [AWS](https://www.awseducate.com/signin/SiteLogin?ec=302&startURL=%2Fstudent%2Fs%2F) and [FIT IOT-Lab](https://www.iot-lab.info/testbed/login?next=%2Fdashboard) accounts.
 
 ### Submit an IoT LAB experiment
 
@@ -61,6 +63,8 @@ Create a new experiment in Saclay with some M3 nodes (suggested number is 5) and
 To run the Mosquitto brokers on the A8-M3 node follow the instructions of the [dedicated folder](mosquitto). You will need the IPv6 global address of the A8-M3 node to setup the sensor nodes. You can use the command `ip -6 -o addr show eth0` from the A8-M3 node terminal.
 
 ### Setup a M3 border router node:
+
+All the file needed for the RIOT application are contained in the [dedicated folder](devices/stm32_f103rey/border_router).
 
 #### Makefile adjustments
 
@@ -80,6 +84,8 @@ Here the M3 node is assume to be the number 10, change this number based on the 
 
 ### Setup the remaining M3 sensor nodes:
 
+All the file needed for the RIOT application are contained in the [dedicated folder](devices/stm32_f103rey/sensor_node).
+
 #### Makefile adjustments
 
 Make sure to modify `Makefile` with the correct path of the RIOT folder. If needed you can also modify the `DEFUALT_CHANNEL` used by the 802.15.4 mesh network accordingly to the one chosen when compiling the bored router program.
@@ -90,15 +96,15 @@ From the `sensor_node` folder compile the code for each of the ARM Cortex M3 boa
 
     make NODE_ID=<XX> SERVER_ADDR=<A8-M3 node address>
 
-where you have to make sure to use a different node ID numbers for each of the sensor nodes. Use numbers from 1 to 100. The server address is the global IPv6 address of the A8-M3 node used to run the Mosquitto RSMB broker.
+where you have to make sure to use a different node ID number for each of the sensor nodes. Use numbers from 1 to 89. The server address is the global IPv6 address of the A8-M3 node used to run the Mosquitto RSMB broker.
 
-Upload each compiled program to the M3 nodes of the experiment that have to be used as sensor nodes. If you want to access the shell of a sensor node use the following command from the FIT IoT-Lab terminal
+Flash each compiled program to the M3 nodes of the experiment that have to be used as sensor nodes. If you want to access the shell of a sensor node use the following command from the FIT IoT-Lab terminal
 
     nc m3-XX 20000
 
 ### Setup STM32 Nucleo F401RE board
 
-If you want to use a local STM32 Nucleo board as an additional sensor node check the code and the instructions contained in the [first assignment](first_assignment.md), the only change that has to be done is in the configuration of the local RSMB to which the board is connected. In particular inside the file `config.conf` the address of the outgoing bridge has to be substituted with the A8-M3 global address.
+If you want to use a local STM32 Nucleo board as an additional sensor node check the code and the instructions contained in the [first assignment document](first_assignment.md), the only change that has to be done is in the configuration of the local RSMB to which the board is connected. In particular inside the file `config.conf` the address of the outgoing bridge has to be substituted with the A8-M3 global address. All the details are contained in the dedicated [Mosquitton document](mosquitto/README.md).
 
 ### Mosquitto and AWS setup
 
