@@ -48,6 +48,8 @@ Network security was not the main focus of this assignment, in fact the wireless
 
 ## Other considerations
 
+For simplicity the code developed for the M3 nodes uses semi-random sensor readings, but this is fine since the goal of this assignment was to test the network infrastructure in general, the considerations about the real sensors have already been done. 
+
 In this system the use of multiple sensors could be useful to monitor multiple rooms at the same time and compare their use. Having overlapping observation areas can be useful for the light measurements since the light coming from the windows may be focused only in some places of the room. In this case the reactive behavior can be used to close the curtains only for the windows where a lot of light is coming. Since being fault tolerant for this system is not so crucial, having sensors redundancy may result only in an energy waste, so we can conclude that the maximum reasonable number of sensors for each room is two.
 
 Talking about the wireless network the main limitation is the interference from sensor to sensor if the messages are not synchronized, in addition also the use of WiFi by other devices inside the room can cause problems. The consequence of interference is that some sensors readings or actuation commands may be lost, but, as long as the number of messages lost is minimum, it will cause only a delay in the system reactions.
