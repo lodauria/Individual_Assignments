@@ -38,9 +38,19 @@ In the configuration developed for the first assignment the network uses Mosquit
 
 ## Other considerations
 
+### Concept considerations
 
+Even if the system concept may seem trivial, the idea behind this choice is that monitoring the university rooms with sensors of any kind could be a valuable option. In the system prototype implemented for these individual assignments the sensors choice was due to their availability, but to obtain a smarter collective intelligence other kind of sensor could have been used. For example monitoring the room temperature, the heater and the opening of the windows could have been more interesting.
 
+Also the use of the data collected is very trivial because there is only a simple reactive behavior, but in general the data about the rooms could be used by the university to obtain information about the students habits. The point is that, even if the system presented in these assignments is very simple, I thought that the idea of a smarter university has a potential.
 
+All these considerations have been done only going on with the course, when it was to late to restart from scratch the individual assignments. Anyway, since the goal of these assignments was to reason on the use of IoT and develop something on your own, I'm happy with the choice because I've understood the limitations of my prototype. The main change I would make is the type of sensors chosen and how the data are used to create the collective intelligence. 
+
+### Technical considerations
+
+If we assume to be interested in the projector status a lot of other passive sensors could have been used instead of an Hall sensor since is used only to return a boolean signal.
+
+The periodicity of the measurements has been chosen to make it easy to test the system, but for a real application is too short considering that this kind of system doesn't need to be so fast in reacting to changes.
 
 ## Hands-on walkthrough
 

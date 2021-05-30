@@ -28,7 +28,9 @@ For the third assignment the interaction with the environment is simulated by a 
 
 ### Setup a TTN device
 
-Create a TTN application
+From The Things Network community edition console, create an application. From the application console add a new device with manual configuration. Select the OTAA activation mode and the version 1.0.2 of LoRaWAN. Configure the AppEUI and the DevEUI at your choice, they will be used later. Then select SF9 as frequency plan and the REV B as regional parameter version. Finally generate the AppKey and finalize the device creation.
+
+From the application console add an API key with all the individual rights granted and save it for the [AWS setup](aws/).
 
 ### Submit an IoT LAB experiment
 
