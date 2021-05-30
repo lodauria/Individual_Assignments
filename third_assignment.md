@@ -16,7 +16,7 @@ For this simple prototype the edge computation is trivial, it is done only to ha
 
 The rule can be summarized as follows:
 
-**If** *is day time* **and** *the light value is above 20 lux*, **then** *ignore the sensor reading*
+**If** *is day time* **and** *the light value is under 20 lux*, **then** *ignore the sensor reading*
 
 ## Other considerations
 
