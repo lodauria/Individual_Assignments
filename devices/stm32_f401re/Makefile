@@ -2,7 +2,7 @@ APPLICATION = local_sensor_node
 BOARD ?= nucleo-f401re
 RIOTBASE ?= $(CURDIR)/../../../RIOT
 
-# Default to using ethos for providing the uplink when not on native
+# Use ethos for uplink
 UPLINK ?= ethos
 
 # Modules and packages
@@ -21,7 +21,7 @@ FEATURES_REQUIRED = periph_adc
 
 USEPKG += jsmn
 
-# include UHCP client
+# Include UHCP client
 USE_DHCPV6 ?= 0
 
 # Comment this out to disable code in RIOT that does safety checking
@@ -38,11 +38,11 @@ TAP ?= tap0
 # IPV6_PREFIX ?= fe80::/64
 IPV6_PREFIX ?= fe80::6000:0:0:0/66
 
-# The Broker address, port and the MQTT topics that will be used
-SERVER_ADDR = fe80::1
-SERVER_PORT = 1885
-MQTT_TOPIC_S = sensing
-MQTT_TOPIC_A = actuation
+# The broker address, port and the MQTT topics that will be used
+SERVER_ADDR ?= fe80::1
+SERVER_PORT ?= 1885
+MQTT_TOPIC_S ?= sensing
+MQTT_TOPIC_A ?= actuation
 
 CFLAGS += -DSERVER_ADDR='"$(SERVER_ADDR)"'
 CFLAGS += -DSERVER_PORT=$(SERVER_PORT)

@@ -23,12 +23,12 @@ QUIET ?= 1
 
 DEFAULT_CHANNEL ?= 13
 
-# The Broker address, port and the MQTT topics that will be used
-SERVER_ADDR = 2001:660:3207:400::64
-SERVER_PORT = 1885
-MQTT_TOPIC_S = sensing
-MQTT_TOPIC_A = actuation
-NODE_ID = 1
+# The broker address, port, MQTT topics and device ID that will be used
+SERVER_ADDR ?= 2001:660:3207:400::64
+SERVER_PORT ?= 1885
+MQTT_TOPIC_S ?= sensing
+MQTT_TOPIC_A ?= actuation
+NODE_ID ?= 1
 
 CFLAGS += -DSERVER_ADDR='"$(SERVER_ADDR)"'
 CFLAGS += -DSERVER_PORT=$(SERVER_PORT)

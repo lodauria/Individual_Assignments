@@ -21,8 +21,8 @@ int relay_stauts=0;   // 0: lights off, 1: lights on
 int motor_status=2;   // 0: no action, 1: curatin closed, 2: curtain open
 
 // Emcute thread
-static void *emcute_thread(void *arg)
-{
+static void *emcute_thread(void *arg){
+
     (void)arg;
     char id_emcute[12];
     sprintf(id_emcute,"m3-node-%d",NODE_ID);
@@ -31,8 +31,8 @@ static void *emcute_thread(void *arg)
 }
 
 // When a message is received
-static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
-{
+static void on_pub(const emcute_topic_t *topic, void *data, size_t len){
+
     // Interpret the JSON message 
     char *in = (char *)data;
     jsmn_parser parser;
@@ -41,16 +41,18 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
     jsmn_init(&parser);
     int elem = jsmn_parse(&parser, in, len, tok, 10);
 
+    // Check for errors
     if (elem < 7) {
         printf("Error reading json from topic \"%s\"\n", topic->name);
     }
     else{
 
+        // Get the node ID from the message
         char node_id[3];
         sprintf(node_id,"%.*s", tok[2].end - tok[2].start, in + tok[2].start);
         if (atoi(node_id) == NODE_ID){
 
-            // First value is relay command, the second is the motor command
+            // Second value is relay command, the third is the motor command
             char relay_str[2];
             char motor_str[2];
             sprintf(relay_str,"%.*s", tok[4].end - tok[4].start, in + tok[4].start);
@@ -66,15 +68,12 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
                 motor_status = atoi(motor_str);
             }
         }
-
     }
-
 }
 
-// Setup the EMCUTE, open a connection to the MQTT-S broker and subscribe to default topic
+// Setup the EMCUTE, open a connection to the MQTT-S broker and subscribe to actuation topic
+int setup_mqtt(void){
 
-int setup_mqtt(void)
-{
     // Subscription buffer
     memset(subscriptions, 0, (NUMOFSUBS * sizeof(emcute_sub_t)));
 
@@ -90,13 +89,11 @@ int setup_mqtt(void)
     }
 
     if (emcute_con(&gw, true, NULL, NULL, 0, 0) != EMCUTE_OK) {
-        printf("Error: unable to connect to [%s]:%i\n", SERVER_ADDR,
-               (int)gw.port);
+        printf("Error: unable to connect to [%s]:%i\n", SERVER_ADDR, (int)gw.port);
         return 1;
     }
 
-    printf("Successfully connected to gateway at [%s]:%i\n",
-           SERVER_ADDR, (int)gw.port);
+    printf("Successfully connected to gateway at [%s]:%i\n", SERVER_ADDR, (int)gw.port);
 
     // Subscribe to the MQTT actuation topic
     subscriptions[0].cb = on_pub;
@@ -114,12 +111,12 @@ int setup_mqtt(void)
     return 1;
 }
 
-int main(void)
-{
+// Main function
+int main(void){
 
     // INITIALIZATION
 	
-	// Set the random seed
+	// Set the random seed based on the NODE_ID
     random_init(12345+(NODE_ID*6));
 
     // Setup MQTT-SN connection
@@ -130,7 +127,7 @@ int main(void)
 
     while(1){
 
-        // GET SENSORS READINGS
+        // GET THE SIMULATED SENSORS READINGS
 
         // Projector
         int projector_status;

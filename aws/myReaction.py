@@ -36,7 +36,7 @@ def store_data(light, projector, relay, motor, d_id, dynamodb=None):
 # When the lambda function is invoked  
 def lambda_handler(event, context):
   
-    # Decode the JSON message (gives error and stop if wrong format)
+    # Decode the JSON message (gives error and stops if wrong format)
     relay_var = event["relay"]
     motor_var = event["motor"]
     l_level = event["light_level"]
@@ -46,7 +46,7 @@ def lambda_handler(event, context):
     # Add item to the DB
     store_data (l_level, p_status, relay_var, motor_var, dev_id)
     
-    # IoT logic
+    # System reaction logic
     new_motor_var = 0
     actuation = False
 
@@ -79,7 +79,7 @@ def lambda_handler(event, context):
       # Create an MQTT client
       client = boto3.client('iot-data', region_name='us-east-1')
     
-      # Publish a message to actuation topic
+      # Publish a message with actuation topic
       response = client.publish (
           topic='actuation',
           qos=1,

@@ -71,6 +71,7 @@ function callAwsLambdaFunction(mess_type, mess_debug, device_id) {
 
 			} else{
 				
+				// If there is an error, ask to activate debug mode
 				if (debug_status == 0){
 					
 					var result = confirm("No data in the last hour for this device. Activate demo mode?");
@@ -80,6 +81,8 @@ function callAwsLambdaFunction(mess_type, mess_debug, device_id) {
 						callAwsLambdaFunction(0,debug_status,dev_id);
 					}
 				}
+
+				// Or to change the device ID
 				else{
 					
 					var result = confirm("No data in the last hour for this device. Demo mode already active. Do you want to set device ID to 0?");
@@ -100,16 +103,17 @@ function callAwsLambdaFunction(mess_type, mess_debug, device_id) {
     });
 }
 
-// Call lambda function with specific parameters
+// Call lambda function with specific parameters to toggle the relay
 function toggleRelay() {
 	callAwsLambdaFunction(1,debug_status,dev_id)
 }
 
-// Call lambda function with specific parameters
+// Call lambda function with specific parameters to toggle the motor
 function toggleMotor() {
 	callAwsLambdaFunction(2,debug_status,dev_id)
 }
 
+// Call lambda function to update the values when the device ID changes
 function updateDev() {
 	dev_id = document.getElementById('id_dev').value;
 	callAwsLambdaFunction(0,debug_status,dev_id)

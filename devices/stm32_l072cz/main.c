@@ -24,8 +24,8 @@ int relay_stauts=0;   // 0: lights off, 1: lights on
 int motor_status=2;   // 0: no action, 1: curtain closed, 2: curtain open
 
 // When a message is received
-static void handle_mess(void *data, int len)
-{
+static void handle_mess(void *data, int len){
+
     // Interpret the JSON message 
     char *in = (char *)data;
     jsmn_parser parser;
@@ -34,6 +34,7 @@ static void handle_mess(void *data, int len)
     jsmn_init(&parser);
     int elem = jsmn_parse(&parser, in, len, tok, 10);
 
+    // Check for errors
     if (elem < 7) {
         printf("Error reading json message\n");
     }
@@ -61,7 +62,6 @@ static void handle_mess(void *data, int len)
             }
         }
     }
-
 }
 
 // Thread for receiving LoRa messages
@@ -80,7 +80,6 @@ static void *_recv(void *arg){
     }
 
     return NULL;
-
 }
 
 // Setup LoRa connection and the OTAA procedure
@@ -111,14 +110,15 @@ int setup_loramac(void){
     return 0;    
 }
 
-int main(void)
-{
+// Main function
+int main(void){
 
     // INITIALIZATION
 
     // Setup LoRa connection
     printf("Setting LoRa\n");
-    if (setup_loramac() != 0) {
+    if (setup_loramac() != 0){
+        printf("Error during LoRa setup\n");
         return 1;
     }
 
@@ -129,7 +129,7 @@ int main(void)
 
     while(1){
 
-        // GET SENSORS READINGS
+        // GET THE SIMULATED SENSORS READINGS
 
         // Projector
         int projector_status;

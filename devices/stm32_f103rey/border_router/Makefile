@@ -1,3 +1,6 @@
+# Code adapted from the gnc_border_router example of RIOT 
+# The only changes done are in the variables values in this file
+
 # name of your application
 APPLICATION = border_router
 

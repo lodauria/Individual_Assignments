@@ -8,6 +8,7 @@
 #include "analog_util.h"
 #include "jsmn.h"
 
+// Device ID of the local node is always set to 0
 #define NODE_ID 0
 #define EMCUTE_PRIO         (THREAD_PRIORITY_MAIN - 1)
 
@@ -33,16 +34,16 @@ int relay_stauts=0;   // 0: lights off, 1: lights on
 int motor_status=2;   // 0: no action, 1: curatin closed, 2: curtain open
 
 // Emcute thread
-static void *emcute_thread(void *arg)
-{
+static void *emcute_thread(void *arg){
+
     (void)arg;
     emcute_run(CONFIG_EMCUTE_DEFAULT_PORT, "nucleo-f401re");
     return NULL;
 }
 
 // Spin the motor for 3 seconds in one of the two directions
-static void actuate_DC_motor(int m1, int m2, int status)
-{
+static void actuate_DC_motor(int m1, int m2, int status){
+
 	if (status >= 2){
         gpio_clear(m1);
         gpio_set(m2);
@@ -59,8 +60,8 @@ static void actuate_DC_motor(int m1, int m2, int status)
 }
 
 // When a message is received
-static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
-{
+static void on_pub(const emcute_topic_t *topic, void *data, size_t len){
+
     // Interpret the JSON message 
     char *in = (char *)data;
     jsmn_parser parser;
@@ -69,16 +70,18 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
 	jsmn_init(&parser);
 	int elem = jsmn_parse(&parser, in, len, tok, 10);
 
+	// Check for errors
 	if (elem < 7) {
 		printf("Error reading json from topic \"%s\"\n", topic->name);
 	}
 	else{
 
+		// Get the node ID from the message
 		char node_id[3];
         sprintf(node_id,"%.*s", tok[2].end - tok[2].start, in + tok[2].start);
         if (atoi(node_id) == NODE_ID){
 
-			// First value is relay command, the second is the motor command
+			// Second value is relay command, the third is the motor command
 			char relay_str[2];
 			char motor_str[2];
 			sprintf(relay_str,"%.*s", tok[4].end - tok[4].start, in + tok[4].start);
@@ -103,10 +106,9 @@ static void on_pub(const emcute_topic_t *topic, void *data, size_t len)
 	}
 }
 
-// Setup the EMCUTE, open a connection to the MQTT-S broker and subscribe to default topic
+// Setup the EMCUTE, open a connection to the MQTT-S broker and subscribe to actuation topic
+int setup_mqtt(void){
 
-int setup_mqtt(void)
-{
     // Subscription buffer
     memset(subscriptions, 0, (NUMOFSUBS * sizeof(emcute_sub_t)));
 
@@ -122,13 +124,11 @@ int setup_mqtt(void)
     }
 
     if (emcute_con(&gw, true, NULL, NULL, 0, 0) != EMCUTE_OK) {
-        printf("Error: unable to connect to [%s]:%i\n", SERVER_ADDR,
-               (int)gw.port);
+        printf("Error: unable to connect to [%s]:%i\n", SERVER_ADDR, (int)gw.port);
         return 1;
     }
 
-    printf("Successfully connected to gateway at [%s]:%i\n",
-           SERVER_ADDR, (int)gw.port);
+    printf("Successfully connected to gateway at [%s]:%i\n", SERVER_ADDR, (int)gw.port);
 
     // Subscribe to the MQTT actuation topic
     subscriptions[0].cb = on_pub;
@@ -146,8 +146,8 @@ int setup_mqtt(void)
     return 1;
 }
 
-int main(void)
-{
+// Main function
+int main(void){
 
 	// INITIALIZATION
 
@@ -160,7 +160,7 @@ int main(void)
     }
     printf("Projector sensor ready\n");
 
-    // Initialize the analogic pin
+    // Initialize the analog pin
 	if (adc_init(ADC_IN_USE) < 0) {
 	    printf("Failed to initialize photoresistor\n");
 	    return -1;

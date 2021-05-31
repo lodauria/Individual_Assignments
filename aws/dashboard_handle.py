@@ -10,13 +10,14 @@ def get_last_data(table, d, d_id):
 
         # Get old data if in demo mode
         response = table.scan(
-        FilterExpression=Key('num').lt(1617264905) & Attr('id').eq(d_id)
+            FilterExpression=Key('num').lt(1617264905) & Attr('id').eq(d_id)
         )
+
     else:
 
         # Get data of the last hour
         response = table.scan(
-        FilterExpression=Key('num').gte(int(datetime.utcnow().timestamp()-3600)) & Attr('id').eq(d_id)
+            FilterExpression=Key('num').gte(int(datetime.utcnow().timestamp()-3600)) & Attr('id').eq(d_id)
         )
 
     return response['Items']
@@ -28,13 +29,14 @@ def get_all_last_data(table, d):
 
         # Get old data if in demo mode
         response = table.scan(
-        FilterExpression=Key('num').lt(1617264905)
+            FilterExpression=Key('num').lt(1617264905)
         )
+
     else:
 
         # Get data of the last hour
         response = table.scan(
-        FilterExpression=Key('num').gte(int(datetime.utcnow().timestamp()-3600))
+            FilterExpression=Key('num').gte(int(datetime.utcnow().timestamp()-3600))
         )
 
     return response['Items']
@@ -74,7 +76,7 @@ def lambda_handler(event, context):
         'body': json.dumps("No sensor values in the last hour")
     }
     
-    # Get most recent item
+    # Get most recent items sorted
     last_data = sorted(last_data, key=lambda k: k['num'], reverse=True)
     all_last_data = sorted(all_last_data, key=lambda k: k['num'], reverse=True)
     last = last_data[0]
@@ -106,7 +108,7 @@ def lambda_handler(event, context):
     proj_hist[-1] = proj_hist[-1][:-1]+"\""
     light_hist[-1] = light_hist[-1][:-1]+"\""
     
-    # Compute the aggregated values
+    # Compute the aggregated values for all the devices
     all_proj_min = 2
     all_proj_max = -1
     all_light_min = 101
@@ -177,7 +179,7 @@ def lambda_handler(event, context):
         # Create an MQTT client
         client = boto3.client('iot-data', region_name='us-east-1')
       
-        # Publish a message to actuation topic
+        # Publish a message with actuation topic
         response = client.publish (
             topic='actuation',
             qos=1,
@@ -192,7 +194,7 @@ def lambda_handler(event, context):
         # Used to communicate that no actuation has been done
         message = message + "\"act\": 0}"
     
-    # Return all the informations to the web page
+    # Send the final message to the web page
     return {
         'statusCode': 200,
         'headers': {

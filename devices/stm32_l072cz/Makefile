@@ -27,13 +27,11 @@ DEVELHELP ?= 1
 # Change this to 0 show compiler invocation lines by default:
 QUIET ?= 1
 
-# Sensor node ID
-NODE_ID = 90
-
-# The things network device configuration
+# The things network device configuration and device ID to be used
 DEVEUI ?= 9090909090909090
 APPEUI ?= 5775577557755775
 APPKEY ?= D12FF32610C3A92051B209FC3A023559
+NODE_ID ?= 90
 
 CFLAGS += -DNODE_ID=$(NODE_ID)
 
