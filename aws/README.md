@@ -23,7 +23,7 @@ Create a S3 bucket with public files allowed. Upload the file contained in the f
 
 ## For the third assignment
 
-Some additional configurations has to be done if we want to configure the system with the architecture described for the [third assignment](../third_assignment.md). On [The Things Network website](https://www.thethingsindustries.com/docs/integrations/aws-iot/default/deployment-guide/) there is a CloudFormation template to setup the AWS integration with TTN, refer to the community tab. When the stack status is `CREATE_COMPLETE`, go to AWS IoT Core settings and in the event-based messages section turn on the option *"Thing: created, updated, deleted"*.
+Some additional configurations has to be done if we want to configure the system with the architecture described for the [third assignment](../third_assignment.md). On The Things Network website there is a [CloudFormation template](https://www.thethingsindustries.com/docs/integrations/aws-iot/default/deployment-guide/) to setup the AWS integration with TTN, refer to the community tab. When the stack status is `CREATE_COMPLETE`, go to AWS IoT Core settings and in the event-based messages section turn on the option *"Thing: created, updated, deleted"*.
 
 Create a python lambda function called `lora-decoder` and one called `lora-encoder` using a role with full access to IoTCore and DynamoDB. In the code section of each function paste the content of `lora-decoder.py` and `lora-encoder.py` respectively.
 

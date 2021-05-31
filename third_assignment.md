@@ -34,11 +34,11 @@ Is important to mention that LoRaWAN uses a different frequency band with respec
 
 ## Other considerations
 
-As in the previous assignment also in this case the sensor readings are simulated with a semi-random numbers, this because the focus of this assignment was to develop the LoRa connection and the edge computation.
+As in the previous assignment also in this case the sensor readings are simulated with semi-random numbers, this because the focus of this assignment was to develop the LoRa connection and the edge computation.
 
 An advantage of using the LoRa devices is that RIOT applications using LoRa are in generally smaller in size with respect to the one using 6LoWPAN. For this system this was not a relevant aspect, but in general it could be a useful consideration.
 
-The consideration about the use of multiple sensor are the same discussed for the second assignment, the only difference in this case is in the edge computation. Even if the edge computation developed for this assignment is trivial, its potential is big since it can be used to group the sensor reading from the devices placed in the same room or in the same floor. In this way the amount of cloud operations can be reduced a lot. 
+The consideration about the use of multiple sensor are the same discussed for the second assignment, the only difference in this case is in the edge computation. Even if the edge computation developed for this assignment is trivial, its potential is big since it can be used to group the sensor reading from the devices placed in the same room or in the same floor. In this way the amount of cloud operations can be reduced a lot. A possible upgrade for the infrastructure would be to do the edge computation on the LoRa gateway, but the one used for this assignment was handled by the IoT-Lab.
 
 ## Hands-on walkthrough
 
