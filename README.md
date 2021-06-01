@@ -28,7 +28,7 @@ The details of the third assignment can be found [here](third_assignment.md).
 
 ## System prototype
 
-The final working prototype of the system can be seen in [this demo]().
+The final working prototype of the system can be seen in the [video demo]().
 
 The web interface associated with the creator personal implementation is available at this [link](https://dauriaassignment1.s3.amazonaws.com/dashboard.html). Note that if you access the page when no sensor nodes are connected you can only use it in demo mode.
 
@@ -42,4 +42,4 @@ Then follow the dedicated tutorials reachable from each of the assignments docum
 - [Assignment 2](second_assignment.md)
 - [Assignment 3](third_assignment.md)
 
-The main findings of the three individual assignments are discussed in [this blog post]().
+The main findings of the three individual assignments are discussed in [this blog post](https://lodauria.medium.com/iot-system-to-make-universities-smarter-27f18c4c7cf).
