@@ -167,13 +167,17 @@ def lambda_handler(event, context):
         if messType == "1":
             if relay_var==0:
                 relay_var = 1
+                motor_var = 0
             else:
                 relay_var = 0
+                motor_var = 0
                 
         if messType == "2":
             if motor_var==1:
+                relay_var = int(relay_var)
                 motor_var = 2
             else:
+                relay_var = int(relay_var)
                 motor_var = 1
         
         # Create an MQTT client
@@ -183,7 +187,7 @@ def lambda_handler(event, context):
         response = client.publish (
             topic='actuation',
             qos=1,
-            payload=json.dumps({"relay":str(relay_var), "motor":str(motor_var), "id":str(dev_id)})
+            payload=json.dumps({"id":int(dev_id), "relay": relay_var, "motor":motor_var})
         )
 
         # Communicate to the web page that actuation has been performed

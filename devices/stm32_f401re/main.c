@@ -199,7 +199,7 @@ int main(void){
 		int projector_status;
 	    projector_status = gpio_read(projectorSens);
 	    if (projector_status > 0){
-	    	printf("Projector: OPEN, %i\n", projector_status);
+	    	printf("Projector: OPEN\n");
 	    	projector_status = 1;
 	    }
 	    else{

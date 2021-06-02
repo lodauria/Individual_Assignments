@@ -72,10 +72,11 @@ static void *_recv(void *arg){
     while (1) {
 
         // Blocks until some data is received
-        semtech_loramac_recv(&loramac);
-        loramac.rx_data.payload[loramac.rx_data.payload_len] = 0;
-        if (loramac.rx_data.port == 10){
-            handle_mess(loramac.rx_data.payload, loramac.rx_data.payload_len);
+        if (semtech_loramac_recv(&loramac) == SEMTECH_LORAMAC_RX_DATA){
+            loramac.rx_data.payload[loramac.rx_data.payload_len] = 0;
+            if (loramac.rx_data.port == 10){
+                handle_mess(loramac.rx_data.payload, loramac.rx_data.payload_len);
+            }
         }
     }
 
@@ -150,6 +151,7 @@ int main(void){
         else{
             printf("Sensor readings published\n");
         }
+        puts("");
 
         xtimer_sleep(10);
     }
