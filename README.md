@@ -28,7 +28,7 @@ The details of the third assignment can be found [here](third_assignment.md).
 
 ## System prototype
 
-The final working prototype of the system can be seen in the [video demo]().
+The final working prototype of the system can be seen in the [video demo](https://youtu.be/HOkv7nlomJc).
 
 The web interface associated with the creator personal implementation is available at this [link](https://dauriaassignment1.s3.amazonaws.com/dashboard.html). Note that if you access the page when no sensor nodes are connected you can only use it in demo mode.
 
