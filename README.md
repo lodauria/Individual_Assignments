@@ -2,7 +2,7 @@
 
 ## System description
 
-The IoT system chosen for the individual assignments is based on the idea of making university rooms smarter. By monitoring the light condition and time at which the rooms projectors are used is possible to automatically adjust the curtains and the lights so to reduce energy waste and provide students the best possible rooms conditions.
+The IoT system developed for this individual project is based on the idea of making university rooms smarter. By monitoring the light condition and time at which the rooms projectors are used is possible to automatically adjust the curtains and the lights so to reduce energy waste and provide students the best possible rooms conditions.
 
 ## Individual assignments
 
@@ -10,7 +10,7 @@ The different aspects of this system have been analyzed during the course by fol
 
 ### First assignment
 
-For the first individual assignment the goal was to develop a simplified version of the hole system based on a single sensor node implemented on the [STM32 Nucleo F401RE](https://www.st.com/en/evaluation-tools/nucleo-f401re.html) board with some real physical sensors and actuators connected.
+For the first individual assignment the goal was to develop a simplified version of the hole system based on a single sensor node implemented on the [STM32 Nucleo F401RE](https://www.st.com/en/evaluation-tools/nucleo-f401re.html) board with some real physical sensors and actuators connected. The software was developed using [RIOTS-OS](https://github.com/RIOT-OS/RIOT).
 
 The details of the first assignment can be found [here](first_assignment.md).
 
@@ -30,16 +30,12 @@ The details of the third assignment can be found [here](third_assignment.md).
 
 The final working prototype of the system can be seen in the [video demo](https://youtu.be/HOkv7nlomJc).
 
-The web interface associated with the creator personal implementation is available at this [link](https://dauriaassignment1.s3.amazonaws.com/dashboard.html). Note that if you access the page when no sensor nodes are connected you can only use it in demo mode.
-
 If you want to implement this system on your own start by cloning this repository with the following command:
 
-		git clone https://github.com/lodauria/Individual_Assignments
+		git clone https://github.com/lodauria/IoT_Individual_Project
 
 Then follow the dedicated tutorials reachable from each of the assignments documents:
 
 - [Assignment 1](first_assignment.md)
 - [Assignment 2](second_assignment.md)
 - [Assignment 3](third_assignment.md)
-
-The main findings of the three individual assignments are discussed in [this blog post](https://lodauria.medium.com/iot-system-to-make-universities-smarter-27f18c4c7cf).
